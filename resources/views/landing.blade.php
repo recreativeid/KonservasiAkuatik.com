@@ -156,8 +156,8 @@
                 </p>
             </div>
 
-            <!-- 4 Cards Grid for all packages -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto items-stretch">
+            <!-- 5 Cards Grid for all packages (Klub, Privat, Syaraf Terjepit, Hydroterapi, Kelas Gratis) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 lg:gap-5 max-w-[1400px] mx-auto items-stretch">
                 @foreach($packages as $package)
                     <div class="pricing-card {{ $package['is_popular'] ? 'popular' : '' }}">
                         @if($package['is_popular'])
@@ -168,43 +168,45 @@
                         @endif
 
                         <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <div class="flex items-center gap-2">
-                                    <div class="w-8 h-8 rounded-lg {{ $package['is_popular'] ? 'bg-sky-100 text-sky-600' : 'bg-slate-100 text-slate-600' }} flex items-center justify-center text-sm">
-                                        <i class="fa-solid {{ $package['id'] === 'syaraf-terjepit' || $package['id'] === 'hydroterapi' ? 'fa-spa' : ($package['id'] === 'privat' ? 'fa-user-shield' : 'fa-users') }}"></i>
+                            <div class="flex items-start justify-between gap-2 mb-3">
+                                <div class="flex items-center gap-2 min-w-0">
+                                    <div class="w-8 h-8 rounded-lg {{ $package['is_popular'] ? 'bg-sky-100 text-sky-600' : (isset($package['is_free']) && $package['is_free'] ? 'bg-emerald-100 text-emerald-600' : 'bg-slate-100 text-slate-600') }} flex items-center justify-center text-sm shrink-0">
+                                        <i class="fa-solid {{ $package['id'] === 'gratis' ? 'fa-hand-holding-heart' : ($package['id'] === 'syaraf-terjepit' || $package['id'] === 'hydroterapi' ? 'fa-spa' : ($package['id'] === 'privat' ? 'fa-user-shield' : 'fa-users')) }}"></i>
                                     </div>
-                                    <h3 class="text-lg sm:text-xl font-bold text-slate-900">{{ $package['name'] }}</h3>
+                                    <h3 class="text-base font-extrabold text-slate-900 leading-snug break-words hyphens-none">{{ $package['name'] }}</h3>
                                 </div>
                                 @if(!$package['is_popular'])
-                                    <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full whitespace-nowrap">{{ $package['badge'] }}</span>
+                                    <span class="text-2xs font-bold {{ isset($package['is_free']) && $package['is_free'] ? 'text-emerald-700 bg-emerald-100 border border-emerald-200' : 'text-slate-500 bg-slate-100' }} px-2 py-0.5 rounded-full shrink-0 whitespace-nowrap">{{ $package['badge'] }}</span>
                                 @endif
                             </div>
 
-                            <div class="text-xs font-bold text-sky-600 uppercase tracking-wide mb-2">{{ $package['subtitle'] }}</div>
-                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                            <div class="text-2xs font-bold {{ isset($package['is_free']) && $package['is_free'] ? 'text-emerald-600' : 'text-sky-600' }} uppercase tracking-wide mb-2">{{ $package['subtitle'] }}</div>
+                            <p class="text-slate-600 text-xs leading-relaxed mb-3">
                                 {{ $package['description'] }}
                             </p>
 
                             <!-- Price Tag -->
-                            <div class="{{ $package['is_popular'] ? 'price-box-cyan' : 'price-box-regular' }}">
-                                <div class="text-xs {{ $package['is_popular'] ? 'text-sky-700' : 'text-slate-500' }} font-semibold uppercase tracking-wider">{{ $package['price_prefix'] }}</div>
-                                <div class="flex items-baseline gap-1 mt-1">
-                                    <span class="text-2xl sm:text-3xl font-extrabold {{ $package['is_popular'] ? 'text-sky-700' : 'text-slate-900' }}">{{ $package['price'] }}</span>
-                                    <span class="text-xs font-medium {{ $package['is_popular'] ? 'text-sky-600' : 'text-slate-500' }}">{{ $package['period'] }}</span>
+                            <div class="{{ $package['is_popular'] ? 'price-box-cyan' : (isset($package['is_free']) && $package['is_free'] ? 'price-box-green' : 'price-box-regular') }}">
+                                <div class="text-2xs {{ $package['is_popular'] ? 'text-sky-700' : (isset($package['is_free']) && $package['is_free'] ? 'text-emerald-700' : 'text-slate-500') }} font-bold uppercase tracking-wider">{{ $package['price_prefix'] }}</div>
+                                <div class="flex items-baseline gap-1 mt-0.5 flex-wrap">
+                                    <span class="text-xl xl:text-2xl font-extrabold {{ $package['is_popular'] ? 'text-sky-700' : (isset($package['is_free']) && $package['is_free'] ? 'text-emerald-700' : 'text-slate-900') }} whitespace-nowrap leading-none">{{ $package['price'] }}</span>
+                                    @if(!empty($package['period']))
+                                        <span class="text-xs font-semibold {{ $package['is_popular'] ? 'text-sky-600' : 'text-slate-500' }} shrink-0">{{ $package['period'] }}</span>
+                                    @endif
                                 </div>
                                 @if(!empty($package['note']))
-                                    <div class="text-xs font-bold {{ $package['is_popular'] ? 'text-sky-800' : 'text-slate-600' }} mt-1.5 pt-1.5 border-t {{ $package['is_popular'] ? 'border-sky-200' : 'border-slate-200' }}">
-                                        <i class="fa-solid fa-clock text-sky-600 mr-1"></i> {{ $package['note'] }}
+                                    <div class="text-2xs font-semibold {{ $package['is_popular'] ? 'text-sky-800 border-sky-200' : (isset($package['is_free']) && $package['is_free'] ? 'text-emerald-800 border-emerald-200' : 'text-slate-600 border-slate-200') }} mt-1.5 pt-1.5 border-t leading-tight">
+                                        <i class="fa-solid fa-clock {{ isset($package['is_free']) && $package['is_free'] ? 'text-emerald-600' : 'text-sky-600' }} mr-1"></i> {{ $package['note'] }}
                                     </div>
                                 @endif
                             </div>
 
                             <!-- Features -->
-                            <div class="space-y-2.5 mb-8">
+                            <div class="space-y-2 mb-6">
                                 @foreach($package['features'] as $feature)
-                                    <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-600">
-                                        <i class="fa-solid fa-circle-check text-sky-600 text-sm mt-0.5 flex-shrink-0"></i>
-                                        <span>{{ $feature }}</span>
+                                    <div class="flex items-start gap-1.5 text-xs text-slate-600">
+                                        <i class="fa-solid fa-circle-check {{ isset($package['is_free']) && $package['is_free'] ? 'text-emerald-600' : 'text-sky-600' }} text-xs mt-0.5 shrink-0"></i>
+                                        <span class="leading-tight">{{ $feature }}</span>
                                     </div>
                                 @endforeach
                             </div>
@@ -213,9 +215,9 @@
                         <div>
                             <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode($package['whatsapp_msg']) }}" 
                                target="_blank" 
-                               class="{{ $package['cta_class'] }}">
+                               class="{{ $package['cta_class'] }} text-xs py-2.5">
                                 <span>{{ $package['cta_text'] }}</span>
-                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                                <i class="fa-solid fa-arrow-right text-2xs"></i>
                             </a>
                         </div>
                     </div>
@@ -862,9 +864,24 @@
                         <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-3 break-words">
                             LOKASI LATIHAN
                         </h2>
-                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
-                            Latihan tersedia di 9 pilihan kolam renang Kota Jambi, menyesuaikan domisili terdekat Anda:
-                        </p>
+                        <!-- Secretariat Address Banner -->
+                        <div class="mb-6 p-4 bg-sky-50/90 border border-sky-200 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-xs">
+                            <div class="flex items-start gap-3">
+                                <div class="w-9 h-9 rounded-xl bg-sky-600 text-white flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-building-flag"></i>
+                                </div>
+                                <div>
+                                    <span class="text-2xs font-bold text-sky-800 uppercase tracking-wider block mb-0.5">Alamat Sekretariat Utama</span>
+                                    <p class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
+                                        {{ $secretariatAddress }}
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="{{ $secretariatGmaps }}" target="_blank" class="btn-primary-pill text-xs shrink-0 self-start sm:self-center">
+                                <span>Maps Sekretariat</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-2xs"></i>
+                            </a>
+                        </div>
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 text-xs sm:text-sm text-slate-700">
                             @foreach($branches as $index => $branch)

@@ -99,7 +99,33 @@ class LandingPageController extends Controller
                 'cta_class' => 'btn-card-outline',
                 'whatsapp_msg' => 'Halo KonservasiAkuatik.com, saya ingin mendaftar Kelas Hydroterapi (Terapi & Latihan di Dalam Air) di Kota Jambi. Mohon info ketersediaan jadwal.',
             ],
+            [
+                'id' => 'gratis',
+                'name' => 'Kelas Gratis',
+                'badge' => 'Hibah & Subsidi',
+                'subtitle' => 'Program Hibah & Subsidi',
+                'is_popular' => false,
+                'is_free' => true,
+                'description' => 'Program latihan berenang yang diperuntukkan bagi peserta terpilih melalui dukungan bapak angkat, donatur, serta program subsidi dari pemerintah dan pihak swasta.',
+                'price_prefix' => 'Biaya Program',
+                'price' => 'GRATIS',
+                'period' => '',
+                'note' => 'Biaya ditanggung melalui program hibah & donasi',
+                'features' => [
+                    'Tanpa biaya bagi peserta penerima program',
+                    'Dukungan dari bapak angkat dan donatur',
+                    'Tersedia melalui program subsidi pemerintah & swasta',
+                    'Kesempatan belajar berenang secara terarah',
+                    'Pendampingan selama proses latihan',
+                ],
+                'cta_text' => 'DAFTAR KELAS GRATIS',
+                'cta_class' => 'btn-card-outline',
+                'whatsapp_msg' => 'Halo KonservasiAkuatik.com, saya ingin mendaftar Program Kelas Gratis (Hibah & Subsidi) di Kota Jambi. Mohon info syarat dan kualifikasinya.',
+            ],
         ];
+
+        $secretariatAddress = 'Jalan Penerangan Perum Panorama Sakura Asri Blok T No 52 Kenali Besar, Alam Barajo Jambi';
+        $secretariatGmaps = 'https://www.google.com/maps/search/?api=1&query=' . rawurlencode('Perum Panorama Sakura Asri Kenali Besar Alam Barajo Jambi');
 
         $targetAudience = [
             [
@@ -214,7 +240,7 @@ class LandingPageController extends Controller
             ],
             [
                 'title' => 'Program Terstruktur & Terapi Air',
-                'description' => 'Peserta dapat memilih latihan bersama klub, kursus privat, maupun pendampingan terapi air khusus.',
+                'description' => 'Peserta dapat memilih latihan bersama klub, kursus privat, pendampingan terapi air, maupun program hibah kelas gratis.',
                 'icon' => 'award',
             ],
         ];
@@ -291,12 +317,22 @@ class LandingPageController extends Controller
                 'is_popular' => false,
                 'msg' => 'Halo KonservasiAkuatik.com, saya ingin mendaftar Kelas Hydroterapi di Kota Jambi.',
             ],
+            [
+                'program' => 'Kelas Gratis',
+                'harga' => 'GRATIS',
+                'cocok_untuk' => 'Program Hibah & Subsidi (Peserta Terpilih)',
+                'action_label' => 'DAFTAR KELAS GRATIS',
+                'is_popular' => false,
+                'msg' => 'Halo KonservasiAkuatik.com, saya ingin mendaftar Program Kelas Gratis (Hibah & Subsidi) di Kota Jambi.',
+            ],
         ];
 
         return view('landing', compact(
             'whatsappNumber',
             'whatsappDisplay',
             'packages',
+            'secretariatAddress',
+            'secretariatGmaps',
             'targetAudience',
             'timeSlots',
             'branches',

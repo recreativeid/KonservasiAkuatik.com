@@ -137,7 +137,7 @@
                 <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs sm:text-sm font-semibold text-slate-700">
                     <div class="flex items-center gap-1.5">
                         <i class="fa-solid fa-person-swimming text-sky-600"></i>
-                        <span>Klub Renang &amp; Kursus Privat</span>
+                        <span>Klub Renang, Privat &amp; Terapi Air</span>
                     </div>
                     <span class="text-slate-300">•</span>
                     <div class="flex items-center gap-1.5">
@@ -150,6 +150,24 @@
                         <span>WhatsApp: 081*** ({{ $whatsappDisplay }})</span>
                     </a>
                 </div>
+            </div>
+
+            <!-- Secretariat Address Box -->
+            <div class="max-w-2xl mx-auto mb-8 p-4 sm:p-5 bg-sky-50/80 border border-sky-100 rounded-2xl text-center shadow-xs">
+                <div class="inline-flex items-center gap-2 text-xs font-bold text-sky-700 bg-white px-3 py-1 rounded-full border border-sky-100 mb-2">
+                    <i class="fa-solid fa-building-flag text-sky-600"></i>
+                    <span>ALAMAT SEKRETARIAT UTAMA</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-700 font-semibold leading-relaxed">
+                    Jalan Penerangan Perum Panorama Sakura Asri Blok T No 52 Kenali Besar, Alam Barajo Jambi
+                </p>
+                <a href="{{ $secretariatGmaps ?? 'https://www.google.com/maps/search/?api=1&query=Perum+Panorama+Sakura+Asri+Kenali+Besar+Alam+Barajo+Jambi' }}" 
+                   target="_blank" 
+                   class="inline-flex items-center gap-1.5 text-xs font-bold text-sky-600 hover:text-sky-700 mt-2 transition-colors">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span>Buka Peta Google Maps</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-2xs"></i>
+                </a>
             </div>
 
             <!-- Bottom Copyright -->
