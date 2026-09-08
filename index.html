@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Custom Modern CSS with Cache Buster -->
-    <link rel="stylesheet" href="./css/landing.css?v=1788873472">
+    <link rel="stylesheet" href="./css/landing.css?v=1788874164">
 
     <meta name="csrf-token" content="">
 </head>
@@ -1096,279 +1096,182 @@
                 </p>
             </div>
 
-            <!-- Mobile View: Clean Card List (Fit 100% Mobile Screen, No Scroll) -->
-            <div class="block sm:hidden space-y-3.5 max-w-md mx-auto mb-8">
-                                    <div class="p-4 bg-white rounded-2xl border border-slate-200 shadow-xs flex flex-col justify-between gap-3 text-center items-center">
-                        <div class="flex flex-col items-center gap-1.5 w-full">
-                            <div class="inline-flex items-center justify-center gap-2">
-                                <div class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center text-sm shrink-0">
-                                    <i class="fa-solid fa-users no-mr"></i>
-                                </div>
-                                <h3 class="text-base font-extrabold text-slate-900 leading-snug">Kelas Klub</h3>
+            <!-- Responsive Program Cards (Side-by-Side on Laptop, Vertical Stacked on HP) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-7xl mx-auto mb-8">
+                                    <div class="p-4 sm:p-5 bg-white rounded-2xl border border-slate-200 shadow-xs flex flex-col justify-between items-center text-center transition-all duration-200 hover:-translate-y-1 hover:shadow-md relative">
+                        
+                        
+                        <div class="w-full flex flex-col items-center pt-1.5 flex-1">
+                            <!-- Icon & Title -->
+                            <div class="w-10 h-10 rounded-xl bg-slate-100 text-slate-600 flex items-center justify-center text-base shrink-0 mb-2">
+                                <i class="fa-solid fa-users no-mr"></i>
                             </div>
-                                                    </div>
+                            
+                            <h3 class="text-base font-extrabold text-slate-900 leading-snug mb-2">Kelas Klub</h3>
+                            
+                            <!-- Price Box -->
+                            <div class="my-2 py-2 px-3 bg-slate-50 border-slate-100 rounded-xl w-full text-center border">
+                                <span class="text-2xs text-slate-400 font-bold uppercase tracking-wider block mb-0.5">Biaya / Harga</span>
+                                <span class="text-base font-extrabold text-slate-900 block leading-tight">Rp500.000/bulan</span>
+                            </div>
 
-                        <div class="py-2 px-4 bg-slate-50 rounded-xl w-full text-center border border-slate-100">
-                            <span class="text-2xs text-slate-400 font-bold uppercase tracking-wider block mb-0.5">Biaya / Harga</span>
-                            <span class="text-lg font-extrabold text-slate-900">Rp500.000/bulan</span>
+                            <!-- Description / Suitable For -->
+                            <p class="text-xs text-slate-600 leading-relaxed text-center my-2 flex-1">
+                                Peserta yang ingin berlatih bersama
+                            </p>
                         </div>
 
-                        <p class="text-xs text-slate-600 leading-relaxed text-center">
-                            Peserta yang ingin berlatih bersama
-                        </p>
-
-                        <a href="https://wa.me/6281234567890?text=Halo%20KonservasiAkuatik.com%2C%20saya%20ingin%20mendaftar%20Kelas%20Klub%20di%20Kota%20Jambi." 
-                           target="_blank" 
-                           class="btn-primary-pill text-xs w-full justify-center text-center py-2.5">
-                            <span>PILIH KELAS KLUB</span>
-                            <i class="fa-solid fa-angle-right text-xs no-mr"></i>
-                        </a>
+                        <!-- CTA Button -->
+                        <div class="w-full pt-3 border-t border-slate-100 mt-2">
+                            <a href="https://wa.me/6281234567890?text=Halo%20KonservasiAkuatik.com%2C%20saya%20ingin%20mendaftar%20Kelas%20Klub%20di%20Kota%20Jambi." 
+                               target="_blank" 
+                               class="btn-card-outline text-xs w-full justify-center text-center py-2.5">
+                                <span>PILIH KELAS KLUB</span>
+                                <i class="fa-solid fa-angle-right text-xs no-mr"></i>
+                            </a>
+                        </div>
                     </div>
-                                    <div class="p-4 bg-white rounded-2xl border border-slate-200 shadow-xs flex flex-col justify-between gap-3 text-center items-center">
-                        <div class="flex flex-col items-center gap-1.5 w-full">
-                            <div class="inline-flex items-center justify-center gap-2">
-                                <div class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center text-sm shrink-0">
-                                    <i class="fa-solid fa-user-shield no-mr"></i>
-                                </div>
-                                <h3 class="text-base font-extrabold text-slate-900 leading-snug">Kursus Privat</h3>
+                                    <div class="p-4 sm:p-5 bg-white rounded-2xl border border-slate-200 shadow-xs flex flex-col justify-between items-center text-center transition-all duration-200 hover:-translate-y-1 hover:shadow-md relative">
+                        
+                        
+                        <div class="w-full flex flex-col items-center pt-1.5 flex-1">
+                            <!-- Icon & Title -->
+                            <div class="w-10 h-10 rounded-xl bg-slate-100 text-slate-600 flex items-center justify-center text-base shrink-0 mb-2">
+                                <i class="fa-solid fa-user-shield no-mr"></i>
                             </div>
-                                                    </div>
+                            
+                            <h3 class="text-base font-extrabold text-slate-900 leading-snug mb-2">Kursus Privat</h3>
+                            
+                            <!-- Price Box -->
+                            <div class="my-2 py-2 px-3 bg-slate-50 border-slate-100 rounded-xl w-full text-center border">
+                                <span class="text-2xs text-slate-400 font-bold uppercase tracking-wider block mb-0.5">Biaya / Harga</span>
+                                <span class="text-base font-extrabold text-slate-900 block leading-tight">Rp1.000.000/bulan</span>
+                            </div>
 
-                        <div class="py-2 px-4 bg-slate-50 rounded-xl w-full text-center border border-slate-100">
-                            <span class="text-2xs text-slate-400 font-bold uppercase tracking-wider block mb-0.5">Biaya / Harga</span>
-                            <span class="text-lg font-extrabold text-slate-900">Rp1.000.000/bulan</span>
+                            <!-- Description / Suitable For -->
+                            <p class="text-xs text-slate-600 leading-relaxed text-center my-2 flex-1">
+                                Peserta yang membutuhkan latihan lebih personal
+                            </p>
                         </div>
 
-                        <p class="text-xs text-slate-600 leading-relaxed text-center">
-                            Peserta yang membutuhkan latihan lebih personal
-                        </p>
-
-                        <a href="https://wa.me/6281234567890?text=Halo%20KonservasiAkuatik.com%2C%20saya%20ingin%20mendaftar%20Kursus%20Privat%20renang%20di%20Kota%20Jambi." 
-                           target="_blank" 
-                           class="btn-primary-pill text-xs w-full justify-center text-center py-2.5">
-                            <span>DAFTAR KURSUS PRIVAT</span>
-                            <i class="fa-solid fa-angle-right text-xs no-mr"></i>
-                        </a>
+                        <!-- CTA Button -->
+                        <div class="w-full pt-3 border-t border-slate-100 mt-2">
+                            <a href="https://wa.me/6281234567890?text=Halo%20KonservasiAkuatik.com%2C%20saya%20ingin%20mendaftar%20Kursus%20Privat%20renang%20di%20Kota%20Jambi." 
+                               target="_blank" 
+                               class="btn-card-outline text-xs w-full justify-center text-center py-2.5">
+                                <span>DAFTAR KURSUS PRIVAT</span>
+                                <i class="fa-solid fa-angle-right text-xs no-mr"></i>
+                            </a>
+                        </div>
                     </div>
-                                    <div class="p-4 bg-white rounded-2xl border border-sky-500 shadow-md ring-1 ring-sky-200 flex flex-col justify-between gap-3 text-center items-center">
-                        <div class="flex flex-col items-center gap-1.5 w-full">
-                            <div class="inline-flex items-center justify-center gap-2">
-                                <div class="w-8 h-8 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center text-sm shrink-0">
-                                    <i class="fa-solid fa-spa no-mr"></i>
-                                </div>
-                                <h3 class="text-base font-extrabold text-slate-900 leading-snug">Kelas Syaraf Terjepit</h3>
+                                    <div class="p-4 sm:p-5 bg-white rounded-2xl border border-sky-500 shadow-md ring-2 ring-sky-200/60 flex flex-col justify-between items-center text-center transition-all duration-200 hover:-translate-y-1 hover:shadow-md relative">
+                        
+                                                    <!-- Popular Ribbon Badge -->
+                            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-sky-600 text-white text-2xs font-extrabold px-3 py-0.5 rounded-full shadow-xs whitespace-nowrap z-10">
+                                Rekomendasi Terapi
                             </div>
-                                                            <span class="text-2xs bg-sky-100 text-sky-700 border border-sky-200 font-bold px-3 py-0.5 rounded-full">Rekomendasi Terapi</span>
-                                                    </div>
+                        
+                        <div class="w-full flex flex-col items-center pt-1.5 flex-1">
+                            <!-- Icon & Title -->
+                            <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center text-base shrink-0 mb-2">
+                                <i class="fa-solid fa-spa no-mr"></i>
+                            </div>
+                            
+                            <h3 class="text-base font-extrabold text-slate-900 leading-snug mb-2">Kelas Syaraf Terjepit</h3>
+                            
+                            <!-- Price Box -->
+                            <div class="my-2 py-2 px-3 bg-sky-50 border-sky-100 rounded-xl w-full text-center border">
+                                <span class="text-2xs text-sky-600 font-bold uppercase tracking-wider block mb-0.5">Biaya / Harga</span>
+                                <span class="text-base font-extrabold text-sky-700 block leading-tight">Rp3.000.000/bulan</span>
+                            </div>
 
-                        <div class="py-2 px-4 bg-slate-50 rounded-xl w-full text-center border border-slate-100">
-                            <span class="text-2xs text-slate-400 font-bold uppercase tracking-wider block mb-0.5">Biaya / Harga</span>
-                            <span class="text-lg font-extrabold text-sky-600">Rp3.000.000/bulan</span>
+                            <!-- Description / Suitable For -->
+                            <p class="text-xs text-slate-600 leading-relaxed text-center my-2 flex-1">
+                                Pendampingan Terapi Air (8x pertemuan, durasi 2 jam)
+                            </p>
                         </div>
 
-                        <p class="text-xs text-slate-600 leading-relaxed text-center">
-                            Pendampingan Terapi Air (8x pertemuan, durasi 2 jam)
-                        </p>
-
-                        <a href="https://wa.me/6281234567890?text=Halo%20KonservasiAkuatik.com%2C%20saya%20ingin%20mendaftar%20Kelas%20Syaraf%20Terjepit%20%28Pendampingan%20Terapi%20Air%29%20di%20Kota%20Jambi." 
-                           target="_blank" 
-                           class="btn-primary-pill text-xs w-full justify-center text-center py-2.5">
-                            <span>DAFTAR SYARAF TERJEPIT</span>
-                            <i class="fa-solid fa-angle-right text-xs no-mr"></i>
-                        </a>
+                        <!-- CTA Button -->
+                        <div class="w-full pt-3 border-t border-slate-100 mt-2">
+                            <a href="https://wa.me/6281234567890?text=Halo%20KonservasiAkuatik.com%2C%20saya%20ingin%20mendaftar%20Kelas%20Syaraf%20Terjepit%20%28Pendampingan%20Terapi%20Air%29%20di%20Kota%20Jambi." 
+                               target="_blank" 
+                               class="btn-card-primary text-xs w-full justify-center text-center py-2.5">
+                                <span>DAFTAR SYARAF TERJEPIT</span>
+                                <i class="fa-solid fa-angle-right text-xs no-mr"></i>
+                            </a>
+                        </div>
                     </div>
-                                    <div class="p-4 bg-white rounded-2xl border border-slate-200 shadow-xs flex flex-col justify-between gap-3 text-center items-center">
-                        <div class="flex flex-col items-center gap-1.5 w-full">
-                            <div class="inline-flex items-center justify-center gap-2">
-                                <div class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center text-sm shrink-0">
-                                    <i class="fa-solid fa-spa no-mr"></i>
-                                </div>
-                                <h3 class="text-base font-extrabold text-slate-900 leading-snug">Hydroterapi</h3>
+                                    <div class="p-4 sm:p-5 bg-white rounded-2xl border border-slate-200 shadow-xs flex flex-col justify-between items-center text-center transition-all duration-200 hover:-translate-y-1 hover:shadow-md relative">
+                        
+                        
+                        <div class="w-full flex flex-col items-center pt-1.5 flex-1">
+                            <!-- Icon & Title -->
+                            <div class="w-10 h-10 rounded-xl bg-slate-100 text-slate-600 flex items-center justify-center text-base shrink-0 mb-2">
+                                <i class="fa-solid fa-spa no-mr"></i>
                             </div>
-                                                    </div>
+                            
+                            <h3 class="text-base font-extrabold text-slate-900 leading-snug mb-2">Hydroterapi</h3>
+                            
+                            <!-- Price Box -->
+                            <div class="my-2 py-2 px-3 bg-slate-50 border-slate-100 rounded-xl w-full text-center border">
+                                <span class="text-2xs text-slate-400 font-bold uppercase tracking-wider block mb-0.5">Biaya / Harga</span>
+                                <span class="text-base font-extrabold text-slate-900 block leading-tight">Rp1.500.000/bulan</span>
+                            </div>
 
-                        <div class="py-2 px-4 bg-slate-50 rounded-xl w-full text-center border border-slate-100">
-                            <span class="text-2xs text-slate-400 font-bold uppercase tracking-wider block mb-0.5">Biaya / Harga</span>
-                            <span class="text-lg font-extrabold text-slate-900">Rp1.500.000/bulan</span>
+                            <!-- Description / Suitable For -->
+                            <p class="text-xs text-slate-600 leading-relaxed text-center my-2 flex-1">
+                                Terapi &amp; Latihan di Dalam Air (4x pertemuan, durasi 1 jam)
+                            </p>
                         </div>
 
-                        <p class="text-xs text-slate-600 leading-relaxed text-center">
-                            Terapi &amp; Latihan di Dalam Air (4x pertemuan, durasi 1 jam)
-                        </p>
-
-                        <a href="https://wa.me/6281234567890?text=Halo%20KonservasiAkuatik.com%2C%20saya%20ingin%20mendaftar%20Kelas%20Hydroterapi%20di%20Kota%20Jambi." 
-                           target="_blank" 
-                           class="btn-primary-pill text-xs w-full justify-center text-center py-2.5">
-                            <span>DAFTAR HYDROTERAPI</span>
-                            <i class="fa-solid fa-angle-right text-xs no-mr"></i>
-                        </a>
+                        <!-- CTA Button -->
+                        <div class="w-full pt-3 border-t border-slate-100 mt-2">
+                            <a href="https://wa.me/6281234567890?text=Halo%20KonservasiAkuatik.com%2C%20saya%20ingin%20mendaftar%20Kelas%20Hydroterapi%20di%20Kota%20Jambi." 
+                               target="_blank" 
+                               class="btn-card-outline text-xs w-full justify-center text-center py-2.5">
+                                <span>DAFTAR HYDROTERAPI</span>
+                                <i class="fa-solid fa-angle-right text-xs no-mr"></i>
+                            </a>
+                        </div>
                     </div>
-                                    <div class="p-4 bg-white rounded-2xl border border-slate-200 shadow-xs flex flex-col justify-between gap-3 text-center items-center">
-                        <div class="flex flex-col items-center gap-1.5 w-full">
-                            <div class="inline-flex items-center justify-center gap-2">
-                                <div class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center text-sm shrink-0">
-                                    <i class="fa-solid fa-users no-mr"></i>
-                                </div>
-                                <h3 class="text-base font-extrabold text-slate-900 leading-snug">Kelas Gratis</h3>
+                                    <div class="p-4 sm:p-5 bg-white rounded-2xl border border-emerald-300 shadow-xs flex flex-col justify-between items-center text-center transition-all duration-200 hover:-translate-y-1 hover:shadow-md relative">
+                        
+                                                    <!-- Free Ribbon Badge -->
+                            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-emerald-600 text-white text-2xs font-extrabold px-3 py-0.5 rounded-full shadow-xs whitespace-nowrap z-10">
+                                Hibah &amp; Subsidi
                             </div>
-                                                    </div>
+                        
+                        <div class="w-full flex flex-col items-center pt-1.5 flex-1">
+                            <!-- Icon & Title -->
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-base shrink-0 mb-2">
+                                <i class="fa-solid fa-hand-holding-heart no-mr"></i>
+                            </div>
+                            
+                            <h3 class="text-base font-extrabold text-slate-900 leading-snug mb-2">Kelas Gratis</h3>
+                            
+                            <!-- Price Box -->
+                            <div class="my-2 py-2 px-3 bg-emerald-50 border-emerald-100 rounded-xl w-full text-center border">
+                                <span class="text-2xs text-emerald-600 font-bold uppercase tracking-wider block mb-0.5">Biaya / Harga</span>
+                                <span class="text-base font-extrabold text-emerald-700 block leading-tight">GRATIS</span>
+                            </div>
 
-                        <div class="py-2 px-4 bg-slate-50 rounded-xl w-full text-center border border-slate-100">
-                            <span class="text-2xs text-slate-400 font-bold uppercase tracking-wider block mb-0.5">Biaya / Harga</span>
-                            <span class="text-lg font-extrabold text-slate-900">GRATIS</span>
+                            <!-- Description / Suitable For -->
+                            <p class="text-xs text-slate-600 leading-relaxed text-center my-2 flex-1">
+                                Program Hibah &amp; Subsidi (Peserta Terpilih)
+                            </p>
                         </div>
 
-                        <p class="text-xs text-slate-600 leading-relaxed text-center">
-                            Program Hibah &amp; Subsidi (Peserta Terpilih)
-                        </p>
-
-                        <a href="https://wa.me/6281234567890?text=Halo%20KonservasiAkuatik.com%2C%20saya%20ingin%20mendaftar%20Program%20Kelas%20Gratis%20%28Hibah%20%26%20Subsidi%29%20di%20Kota%20Jambi." 
-                           target="_blank" 
-                           class="btn-primary-pill text-xs w-full justify-center text-center py-2.5">
-                            <span>DAFTAR KELAS GRATIS</span>
-                            <i class="fa-solid fa-angle-right text-xs no-mr"></i>
-                        </a>
+                        <!-- CTA Button -->
+                        <div class="w-full pt-3 border-t border-slate-100 mt-2">
+                            <a href="https://wa.me/6281234567890?text=Halo%20KonservasiAkuatik.com%2C%20saya%20ingin%20mendaftar%20Program%20Kelas%20Gratis%20%28Hibah%20%26%20Subsidi%29%20di%20Kota%20Jambi." 
+                               target="_blank" 
+                               class="btn-card-outline text-xs w-full justify-center text-center py-2.5">
+                                <span>DAFTAR KELAS GRATIS</span>
+                                <i class="fa-solid fa-angle-right text-xs no-mr"></i>
+                            </a>
+                        </div>
                     </div>
                             </div>
-
-            <!-- Desktop & Tablet View: Clean Comparison Table -->
-            <div class="hidden sm:block table-wrapper max-w-4xl mx-auto">
-                <div class="overflow-x-auto">
-                    <table class="custom-table">
-                        <thead>
-                            <tr>
-                                <th>Program</th>
-                                <th>Harga</th>
-                                <th>Cocok Untuk</th>
-                                <th class="text-center">Aksi</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                                                            <tr class="">
-                                    <td class="font-bold text-slate-900 whitespace-nowrap">
-                                        <div class="flex items-center gap-2">
-                                            <div class="w-7 h-7 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center text-xs">
-                                                <i class="fa-solid fa-users no-mr"></i>
-                                            </div>
-                                            <span>Kelas Klub</span>
-                                                                                    </div>
-                                    </td>
-                                    <td class="font-extrabold text-slate-900 whitespace-nowrap">
-                                        Rp500.000/bulan
-                                    </td>
-                                    <td class="text-slate-600">
-                                        Peserta yang ingin berlatih bersama
-                                    </td>
-                                    <td class="text-center whitespace-nowrap">
-                                        <a href="https://wa.me/6281234567890?text=Halo%20KonservasiAkuatik.com%2C%20saya%20ingin%20mendaftar%20Kelas%20Klub%20di%20Kota%20Jambi." 
-                                           target="_blank" 
-                                           class="btn-primary-pill text-xs">
-                                            <span>PILIH KELAS KLUB</span>
-                                            <i class="fa-solid fa-angle-right text-xs no-mr"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                                            <tr class="">
-                                    <td class="font-bold text-slate-900 whitespace-nowrap">
-                                        <div class="flex items-center gap-2">
-                                            <div class="w-7 h-7 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center text-xs">
-                                                <i class="fa-solid fa-user-shield no-mr"></i>
-                                            </div>
-                                            <span>Kursus Privat</span>
-                                                                                    </div>
-                                    </td>
-                                    <td class="font-extrabold text-slate-900 whitespace-nowrap">
-                                        Rp1.000.000/bulan
-                                    </td>
-                                    <td class="text-slate-600">
-                                        Peserta yang membutuhkan latihan lebih personal
-                                    </td>
-                                    <td class="text-center whitespace-nowrap">
-                                        <a href="https://wa.me/6281234567890?text=Halo%20KonservasiAkuatik.com%2C%20saya%20ingin%20mendaftar%20Kursus%20Privat%20renang%20di%20Kota%20Jambi." 
-                                           target="_blank" 
-                                           class="btn-primary-pill text-xs">
-                                            <span>DAFTAR KURSUS PRIVAT</span>
-                                            <i class="fa-solid fa-angle-right text-xs no-mr"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                                            <tr class="highlighted-row">
-                                    <td class="font-bold text-sky-800 whitespace-nowrap">
-                                        <div class="flex items-center gap-2">
-                                            <div class="w-7 h-7 rounded-lg bg-sky-200 text-sky-800 flex items-center justify-center text-xs">
-                                                <i class="fa-solid fa-spa no-mr"></i>
-                                            </div>
-                                            <span>Kelas Syaraf Terjepit</span>
-                                                                                            <span class="text-xs bg-sky-200 text-sky-800 font-bold px-2 py-0.5 rounded-full ml-1">Rekomendasi</span>
-                                                                                    </div>
-                                    </td>
-                                    <td class="font-extrabold text-sky-800 whitespace-nowrap">
-                                        Rp3.000.000/bulan
-                                    </td>
-                                    <td class="text-slate-700 font-medium">
-                                        Pendampingan Terapi Air (8x pertemuan, durasi 2 jam)
-                                    </td>
-                                    <td class="text-center whitespace-nowrap">
-                                        <a href="https://wa.me/6281234567890?text=Halo%20KonservasiAkuatik.com%2C%20saya%20ingin%20mendaftar%20Kelas%20Syaraf%20Terjepit%20%28Pendampingan%20Terapi%20Air%29%20di%20Kota%20Jambi." 
-                                           target="_blank" 
-                                           class="btn-primary-pill text-xs">
-                                            <span>DAFTAR SYARAF TERJEPIT</span>
-                                            <i class="fa-solid fa-angle-right text-xs no-mr"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                                            <tr class="">
-                                    <td class="font-bold text-slate-900 whitespace-nowrap">
-                                        <div class="flex items-center gap-2">
-                                            <div class="w-7 h-7 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center text-xs">
-                                                <i class="fa-solid fa-spa no-mr"></i>
-                                            </div>
-                                            <span>Hydroterapi</span>
-                                                                                    </div>
-                                    </td>
-                                    <td class="font-extrabold text-slate-900 whitespace-nowrap">
-                                        Rp1.500.000/bulan
-                                    </td>
-                                    <td class="text-slate-600">
-                                        Terapi &amp; Latihan di Dalam Air (4x pertemuan, durasi 1 jam)
-                                    </td>
-                                    <td class="text-center whitespace-nowrap">
-                                        <a href="https://wa.me/6281234567890?text=Halo%20KonservasiAkuatik.com%2C%20saya%20ingin%20mendaftar%20Kelas%20Hydroterapi%20di%20Kota%20Jambi." 
-                                           target="_blank" 
-                                           class="btn-primary-pill text-xs">
-                                            <span>DAFTAR HYDROTERAPI</span>
-                                            <i class="fa-solid fa-angle-right text-xs no-mr"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                                            <tr class="">
-                                    <td class="font-bold text-slate-900 whitespace-nowrap">
-                                        <div class="flex items-center gap-2">
-                                            <div class="w-7 h-7 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center text-xs">
-                                                <i class="fa-solid fa-users no-mr"></i>
-                                            </div>
-                                            <span>Kelas Gratis</span>
-                                                                                    </div>
-                                    </td>
-                                    <td class="font-extrabold text-slate-900 whitespace-nowrap">
-                                        GRATIS
-                                    </td>
-                                    <td class="text-slate-600">
-                                        Program Hibah &amp; Subsidi (Peserta Terpilih)
-                                    </td>
-                                    <td class="text-center whitespace-nowrap">
-                                        <a href="https://wa.me/6281234567890?text=Halo%20KonservasiAkuatik.com%2C%20saya%20ingin%20mendaftar%20Program%20Kelas%20Gratis%20%28Hibah%20%26%20Subsidi%29%20di%20Kota%20Jambi." 
-                                           target="_blank" 
-                                           class="btn-primary-pill text-xs">
-                                            <span>DAFTAR KELAS GRATIS</span>
-                                            <i class="fa-solid fa-angle-right text-xs no-mr"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                                    </tbody>
-                    </table>
-                </div>
-            </div>
 
             <!-- Consultation Notice -->
             <div class="text-center mt-8">
@@ -1747,6 +1650,6 @@
     </div>
 
     <!-- Custom Scripts with Cache Buster -->
-    <script src="./js/landing.js?v=1788873472"></script>
+    <script src="./js/landing.js?v=1788874164"></script>
 </body>
 </html>
