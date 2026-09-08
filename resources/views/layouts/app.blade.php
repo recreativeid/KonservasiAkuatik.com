@@ -53,14 +53,9 @@
     <!-- Navigation Header -->
     <header class="main-header" id="mainHeader">
         <div class="container-custom flex items-center justify-between py-4">
-            <!-- Brand Logo -->
-            <a href="{{ route('home') }}" class="brand-logo flex items-center gap-2">
-                <span class="logo-icon">
-                    <i class="fa-solid fa-water"></i>
-                </span>
-                <span class="logo-text">
-                    Konservasi<span class="text-sky-600">Akuatik</span><span class="text-xs text-slate-400 font-normal">.com</span>
-                </span>
+            <!-- Brand Logo (Main Logo Image Only) -->
+            <a href="{{ route('home') }}" class="brand-logo inline-flex items-center">
+                <img src="{{ asset('images/logo_utama.jpg') }}" alt="Konservasi Akuatik" class="h-10 sm:h-12 w-auto object-contain transition-transform hover:scale-105">
             </a>
 
             <!-- Desktop Nav Items -->
@@ -123,13 +118,8 @@
     <footer class="main-footer">
         <div class="container-custom py-14">
             <div class="text-center max-w-2xl mx-auto mb-8">
-                <div class="flex items-center justify-center gap-2 mb-3">
-                    <span class="logo-icon bg-sky-600 text-white p-2 rounded-xl text-lg inline-flex items-center justify-center">
-                        <i class="fa-solid fa-water"></i>
-                    </span>
-                    <span class="text-2xl font-extrabold text-slate-900 tracking-tight">
-                        KONVERSASIAKUATIK.COM
-                    </span>
+                <div class="flex items-center justify-center mb-3">
+                    <img src="{{ asset('images/logo_utama.jpg') }}" alt="Konservasi Akuatik" class="h-12 sm:h-14 w-auto object-contain">
                 </div>
                 <p class="text-sky-600 font-bold text-base sm:text-lg mb-4">
                     Belajar Berenang. Bangun Kepercayaan Diri. Raih Milestone Baru.

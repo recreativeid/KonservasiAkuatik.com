@@ -939,6 +939,43 @@
                 </div>
             </div>
         </div>
+    <!-- ==================== 12. MITRA & PARTNER TERPERCAYA ==================== -->
+    <section class="py-16 bg-white border-t border-slate-100" id="mitra">
+        <div class="container-custom">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="pill-badge mb-3">MITRA &amp; PARTNER</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-3">
+                    DILINDUNGI &amp; DIDUKUNG OLEH MITRA TERPERCAYA
+                </h2>
+                <p class="text-slate-600 text-xs sm:text-sm">
+                    Bekerja sama dengan asosiasi olahraga akuatik, pusat fisioterapi &amp; hidroterapi, serta pusat rehabilitasi terapi air terkemuka.
+                </p>
+            </div>
+
+            <!-- 3 Partner Logos Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto items-center justify-center">
+                <!-- Partner 1 -->
+                <div class="p-6 bg-slate-50/80 rounded-2xl border border-slate-200/80 hover:border-sky-300 hover:bg-white transition-all duration-200 flex flex-col items-center justify-center text-center shadow-xs group">
+                    <img src="{{ asset('images/logo_partner1.jpg') }}" alt="Konservasi Akuatik Air Indonesia" class="h-20 sm:h-24 w-auto object-contain mb-3 transition-transform group-hover:scale-105">
+                    <span class="text-xs font-bold text-slate-800">Konservasi Akuatik Air Indonesia</span>
+                    <span class="text-2xs text-slate-400 font-medium">Asosiasi Olahraga Akuatik</span>
+                </div>
+
+                <!-- Partner 2 -->
+                <div class="p-6 bg-slate-50/80 rounded-2xl border border-slate-200/80 hover:border-sky-300 hover:bg-white transition-all duration-200 flex flex-col items-center justify-center text-center shadow-xs group">
+                    <img src="{{ asset('images/logo_partner2.jpg') }}" alt="Fisioterapi & Hidroterapi" class="h-20 sm:h-24 w-auto object-contain mb-3 transition-transform group-hover:scale-105">
+                    <span class="text-xs font-bold text-slate-800">Fisioterapi &amp; Hidroterapi</span>
+                    <span class="text-2xs text-slate-400 font-medium">Pemulihan Gerak Di Air</span>
+                </div>
+
+                <!-- Partner 3 -->
+                <div class="p-6 bg-slate-50/80 rounded-2xl border border-slate-200/80 hover:border-sky-300 hover:bg-white transition-all duration-200 flex flex-col items-center justify-center text-center shadow-xs group">
+                    <img src="{{ asset('images/logo_partner3.jpg') }}" alt="Pusat Terapi HNP & Syaraf Terjepit" class="h-20 sm:h-24 w-auto object-contain mb-3 transition-transform group-hover:scale-105">
+                    <span class="text-xs font-bold text-slate-800">Pusat Terapi HNP</span>
+                    <span class="text-2xs text-slate-400 font-medium">Syaraf Terjepit &amp; Rehabilitasi Air</span>
+                </div>
+            </div>
+        </div>
     </section>
 
 @endsection
