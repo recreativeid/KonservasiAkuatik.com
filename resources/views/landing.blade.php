@@ -864,13 +864,13 @@
 
             <!-- Secretariat Address Banner -->
             <div class="secretariat-banner-card">
-                <div class="flex items-center gap-3.5 text-center sm:text-left">
-                    <div class="w-10 h-10 rounded-xl bg-sky-600 text-white flex items-center justify-center font-bold text-base shrink-0">
+                <div class="flex items-start sm:items-center gap-3.5 text-left">
+                    <div class="w-10 h-10 rounded-xl bg-sky-600 text-white flex items-center justify-center font-bold text-base shrink-0 mt-0.5 sm:mt-0">
                         <i class="fa-solid fa-building-flag"></i>
                     </div>
-                    <div>
-                        <span class="text-2xs font-bold text-sky-700 uppercase tracking-wider block mb-0.5">Alamat Sekretariat Utama</span>
-                        <p class="text-xs sm:text-sm font-bold text-slate-800 leading-snug">
+                    <div class="text-left">
+                        <span class="text-2xs font-bold text-sky-700 uppercase tracking-wider block mb-0.5 text-left">Alamat Sekretariat Utama</span>
+                        <p class="text-xs sm:text-sm font-bold text-slate-800 leading-snug text-left">
                             {{ $secretariatAddress }}
                         </p>
                     </div>

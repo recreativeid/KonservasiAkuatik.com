@@ -55,7 +55,7 @@
         <div class="container-custom flex items-center justify-between py-4">
             <!-- Brand Logo (Main Logo Image Only) -->
             <a href="{{ route('home') }}" class="brand-logo inline-flex items-center">
-                <img src="{{ asset('images/logo_utama.jpg') }}" alt="Konservasi Akuatik" class="brand-logo-img" style="height:38px; max-height:38px; width:auto; max-width:180px; object-fit:contain;">
+                <img src="{{ asset('images/logo_utama.jpg') }}" alt="Konservasi Akuatik" class="brand-logo-img" style="height:46px; max-height:46px; width:auto; max-width:220px; object-fit:contain;">
             </a>
 
             <!-- Desktop Nav Items -->
@@ -116,53 +116,54 @@
 
     <!-- Footer -->
     <footer class="main-footer">
-        <div class="container-custom py-14">
+        <div class="container-custom py-14 text-center">
             <div class="text-center max-w-2xl mx-auto mb-8">
-                <p class="text-sky-600 font-bold text-base sm:text-lg mb-4">
+                <p class="text-sky-600 font-bold text-base sm:text-lg mb-4 text-center">
                     Belajar Berenang. Bangun Kepercayaan Diri. Raih Milestone Baru.
                 </p>
-                <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs sm:text-sm font-semibold text-slate-700">
-                    <div class="flex items-center gap-1.5">
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-6 text-xs sm:text-sm font-semibold text-slate-700 text-center">
+                    <div class="flex items-center justify-center gap-1.5">
                         <i class="fa-solid fa-person-swimming text-sky-600"></i>
                         <span>Klub Renang, Privat &amp; Terapi Air</span>
                     </div>
-                    <span class="text-slate-300">•</span>
-                    <div class="flex items-center gap-1.5">
+                    <span class="hidden sm:inline text-slate-300">•</span>
+                    <div class="flex items-center justify-center gap-1.5">
                         <i class="fa-solid fa-location-dot text-sky-600"></i>
                         <span>Kota Jambi</span>
                     </div>
-                    <span class="text-slate-300">•</span>
-                    <a href="https://wa.me/{{ $whatsappNumber }}" target="_blank" class="flex items-center gap-1.5 hover:text-emerald-600 transition-colors">
+                    <span class="hidden sm:inline text-slate-300">•</span>
+                    <a href="https://wa.me/{{ $whatsappNumber }}" target="_blank" class="flex items-center justify-center gap-1.5 text-slate-700 hover:text-emerald-600 transition-colors">
                         <i class="fa-brands fa-whatsapp text-emerald-500 text-base"></i>
-                        <span>WhatsApp: 081*** ({{ $whatsappDisplay }})</span>
+                        <span>WhatsApp: {{ $whatsappDisplay }}</span>
                     </a>
                 </div>
             </div>
 
-            <!-- Secretariat Address Box -->
+            <!-- Secretariat Address Box (Centered) -->
             <div class="max-w-2xl mx-auto mb-8 p-4 sm:p-5 bg-sky-50/80 border border-sky-100 rounded-2xl text-center shadow-xs">
-                <div class="inline-flex items-center gap-2 text-xs font-bold text-sky-700 bg-white px-3 py-1 rounded-full border border-sky-100 mb-2">
+                <div class="inline-flex items-center justify-center gap-2 text-xs font-bold text-sky-700 bg-white px-3.5 py-1 rounded-full border border-sky-100 mb-2">
                     <i class="fa-solid fa-building-flag text-sky-600"></i>
                     <span>ALAMAT SEKRETARIAT UTAMA</span>
                 </div>
-                <p class="text-xs sm:text-sm text-slate-700 font-semibold leading-relaxed">
+                <p class="text-xs sm:text-sm text-slate-700 font-semibold leading-relaxed text-center">
                     Jalan Penerangan Perum Panorama Sakura Asri Blok T No 52 Kenali Besar, Alam Barajo Jambi
                 </p>
                 <a href="{{ $secretariatGmaps ?? 'https://www.google.com/maps/search/?api=1&query=Perum+Panorama+Sakura+Asri+Kenali+Besar+Alam+Barajo+Jambi' }}" 
                    target="_blank" 
-                   class="inline-flex items-center gap-1.5 text-xs font-bold text-sky-600 hover:text-sky-700 mt-2 transition-colors">
+                   class="inline-flex items-center justify-center gap-1.5 text-xs font-bold text-sky-600 hover:text-sky-700 mt-2 transition-colors">
                     <i class="fa-solid fa-map-location-dot"></i>
                     <span>Buka Peta Google Maps</span>
                     <i class="fa-solid fa-arrow-up-right-from-square text-2xs"></i>
                 </a>
             </div>
 
-            <!-- Bottom Copyright -->
-            <div class="pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-                <p>© {{ date('Y') }} KonservasiAkuatik.com. All rights reserved. Kota Jambi.</p>
-                <div class="flex items-center gap-4">
-                    <a href="#hero" class="hover:text-sky-600 transition-colors font-medium">Kembali ke Atas <i class="fa-solid fa-arrow-up text-xs ml-1"></i></a>
-                </div>
+            <!-- Bottom Copyright (Centered) -->
+            <div class="pt-6 border-t border-slate-200/80 flex flex-col items-center justify-center text-center text-xs text-slate-500 gap-2.5">
+                <p class="text-center">© {{ date('Y') }} KonservasiAkuatik.com. All rights reserved. Kota Jambi.</p>
+                <a href="#hero" class="hover:text-sky-600 transition-colors font-medium inline-flex items-center justify-center gap-1">
+                    <span>Kembali ke Atas</span>
+                    <i class="fa-solid fa-arrow-up text-xs"></i>
+                </a>
             </div>
         </div>
     </footer>
