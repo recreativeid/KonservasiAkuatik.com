@@ -31,7 +31,7 @@
     --emerald-500: #10b981;
     --amber-400: #fbbf24;
     
-    --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.03);
     --shadow-lg: 0 10px 25px -5px rgba(15, 23, 42, 0.06), 0 8px 10px -6px rgba(15, 23, 42, 0.03);
@@ -860,6 +860,8 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
     position: relative;
     transition: all 0.25s ease;
     word-break: normal;
@@ -879,7 +881,8 @@ img {
 .popular-top-badge {
     position: absolute;
     top: -14px;
-    right: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #0284c7;
     color: #ffffff;
     font-size: 0.725rem;
@@ -896,6 +899,8 @@ img {
     border-radius: 0.85rem;
     padding: 0.85rem 1rem;
     margin: 1rem 0;
+    width: 100%;
+    text-align: center;
 }
 
 .price-box-cyan {
@@ -904,6 +909,8 @@ img {
     border-radius: 0.85rem;
     padding: 0.85rem 1rem;
     margin: 1rem 0;
+    width: 100%;
+    text-align: center;
 }
 
 .price-box-green {
@@ -912,6 +919,8 @@ img {
     border-radius: 0.85rem;
     padding: 0.85rem 1rem;
     margin: 1rem 0;
+    width: 100%;
+    text-align: center;
 }
 
 .btn-card-primary {

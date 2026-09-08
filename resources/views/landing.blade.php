@@ -159,7 +159,7 @@
             <!-- 5 Cards Grid for all packages (Klub, Privat, Syaraf Terjepit, Hydroterapi, Kelas Gratis) -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 lg:gap-5 max-w-[1400px] mx-auto items-stretch">
                 @foreach($packages as $package)
-                    <div class="pricing-card {{ $package['is_popular'] ? 'popular' : '' }}">
+                    <div class="pricing-card {{ $package['is_popular'] ? 'popular' : '' }} w-full text-center flex flex-col justify-between items-center">
                         @if($package['is_popular'])
                             <!-- Top Ribbon Badge -->
                             <div class="popular-top-badge">
@@ -167,55 +167,54 @@
                             </div>
                         @endif
 
-                        <div>
-                            <div class="flex items-start justify-between gap-2 mb-3">
-                                <div class="flex items-center gap-2 min-w-0">
-                                    <div class="w-8 h-8 rounded-lg {{ $package['is_popular'] ? 'bg-sky-100 text-sky-600' : (isset($package['is_free']) && $package['is_free'] ? 'bg-emerald-100 text-emerald-600' : 'bg-slate-100 text-slate-600') }} flex items-center justify-center text-sm shrink-0">
-                                        <i class="fa-solid {{ $package['id'] === 'gratis' ? 'fa-hand-holding-heart' : ($package['id'] === 'syaraf-terjepit' || $package['id'] === 'hydroterapi' ? 'fa-spa' : ($package['id'] === 'privat' ? 'fa-user-shield' : 'fa-users')) }}"></i>
-                                    </div>
-                                    <h3 class="text-base font-extrabold text-slate-900 leading-snug break-words hyphens-none">{{ $package['name'] }}</h3>
+                        <div class="w-full flex flex-col items-center">
+                            <!-- Icon & Title -->
+                            <div class="flex flex-col items-center justify-center gap-2 mb-2 w-full text-center">
+                                <div class="w-10 h-10 rounded-xl {{ $package['is_popular'] ? 'bg-sky-100 text-sky-600' : (isset($package['is_free']) && $package['is_free'] ? 'bg-emerald-100 text-emerald-600' : 'bg-slate-100 text-slate-600') }} flex items-center justify-center text-base shrink-0 mb-1">
+                                    <i class="fa-solid {{ $package['id'] === 'gratis' ? 'fa-hand-holding-heart' : ($package['id'] === 'syaraf-terjepit' || $package['id'] === 'hydroterapi' ? 'fa-spa' : ($package['id'] === 'privat' ? 'fa-user-shield' : 'fa-users')) }}"></i>
                                 </div>
+                                <h3 class="text-base font-extrabold text-slate-900 leading-snug break-words hyphens-none text-center">{{ $package['name'] }}</h3>
                                 @if(!$package['is_popular'])
-                                    <span class="text-2xs font-bold {{ isset($package['is_free']) && $package['is_free'] ? 'text-emerald-700 bg-emerald-100 border border-emerald-200' : 'text-slate-500 bg-slate-100' }} px-2 py-0.5 rounded-full shrink-0 whitespace-nowrap">{{ $package['badge'] }}</span>
+                                    <span class="text-2xs font-bold {{ isset($package['is_free']) && $package['is_free'] ? 'text-emerald-700 bg-emerald-100 border border-emerald-200' : 'text-slate-500 bg-slate-100' }} px-2.5 py-0.5 rounded-full whitespace-nowrap mt-0.5">{{ $package['badge'] }}</span>
                                 @endif
                             </div>
 
-                            <div class="text-2xs font-bold {{ isset($package['is_free']) && $package['is_free'] ? 'text-emerald-600' : 'text-sky-600' }} uppercase tracking-wide mb-2">{{ $package['subtitle'] }}</div>
-                            <p class="text-slate-600 text-xs leading-relaxed mb-3">
+                            <div class="text-2xs font-bold {{ isset($package['is_free']) && $package['is_free'] ? 'text-emerald-600' : 'text-sky-600' }} uppercase tracking-wide mb-2 text-center">{{ $package['subtitle'] }}</div>
+                            <p class="text-slate-600 text-xs leading-relaxed mb-3 text-center">
                                 {{ $package['description'] }}
                             </p>
 
-                            <!-- Price Tag -->
-                            <div class="{{ $package['is_popular'] ? 'price-box-cyan' : (isset($package['is_free']) && $package['is_free'] ? 'price-box-green' : 'price-box-regular') }}">
+                            <!-- Price Tag Box -->
+                            <div class="{{ $package['is_popular'] ? 'price-box-cyan' : (isset($package['is_free']) && $package['is_free'] ? 'price-box-green' : 'price-box-regular') }} flex flex-col items-center justify-center text-center">
                                 <div class="text-2xs {{ $package['is_popular'] ? 'text-sky-700' : (isset($package['is_free']) && $package['is_free'] ? 'text-emerald-700' : 'text-slate-500') }} font-bold uppercase tracking-wider">{{ $package['price_prefix'] }}</div>
-                                <div class="flex items-baseline gap-1 mt-0.5 flex-wrap">
-                                    <span class="text-xl xl:text-2xl font-extrabold {{ $package['is_popular'] ? 'text-sky-700' : (isset($package['is_free']) && $package['is_free'] ? 'text-emerald-700' : 'text-slate-900') }} whitespace-nowrap leading-none">{{ $package['price'] }}</span>
+                                <div class="flex items-baseline justify-center gap-1 mt-0.5 flex-wrap w-full">
+                                    <span class="text-xl xl:text-2xl font-extrabold {{ $package['is_popular'] ? 'text-sky-700' : (isset($package['is_free']) && $package['is_free'] ? 'text-emerald-700' : 'text-slate-900') }} whitespace-nowrap leading-none text-center">{{ $package['price'] }}</span>
                                     @if(!empty($package['period']))
                                         <span class="text-xs font-semibold {{ $package['is_popular'] ? 'text-sky-600' : 'text-slate-500' }} shrink-0">{{ $package['period'] }}</span>
                                     @endif
                                 </div>
                                 @if(!empty($package['note']))
-                                    <div class="text-2xs font-semibold {{ $package['is_popular'] ? 'text-sky-800 border-sky-200' : (isset($package['is_free']) && $package['is_free'] ? 'text-emerald-800 border-emerald-200' : 'text-slate-600 border-slate-200') }} mt-1.5 pt-1.5 border-t leading-tight">
+                                    <div class="text-2xs font-semibold {{ $package['is_popular'] ? 'text-sky-800 border-sky-200' : (isset($package['is_free']) && $package['is_free'] ? 'text-emerald-800 border-emerald-200' : 'text-slate-600 border-slate-200') }} mt-1.5 pt-1.5 border-t leading-tight w-full text-center">
                                         <i class="fa-solid fa-clock {{ isset($package['is_free']) && $package['is_free'] ? 'text-emerald-600' : 'text-sky-600' }} mr-1"></i> {{ $package['note'] }}
                                     </div>
                                 @endif
                             </div>
 
                             <!-- Features -->
-                            <div class="space-y-2 mb-6">
+                            <div class="space-y-2 mb-6 w-full text-center flex flex-col items-center">
                                 @foreach($package['features'] as $feature)
-                                    <div class="flex items-start gap-1.5 text-xs text-slate-600">
-                                        <i class="fa-solid fa-circle-check {{ isset($package['is_free']) && $package['is_free'] ? 'text-emerald-600' : 'text-sky-600' }} text-xs mt-0.5 shrink-0"></i>
-                                        <span class="leading-tight">{{ $feature }}</span>
+                                    <div class="flex items-center justify-center gap-1.5 text-xs text-slate-600 text-center">
+                                        <i class="fa-solid fa-circle-check {{ isset($package['is_free']) && $package['is_free'] ? 'text-emerald-600' : 'text-sky-600' }} text-xs shrink-0"></i>
+                                        <span class="leading-tight text-center">{{ $feature }}</span>
                                     </div>
                                 @endforeach
                             </div>
                         </div>
 
-                        <div>
+                        <div class="w-full">
                             <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode($package['whatsapp_msg']) }}" 
                                target="_blank" 
-                               class="{{ $package['cta_class'] }} text-xs py-2.5">
+                               class="{{ $package['cta_class'] }} text-xs py-2.5 w-full justify-center text-center">
                                 <span>{{ $package['cta_text'] }}</span>
                                 <i class="fa-solid fa-arrow-right text-2xs"></i>
                             </a>
@@ -856,89 +855,64 @@
     <!-- ==================== 11. LOKASI LATIHAN ==================== -->
     <section class="py-16 bg-slate-50" id="lokasi">
         <div class="container-custom">
-            <div class="location-container">
-                <div class="location-grid-2col items-stretch">
-                    <!-- Left: Description & Details -->
-                    <div class="p-5 sm:p-8 md:p-10">
-                        <span class="pill-badge mb-3">9 LOKASI DI KOTA JAMBI</span>
-                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-3 break-words">
-                            LOKASI LATIHAN
-                        </h2>
-                        <!-- Secretariat Address Banner -->
-                        <div class="mb-6 p-4 bg-sky-50/90 border border-sky-200 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-xs">
-                            <div class="flex items-start gap-3">
-                                <div class="w-9 h-9 rounded-xl bg-sky-600 text-white flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">
-                                    <i class="fa-solid fa-building-flag"></i>
-                                </div>
-                                <div>
-                                    <span class="text-2xs font-bold text-sky-800 uppercase tracking-wider block mb-0.5">Alamat Sekretariat Utama</span>
-                                    <p class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
-                                        {{ $secretariatAddress }}
-                                    </p>
-                                </div>
-                            </div>
-                            <a href="{{ $secretariatGmaps }}" target="_blank" class="btn-primary-pill text-xs shrink-0 self-start sm:self-center">
-                                <span>Maps Sekretariat</span>
-                                <i class="fa-solid fa-arrow-up-right-from-square text-2xs"></i>
-                            </a>
-                        </div>
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="pill-badge mb-3">9 LOKASI DI KOTA JAMBI</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-3">
+                    LOKASI LATIHAN
+                </h2>
+            </div>
 
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 text-xs sm:text-sm text-slate-700">
-                            @foreach($branches as $index => $branch)
-                                @php 
-                                    $bName = is_array($branch) ? $branch['name'] : $branch;
-                                    $bGmaps = is_array($branch) ? $branch['gmaps'] : ('https://www.google.com/maps/search/?api=1&query=' . rawurlencode($bName . ' Kota Jambi'));
-                                @endphp
-                                <div class="p-3 bg-white rounded-xl border border-slate-200 hover:border-sky-300 transition-colors flex items-start justify-between gap-2 shadow-xs">
-                                    <div class="flex items-start gap-2.5">
-                                        <span class="w-5 h-5 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">
-                                            {{ $index + 1 }}
-                                        </span>
-                                        <div>
-                                            <span class="font-bold text-slate-900 block leading-snug">{{ $bName }}</span>
-                                            <span class="text-xs text-slate-400">Kota Jambi</span>
-                                        </div>
-                                    </div>
-                                    <a href="{{ $bGmaps }}" target="_blank" class="text-xs text-sky-600 hover:text-sky-700 font-semibold inline-flex items-center gap-1 bg-sky-50 px-2 py-1 rounded-md border border-sky-100 flex-shrink-0">
-                                        <span>Maps</span> <i class="fa-solid fa-arrow-up-right-from-square text-2xs"></i>
-                                    </a>
-                                </div>
-                            @endforeach
-                        </div>
-
-                        <div class="p-3.5 bg-sky-50 rounded-xl border border-sky-100 text-xs text-slate-600 flex items-start gap-3">
-                            <i class="fa-solid fa-circle-info text-sky-600 text-base mt-0.5 flex-shrink-0"></i>
-                            <span class="leading-relaxed">Silakan pilih titik lokasi terdekat dari tempat tinggal Anda untuk kenyamanan latihan.</span>
-                        </div>
+            <!-- Secretariat Address Banner -->
+            <div class="max-w-5xl mx-auto mb-8 p-4 sm:p-6 bg-white border border-sky-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
+                <div class="flex items-center gap-3.5 text-center sm:text-left">
+                    <div class="w-10 h-10 rounded-xl bg-sky-600 text-white flex items-center justify-center font-bold text-base shrink-0">
+                        <i class="fa-solid fa-building-flag"></i>
                     </div>
-
-                    <!-- Right: Google Maps Area & Action -->
-                    <div class="subtle-grid-box p-5 sm:p-8 flex items-center justify-center border-t lg:border-t-0 lg:border-l border-slate-200">
-                        <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-md text-center max-w-sm w-full">
-                            <div class="w-12 h-12 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center mx-auto mb-3 text-xl">
-                                <i class="fa-solid fa-map-location-dot"></i>
-                            </div>
-                            <h4 class="text-sm font-bold text-slate-900 mb-1">9 TITIK KOLAM RENANG KOTA JAMBI</h4>
-                            <p class="text-xs text-slate-500 mb-4">
-                                Latihan privat &amp; kelompok tersedia di 9 lokasi terdaftar di Kota Jambi &amp; sekitarnya.
-                            </p>
-                            
-                            <!-- Google Maps Button -->
-                            <a href="https://www.google.com/maps/search/?api=1&query=Kolam+Renang+Kota+Jambi" 
-                               target="_blank" 
-                               class="btn-primary-pill text-xs w-full justify-center mb-3">
-                                <span>BUKA GOOGLE MAPS KOTA JAMBI</span>
-                                <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
-                            </a>
-
-                            <p class="text-xs text-slate-400 italic">
-                                Klik nama lokasi di samping untuk navigasi gmaps langsung.
-                            </p>
-                        </div>
+                    <div>
+                        <span class="text-2xs font-bold text-sky-700 uppercase tracking-wider block mb-0.5">Alamat Sekretariat Utama</span>
+                        <p class="text-xs sm:text-sm font-bold text-slate-800 leading-snug">
+                            {{ $secretariatAddress }}
+                        </p>
                     </div>
                 </div>
+                <a href="{{ $secretariatGmaps }}" target="_blank" class="btn-primary-pill text-xs shrink-0 whitespace-nowrap">
+                    <span>Maps Sekretariat</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-2xs"></i>
+                </a>
+            </div>
+
+            <!-- 9 Locations Grid (3 Columns on Desktop, 2 on Tablet, 1 on Mobile) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 max-w-5xl mx-auto mb-8">
+                @foreach($branches as $index => $branch)
+                    @php 
+                        $bName = is_array($branch) ? $branch['name'] : $branch;
+                        $bGmaps = is_array($branch) ? $branch['gmaps'] : ('https://www.google.com/maps/search/?api=1&query=' . rawurlencode($bName . ' Kota Jambi'));
+                    @endphp
+                    <div class="p-3.5 bg-white rounded-xl border border-slate-200/90 hover:border-sky-300 hover:shadow-md transition-all flex items-center justify-between gap-2.5 shadow-xs">
+                        <div class="flex items-center gap-3 min-w-0">
+                            <span class="w-6 h-6 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-xs shrink-0">
+                                {{ $index + 1 }}
+                            </span>
+                            <div class="min-w-0">
+                                <span class="font-bold text-slate-900 text-xs sm:text-sm block leading-snug truncate">{{ $bName }}</span>
+                                <span class="text-2xs text-slate-400 font-medium">Kota Jambi</span>
+                            </div>
+                        </div>
+                        <a href="{{ $bGmaps }}" target="_blank" class="text-xs text-sky-600 hover:text-sky-700 font-semibold inline-flex items-center gap-1 bg-sky-50 hover:bg-sky-100 px-2.5 py-1.5 rounded-lg border border-sky-100 shrink-0 whitespace-nowrap transition-colors">
+                            <span>Maps</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-2xs"></i>
+                        </a>
+                    </div>
+                @endforeach
+            </div>
+
+            <!-- Bottom Note -->
+            <div class="p-4 bg-sky-50/80 rounded-2xl border border-sky-100 text-xs sm:text-sm text-slate-600 text-center max-w-2xl mx-auto flex items-center justify-center gap-2">
+                <i class="fa-solid fa-circle-info text-sky-600 text-base shrink-0"></i>
+                <span>Silakan pilih titik lokasi terdekat dari tempat tinggal Anda untuk kenyamanan latihan.</span>
             </div>
         </div>
+    </section>
     <!-- ==================== 12. MITRA & PARTNER TERPERCAYA ==================== -->
     <section class="py-16 bg-white border-t border-slate-100" id="mitra">
         <div class="container-custom">

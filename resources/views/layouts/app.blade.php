@@ -25,10 +25,10 @@
     <meta name="theme-color" content="#0284c7">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230284c7'><path d='M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z'/></svg>">
 
-    <!-- Fonts: Plus Jakarta Sans -->
+    <!-- Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Font Awesome 6 Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -55,7 +55,7 @@
         <div class="container-custom flex items-center justify-between py-4">
             <!-- Brand Logo (Main Logo Image Only) -->
             <a href="{{ route('home') }}" class="brand-logo inline-flex items-center">
-                <img src="{{ asset('images/logo_utama.jpg') }}" alt="Konservasi Akuatik" class="h-10 sm:h-12 w-auto object-contain transition-transform hover:scale-105">
+                <img src="{{ asset('images/logo_utama.jpg') }}" alt="Konservasi Akuatik" class="h-8 sm:h-10 w-auto max-w-[160px] sm:max-w-[200px] object-contain transition-transform hover:scale-105">
             </a>
 
             <!-- Desktop Nav Items -->
@@ -118,9 +118,6 @@
     <footer class="main-footer">
         <div class="container-custom py-14">
             <div class="text-center max-w-2xl mx-auto mb-8">
-                <div class="flex items-center justify-center mb-3">
-                    <img src="{{ asset('images/logo_utama.jpg') }}" alt="Konservasi Akuatik" class="h-12 sm:h-14 w-auto object-contain">
-                </div>
                 <p class="text-sky-600 font-bold text-base sm:text-lg mb-4">
                     Belajar Berenang. Bangun Kepercayaan Diri. Raih Milestone Baru.
                 </p>
