@@ -847,7 +847,7 @@
 
             <!-- WhatsApp Number Display -->
             <p class="text-xs sm:text-sm font-semibold text-slate-500 mt-4">
-                WhatsApp: <a href="https://wa.me/{{ $whatsappNumber }}" target="_blank" class="text-sky-600 hover:underline">081*** ({{ $whatsappDisplay }})</a>
+                WhatsApp: <a href="https://wa.me/{{ $whatsappNumber }}" target="_blank" class="text-sky-600 hover:underline">{{ $whatsappDisplay }}</a>
             </p>
         </div>
     </section>
