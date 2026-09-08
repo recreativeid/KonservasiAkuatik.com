@@ -14,16 +14,23 @@
     <meta http-equiv="Expires" content="0">
     <meta name="author" content="KonservasiAkuatik.com">
     
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / WhatsApp / Facebook Link Preview -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:title" content="Klub & Kursus Renang untuk Semua Usia di Kota Jambi - KonservasiAkuatik.com">
+    <meta property="og:title" content="Klub &amp; Kursus Renang untuk Semua Usia di Kota Jambi - KonservasiAkuatik.com">
     <meta property="og:description" content="Belajar berenang lebih cepat, percaya diri, dan menyenangkan di Kota Jambi bersama KonservasiAkuatik.com.">
-    <meta property="og:image" content="{{ asset('images/hero-pool.jpg') }}">
+    <meta property="og:image" content="{{ asset('images/logo_utama.jpg') }}">
 
-    <!-- Theme Color -->
+    <!-- Twitter / Messaging Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Klub &amp; Kursus Renang untuk Semua Usia di Kota Jambi - KonservasiAkuatik.com">
+    <meta name="twitter:description" content="Belajar berenang lebih cepat, percaya diri, dan menyenangkan di Kota Jambi bersama KonservasiAkuatik.com.">
+    <meta name="twitter:image" content="{{ asset('images/logo_utama.jpg') }}">
+
+    <!-- Theme Color & Favicon Logo Utama -->
     <meta name="theme-color" content="#0284c7">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230284c7'><path d='M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z'/></svg>">
+    <link rel="icon" type="image/jpeg" href="{{ asset('images/logo_utama.jpg') }}">
+    <link rel="apple-touch-icon" href="{{ asset('images/logo_utama.jpg') }}">
 
     <!-- Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
