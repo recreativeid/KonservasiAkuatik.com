@@ -64,6 +64,29 @@ body {
     background-color: #ffffff;
 }
 
+/* Global Icon Spacing & Margin Rules */
+i.fa-solid,
+i.fa-regular,
+i.fa-brands {
+    margin-right: 0.45rem;
+    display: inline-block;
+}
+
+.no-mr,
+.icon-only,
+.popular-top-badge i,
+.w-5 i, .w-6 i, .w-7 i, .w-8 i, .w-9 i, .w-10 i, .w-12 i,
+.category-icon-box i, .value-icon-box i, .time-slot-card i, .location-num-badge i,
+.btn-primary-pill i.fa-arrow-right,
+.btn-primary-pill i.fa-angle-right,
+.btn-primary-pill i.fa-arrow-up-right-from-square,
+.btn-hero-cta i.fa-arrow-right,
+.btn-card-primary i.fa-arrow-right,
+.btn-card-outline i.fa-arrow-right,
+.location-map-btn i.fa-arrow-up-right-from-square {
+    margin-right: 0 !important;
+}
+
 h1, h2, h3, h4, h5, h6, p, span, a, div {
     overflow-wrap: break-word;
     word-wrap: break-word;

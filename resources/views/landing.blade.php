@@ -731,13 +731,43 @@
                 </p>
             </div>
 
-            <!-- Mobile Scroll Tip -->
-            <div class="sm:hidden text-right text-xs text-sky-600 font-semibold mb-2 flex items-center justify-end gap-1">
-                <i class="fa-solid fa-arrows-left-right text-xs"></i>
-                <span>Geser tabel ke samping</span>
+            <!-- Mobile View: Clean Card List (Fit 100% Mobile Screen, No Scroll) -->
+            <div class="block sm:hidden space-y-3.5 max-w-md mx-auto mb-8">
+                @foreach($priceTable as $item)
+                    <div class="p-4 bg-white rounded-2xl border {{ $item['is_popular'] ? 'border-sky-500 shadow-md ring-1 ring-sky-200' : 'border-slate-200 shadow-xs' }} flex flex-col justify-between gap-3 text-center items-center">
+                        <div class="flex flex-col items-center gap-1.5 w-full">
+                            <div class="inline-flex items-center justify-center gap-2">
+                                <div class="w-8 h-8 rounded-lg {{ $item['is_popular'] ? 'bg-sky-100 text-sky-600' : 'bg-slate-100 text-slate-600' }} flex items-center justify-center text-sm shrink-0">
+                                    <i class="fa-solid {{ str_contains($item['program'], 'Syaraf') || str_contains($item['program'], 'Hydro') ? 'fa-spa' : (str_contains($item['program'], 'Privat') ? 'fa-user-shield' : 'fa-users') }} no-mr"></i>
+                                </div>
+                                <h3 class="text-base font-extrabold text-slate-900 leading-snug">{{ $item['program'] }}</h3>
+                            </div>
+                            @if($item['is_popular'])
+                                <span class="text-2xs bg-sky-100 text-sky-700 border border-sky-200 font-bold px-3 py-0.5 rounded-full">Rekomendasi Terapi</span>
+                            @endif
+                        </div>
+
+                        <div class="py-2 px-4 bg-slate-50 rounded-xl w-full text-center border border-slate-100">
+                            <span class="text-2xs text-slate-400 font-bold uppercase tracking-wider block mb-0.5">Biaya / Harga</span>
+                            <span class="text-lg font-extrabold {{ $item['is_popular'] ? 'text-sky-600' : 'text-slate-900' }}">{{ $item['harga'] }}</span>
+                        </div>
+
+                        <p class="text-xs text-slate-600 leading-relaxed text-center">
+                            {{ $item['cocok_untuk'] }}
+                        </p>
+
+                        <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode($item['msg']) }}" 
+                           target="_blank" 
+                           class="btn-primary-pill text-xs w-full justify-center text-center py-2.5">
+                            <span>{{ $item['action_label'] }}</span>
+                            <i class="fa-solid fa-angle-right text-xs no-mr"></i>
+                        </a>
+                    </div>
+                @endforeach
             </div>
 
-            <div class="table-wrapper max-w-4xl mx-auto">
+            <!-- Desktop & Tablet View: Clean Comparison Table -->
+            <div class="hidden sm:block table-wrapper max-w-4xl mx-auto">
                 <div class="overflow-x-auto">
                     <table class="custom-table">
                         <thead>
@@ -754,7 +784,7 @@
                                     <td class="font-bold {{ $item['is_popular'] ? 'text-sky-800' : 'text-slate-900' }} whitespace-nowrap">
                                         <div class="flex items-center gap-2">
                                             <div class="w-7 h-7 rounded-lg {{ $item['is_popular'] ? 'bg-sky-200 text-sky-800' : 'bg-sky-100 text-sky-600' }} flex items-center justify-center text-xs">
-                                                <i class="fa-solid {{ str_contains($item['program'], 'Syaraf') || str_contains($item['program'], 'Hydro') ? 'fa-spa' : (str_contains($item['program'], 'Privat') ? 'fa-user-shield' : 'fa-users') }}"></i>
+                                                <i class="fa-solid {{ str_contains($item['program'], 'Syaraf') || str_contains($item['program'], 'Hydro') ? 'fa-spa' : (str_contains($item['program'], 'Privat') ? 'fa-user-shield' : 'fa-users') }} no-mr"></i>
                                             </div>
                                             <span>{{ $item['program'] }}</span>
                                             @if($item['is_popular'])
@@ -773,7 +803,7 @@
                                            target="_blank" 
                                            class="btn-primary-pill text-xs">
                                             <span>{{ $item['action_label'] }}</span>
-                                            <i class="fa-solid fa-angle-right text-xs"></i>
+                                            <i class="fa-solid fa-angle-right text-xs no-mr"></i>
                                         </a>
                                     </td>
                                 </tr>
