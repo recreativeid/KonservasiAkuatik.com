@@ -100,6 +100,28 @@ class LandingPageController extends Controller
                 'whatsapp_msg' => 'Halo KonservasiAkuatik.com, saya ingin mendaftar Kelas Hydroterapi (Terapi & Latihan di Dalam Air) di Kota Jambi. Mohon info ketersediaan jadwal.',
             ],
             [
+                'id' => 'perwira-tni-polri',
+                'name' => 'Kelas Calon Perwira TNI/Polri',
+                'badge' => 'Program Intensif 2 Minggu',
+                'subtitle' => 'Program Intensif Kesiapan Renang',
+                'is_popular' => false,
+                'description' => 'Program latihan berenang intensif yang dirancang untuk membantu calon Perwira TNI/Polri mempersiapkan kemampuan renang dengan latihan terarah, disiplin, dan berfokus pada peningkatan kemampuan peserta.',
+                'price_prefix' => 'INVESTASI PROGRAM',
+                'price' => 'Rp3.500.000',
+                'period' => '/2 minggu',
+                'note' => 'Program intensif 2 minggu • Durasi 2 jam/latihan',
+                'features' => [
+                    'Program latihan intensif selama 2 minggu',
+                    'Durasi latihan 2 jam setiap sesi',
+                    'Latihan terarah sesuai kebutuhan peserta',
+                    'Pendampingan pelatih selama program',
+                    'Fokus pada peningkatan kemampuan dan kesiapan renang',
+                ],
+                'cta_text' => 'DAFTAR KELAS PERWIRA',
+                'cta_class' => 'btn-card-outline',
+                'whatsapp_msg' => 'Halo KonservasiAkuatik.com, saya ingin mendaftar Kelas Calon Perwira TNI/Polri (Program Intensif 2 Minggu) di Kota Jambi. Mohon info ketersediaan jadwal.',
+            ],
+            [
                 'id' => 'gratis',
                 'name' => 'Kelas Gratis',
                 'badge' => 'Hibah & Subsidi',
@@ -172,9 +194,9 @@ class LandingPageController extends Controller
                 'note' => 'Cocok untuk balita & anak sebelum siang'
             ],
             [
-                'period' => 'SORE - MALAM',
-                'time' => '15.30 - 18.00 WIB',
-                'note' => 'Jadwal fleksibel sepulang sekolah atau kerja'
+                'period' => 'SIANG - MALAM',
+                'time' => '13.30 - 19.30 WIB',
+                'note' => 'Waktu fleksibel'
             ],
             [
                 'period' => 'TERAPI AIR',
@@ -316,6 +338,14 @@ class LandingPageController extends Controller
                 'action_label' => 'DAFTAR HYDROTERAPI',
                 'is_popular' => false,
                 'msg' => 'Halo KonservasiAkuatik.com, saya ingin mendaftar Kelas Hydroterapi di Kota Jambi.',
+            ],
+            [
+                'program' => 'Kelas Calon Perwira TNI/Polri',
+                'harga' => 'Rp3.500.000/2 minggu',
+                'cocok_untuk' => 'Program Intensif 2 Minggu (Durasi 2 jam/latihan)',
+                'action_label' => 'DAFTAR KELAS PERWIRA',
+                'is_popular' => false,
+                'msg' => 'Halo KonservasiAkuatik.com, saya ingin mendaftar Kelas Calon Perwira TNI/Polri (Program Intensif 2 Minggu) di Kota Jambi.',
             ],
             [
                 'program' => 'Kelas Gratis',
