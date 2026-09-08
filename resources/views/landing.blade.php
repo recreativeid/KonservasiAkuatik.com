@@ -470,8 +470,8 @@
         <div class="container-custom">
             <div class="text-center max-w-2xl mx-auto mb-12">
                 <span class="pill-badge mb-3">KEUNGGULAN KAMI</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-3">
-                    KENAPA KONVERSASIAKUATIK.COM?
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight mb-3 break-words">
+                    KENAPA <span class="text-sky-600">KONSERVASIAKUATIK.COM</span>?
                 </h2>
                 <p class="text-slate-600 text-sm sm:text-base">
                     Dedikasi mendampingi setiap langkah pembelajaran renang Anda hingga mahir dan percaya diri.
@@ -927,42 +927,42 @@
             <div class="location-container">
                 <div class="location-grid-2col items-stretch">
                     <!-- Left: Description & Details -->
-                    <div class="p-8 sm:p-10">
+                    <div class="p-5 sm:p-8 md:p-10">
                         <span class="pill-badge mb-3">LOKASI KOTA JAMBI</span>
-                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-3">
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-3 break-words">
                             LOKASI LATIHAN
                         </h2>
                         <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
                             Latihan tersedia di berbagai kolam renang di Kota Jambi, menyesuaikan domisili peserta.
                         </p>
 
-                        <div class="space-y-3 mb-6 text-xs sm:text-sm text-slate-700">
-                            <div class="flex items-center gap-2.5">
-                                <i class="fa-solid fa-location-dot text-sky-600 text-sm"></i>
-                                <span>Kolam Renang Tepian Ratu (Telanaipura, Kota Jambi)</span>
+                        <div class="space-y-3.5 mb-6 text-xs sm:text-sm text-slate-700">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-location-dot text-sky-600 text-base mt-0.5 flex-shrink-0"></i>
+                                <span class="leading-normal">Kolam Renang Tepian Ratu (Telanaipura, Kota Jambi)</span>
                             </div>
-                            <div class="flex items-center gap-2.5">
-                                <i class="fa-solid fa-location-dot text-sky-600 text-sm"></i>
-                                <span>Kolam Renang Kota Baru Jambi</span>
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-location-dot text-sky-600 text-base mt-0.5 flex-shrink-0"></i>
+                                <span class="leading-normal">Kolam Renang Kota Baru Jambi</span>
                             </div>
-                            <div class="flex items-center gap-2.5">
-                                <i class="fa-solid fa-location-dot text-sky-600 text-sm"></i>
-                                <span>Kolam Renang Sungai Kambang &amp; Mayang Mangurai</span>
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-location-dot text-sky-600 text-base mt-0.5 flex-shrink-0"></i>
+                                <span class="leading-normal">Kolam Renang Sungai Kambang &amp; Mayang Mangurai</span>
                             </div>
-                            <div class="flex items-center gap-2.5">
-                                <i class="fa-solid fa-location-dot text-sky-600 text-sm"></i>
-                                <span>Kolam Renang Pribadi / Domisili Peserta di Kota Jambi</span>
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-location-dot text-sky-600 text-base mt-0.5 flex-shrink-0"></i>
+                                <span class="leading-normal">Kolam Renang Pribadi / Domisili Peserta di Kota Jambi</span>
                             </div>
                         </div>
 
-                        <div class="p-3.5 bg-sky-50 rounded-xl border border-sky-100 text-xs text-slate-600 flex items-center gap-2.5">
-                            <i class="fa-solid fa-circle-info text-sky-600"></i>
-                            <span>Menyesuaikan jadwal dan domisili terdekat peserta di Kota Jambi.</span>
+                        <div class="p-3.5 bg-sky-50 rounded-xl border border-sky-100 text-xs text-slate-600 flex items-start gap-3">
+                            <i class="fa-solid fa-circle-info text-sky-600 text-base mt-0.5 flex-shrink-0"></i>
+                            <span class="leading-relaxed">Menyesuaikan jadwal dan domisili terdekat peserta di Kota Jambi.</span>
                         </div>
                     </div>
 
                     <!-- Right: Google Maps Area & Action -->
-                    <div class="subtle-grid-box p-8 flex items-center justify-center border-t lg:border-t-0 lg:border-l border-slate-200">
+                    <div class="subtle-grid-box p-5 sm:p-8 flex items-center justify-center border-t lg:border-t-0 lg:border-l border-slate-200">
                         <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-md text-center max-w-sm w-full">
                             <div class="w-12 h-12 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center mx-auto mb-3 text-xl">
                                 <i class="fa-solid fa-map-location-dot"></i>
