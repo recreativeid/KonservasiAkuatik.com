@@ -415,13 +415,13 @@
         </div>
     </section>
 
-    <!-- ==================== 5. KENAPA KONVERSASIAKUATIK.COM? ==================== -->
+    <!-- ==================== 5. KENAPA KONSERVASI AKUATIK? ==================== -->
     <section class="py-16 bg-slate-50" id="kenapa-kami">
         <div class="container-custom">
             <div class="text-center max-w-2xl mx-auto mb-12">
                 <span class="pill-badge mb-3">KEUNGGULAN KAMI</span>
                 <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight mb-3 break-words">
-                    KENAPA <span class="text-sky-600">KONSERVASIAKUATIK.COM</span>?
+                    KENAPA <span class="text-sky-600">KONSERVASI AKUATIK</span>?
                 </h2>
                 <p class="text-slate-600 text-sm sm:text-base">
                     Dedikasi mendampingi setiap langkah pembelajaran renang Anda hingga mahir dan percaya diri.

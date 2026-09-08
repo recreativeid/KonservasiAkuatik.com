@@ -93,7 +93,7 @@
                 <a href="#program" class="mobile-link">Program Kami</a>
                 <a href="#untuk-siapa" class="mobile-link">Untuk Siapa Program Ini?</a>
                 <a href="#jadwal" class="mobile-link">Jadwal Latihan</a>
-                <a href="#kenapa-kami" class="mobile-link">Kenapa KonservasiAkuatik.com?</a>
+                <a href="#kenapa-kami" class="mobile-link">Kenapa Konservasi Akuatik?</a>
                 <a href="#prestasi" class="mobile-link">Prestasi &amp; Milestone</a>
                 <a href="#kegiatan" class="mobile-link">Kegiatan Latihan</a>
                 <a href="#testimoni" class="mobile-link">Cerita &amp; Testimoni Peserta</a>
