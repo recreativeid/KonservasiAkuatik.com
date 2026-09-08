@@ -773,12 +773,18 @@
         <div class="container-custom">
             <div class="text-center max-w-2xl mx-auto mb-12">
                 <span class="pill-badge mb-3">PERBANDINGAN PAKET</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-3">
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight mb-3">
                     PILIH PROGRAM ANDA
                 </h2>
                 <p class="text-slate-600 text-sm sm:text-base">
                     Tabel ringkas program dan rincian biaya yang dirancang sesuai kebutuhan Anda.
                 </p>
+            </div>
+
+            <!-- Mobile Scroll Tip -->
+            <div class="sm:hidden text-right text-xs text-sky-600 font-semibold mb-2 flex items-center justify-end gap-1">
+                <i class="fa-solid fa-arrows-left-right text-xs"></i>
+                <span>Geser tabel ke samping</span>
             </div>
 
             <div class="table-wrapper max-w-4xl mx-auto">
