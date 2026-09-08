@@ -28,7 +28,7 @@
                 <div class="inline-flex items-center gap-2 mb-7">
                     <span class="pill-badge hero-pill">
                         <i class="fa-solid fa-water text-sky-600"></i>
-                        <span>Klub &amp; Kursus Renang untuk Semua Usia di Kota Jambi</span>
+                        <span>Konservasi Akuatik</span>
                     </span>
                 </div>
 
@@ -156,124 +156,70 @@
                 </p>
             </div>
 
-            <!-- 2 Cards Comparison matching exact user specifications -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
-                <!-- Card 1: Kelas Klub -->
-                <div class="pricing-card">
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <div class="flex items-center gap-2">
-                                <div class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center text-sm">
-                                    <i class="fa-solid fa-users"></i>
+            <!-- 4 Cards Grid for all packages -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto items-stretch">
+                @foreach($packages as $package)
+                    <div class="pricing-card {{ $package['is_popular'] ? 'popular' : '' }}">
+                        @if($package['is_popular'])
+                            <!-- Top Ribbon Badge -->
+                            <div class="popular-top-badge">
+                                <i class="fa-solid fa-star text-amber-300 mr-1"></i> {{ $package['badge'] }}
+                            </div>
+                        @endif
+
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 rounded-lg {{ $package['is_popular'] ? 'bg-sky-100 text-sky-600' : 'bg-slate-100 text-slate-600' }} flex items-center justify-center text-sm">
+                                        <i class="fa-solid {{ $package['id'] === 'syaraf-terjepit' || $package['id'] === 'hydroterapi' ? 'fa-spa' : ($package['id'] === 'privat' ? 'fa-user-shield' : 'fa-users') }}"></i>
+                                    </div>
+                                    <h3 class="text-lg sm:text-xl font-bold text-slate-900">{{ $package['name'] }}</h3>
                                 </div>
-                                <h3 class="text-xl font-bold text-slate-900">Kelas Klub</h3>
+                                @if(!$package['is_popular'])
+                                    <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full whitespace-nowrap">{{ $package['badge'] }}</span>
+                                @endif
                             </div>
-                            <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full">Latihan Bersama</span>
-                        </div>
-                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
-                            Program latihan berenang dalam kelompok dengan suasana latihan yang aktif, menyenangkan, dan suportif.
-                        </p>
 
-                        <!-- Price Tag -->
-                        <div class="price-box-regular">
-                            <div class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Mulai dari</div>
-                            <div class="flex items-baseline gap-1 mt-1">
-                                <span class="text-2xl sm:text-3xl font-extrabold text-slate-900">Rp500.000</span>
-                                <span class="text-xs font-medium text-slate-500">/bulan</span>
-                            </div>
-                        </div>
+                            <div class="text-xs font-bold text-sky-600 uppercase tracking-wide mb-2">{{ $package['subtitle'] }}</div>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                                {{ $package['description'] }}
+                            </p>
 
-                        <!-- Features -->
-                        <div class="space-y-2.5 mb-8">
-                            <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-600">
-                                <i class="fa-solid fa-circle-check text-sky-600 text-sm mt-0.5"></i>
-                                <span>Latihan terjadwal</span>
-                            </div>
-                            <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-600">
-                                <i class="fa-solid fa-circle-check text-sky-600 text-sm mt-0.5"></i>
-                                <span>Cocok untuk berbagai level</span>
-                            </div>
-                            <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-600">
-                                <i class="fa-solid fa-circle-check text-sky-600 text-sm mt-0.5"></i>
-                                <span>Suasana latihan bersama</span>
-                            </div>
-                            <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-600">
-                                <i class="fa-solid fa-circle-check text-sky-600 text-sm mt-0.5"></i>
-                                <span>Pendampingan selama proses belajar</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.com, saya ingin mendaftar Kelas Klub di Kota Jambi. Mohon info jadwal dan persyaratannya.') }}" 
-                           target="_blank" 
-                           class="btn-card-outline">
-                            <span>PILIH KELAS KLUB</span>
-                            <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 2: Kursus Privat (Popular Highlighted) -->
-                <div class="pricing-card popular">
-                    <!-- Top Ribbon Badge -->
-                    <div class="popular-top-badge">
-                        <i class="fa-solid fa-star text-amber-300 mr-1"></i> Rekomendasi - Pendampingan Personal
-                    </div>
-
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <div class="flex items-center gap-2">
-                                <div class="w-8 h-8 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center text-sm">
-                                    <i class="fa-solid fa-user-shield"></i>
+                            <!-- Price Tag -->
+                            <div class="{{ $package['is_popular'] ? 'price-box-cyan' : 'price-box-regular' }}">
+                                <div class="text-xs {{ $package['is_popular'] ? 'text-sky-700' : 'text-slate-500' }} font-semibold uppercase tracking-wider">{{ $package['price_prefix'] }}</div>
+                                <div class="flex items-baseline gap-1 mt-1">
+                                    <span class="text-2xl sm:text-3xl font-extrabold {{ $package['is_popular'] ? 'text-sky-700' : 'text-slate-900' }}">{{ $package['price'] }}</span>
+                                    <span class="text-xs font-medium {{ $package['is_popular'] ? 'text-sky-600' : 'text-slate-500' }}">{{ $package['period'] }}</span>
                                 </div>
-                                <h3 class="text-xl font-bold text-slate-900">Kursus Privat</h3>
+                                @if(!empty($package['note']))
+                                    <div class="text-xs font-bold {{ $package['is_popular'] ? 'text-sky-800' : 'text-slate-600' }} mt-1.5 pt-1.5 border-t {{ $package['is_popular'] ? 'border-sky-200' : 'border-slate-200' }}">
+                                        <i class="fa-solid fa-clock text-sky-600 mr-1"></i> {{ $package['note'] }}
+                                    </div>
+                                @endif
                             </div>
-                            <span class="text-xs font-semibold text-sky-700 bg-sky-100 px-2.5 py-1 rounded-full">Latihan Lebih Fokus</span>
-                        </div>
-                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
-                            Program belajar berenang secara privat dengan latihan yang lebih terarah sesuai kebutuhan dan kemampuan peserta.
-                        </p>
 
-                        <!-- Price Tag Cyan Box -->
-                        <div class="price-box-cyan">
-                            <div class="text-xs text-sky-700 font-semibold uppercase tracking-wider">Biaya Kursus</div>
-                            <div class="flex items-baseline gap-1 mt-1">
-                                <span class="text-2xl sm:text-3xl font-extrabold text-sky-700">Rp1.000.000</span>
-                                <span class="text-xs font-medium text-sky-600">/bulan</span>
+                            <!-- Features -->
+                            <div class="space-y-2.5 mb-8">
+                                @foreach($package['features'] as $feature)
+                                    <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-600">
+                                        <i class="fa-solid fa-circle-check text-sky-600 text-sm mt-0.5 flex-shrink-0"></i>
+                                        <span>{{ $feature }}</span>
+                                    </div>
+                                @endforeach
                             </div>
                         </div>
 
-                        <!-- Features -->
-                        <div class="space-y-2.5 mb-8">
-                            <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-600">
-                                <i class="fa-solid fa-circle-check text-sky-600 text-sm mt-0.5"></i>
-                                <span>Latihan lebih fokus</span>
-                            </div>
-                            <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-600">
-                                <i class="fa-solid fa-circle-check text-sky-600 text-sm mt-0.5"></i>
-                                <span>Program dapat disesuaikan</span>
-                            </div>
-                            <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-600">
-                                <i class="fa-solid fa-circle-check text-sky-600 text-sm mt-0.5"></i>
-                                <span>Cocok untuk pemula maupun yang ingin meningkatkan kemampuan</span>
-                            </div>
-                            <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-600">
-                                <i class="fa-solid fa-circle-check text-sky-600 text-sm mt-0.5"></i>
-                                <span>Pendampingan lebih personal</span>
-                            </div>
+                        <div>
+                            <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode($package['whatsapp_msg']) }}" 
+                               target="_blank" 
+                               class="{{ $package['cta_class'] }}">
+                                <span>{{ $package['cta_text'] }}</span>
+                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
                         </div>
                     </div>
-
-                    <div>
-                        <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.com, saya ingin mendaftar Kursus Privat renang di Kota Jambi. Mohon info jadwal yang tersedia.') }}" 
-                           target="_blank" 
-                           class="btn-card-primary">
-                            <span>DAFTAR KURSUS PRIVAT</span>
-                            <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </a>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
@@ -439,7 +385,8 @@
                                     <label class="block text-xs font-semibold text-slate-700 mb-1">Pilih Titik Kolam di Kota Jambi</label>
                                     <select name="branch" id="branchSelect" class="form-select-custom">
                                         @foreach($branches as $branch)
-                                            <option value="{{ $branch }}">{{ $branch }}</option>
+                                            @php $bName = is_array($branch) ? $branch['name'] : $branch; @endphp
+                                            <option value="{{ $bName }}">{{ $bName }}</option>
                                         @endforeach
                                     </select>
                                 </div>
@@ -799,58 +746,35 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- Row 1: Klub Renang -->
-                            <tr>
-                                <td class="font-bold text-slate-900 whitespace-nowrap">
-                                    <div class="flex items-center gap-2">
-                                        <div class="w-7 h-7 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center text-xs">
-                                            <i class="fa-solid fa-users"></i>
+                            @foreach($priceTable as $item)
+                                <tr class="{{ $item['is_popular'] ? 'highlighted-row' : '' }}">
+                                    <td class="font-bold {{ $item['is_popular'] ? 'text-sky-800' : 'text-slate-900' }} whitespace-nowrap">
+                                        <div class="flex items-center gap-2">
+                                            <div class="w-7 h-7 rounded-lg {{ $item['is_popular'] ? 'bg-sky-200 text-sky-800' : 'bg-sky-100 text-sky-600' }} flex items-center justify-center text-xs">
+                                                <i class="fa-solid {{ str_contains($item['program'], 'Syaraf') || str_contains($item['program'], 'Hydro') ? 'fa-spa' : (str_contains($item['program'], 'Privat') ? 'fa-user-shield' : 'fa-users') }}"></i>
+                                            </div>
+                                            <span>{{ $item['program'] }}</span>
+                                            @if($item['is_popular'])
+                                                <span class="text-xs bg-sky-200 text-sky-800 font-bold px-2 py-0.5 rounded-full ml-1">Rekomendasi</span>
+                                            @endif
                                         </div>
-                                        <span>Klub Renang</span>
-                                    </div>
-                                </td>
-                                <td class="font-extrabold text-slate-900 whitespace-nowrap">
-                                    Rp500.000/bulan
-                                </td>
-                                <td class="text-slate-600">
-                                    Peserta yang ingin berlatih bersama
-                                </td>
-                                <td class="text-center whitespace-nowrap">
-                                    <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.com, saya ingin mendaftar Klub Renang di Kota Jambi.') }}" 
-                                       target="_blank" 
-                                       class="btn-primary-pill text-xs">
-                                        <span>PILIH KELAS KLUB</span>
-                                        <i class="fa-solid fa-angle-right text-xs"></i>
-                                    </a>
-                                </td>
-                            </tr>
-
-                            <!-- Row 2: Kursus Privat (Highlighted) -->
-                            <tr class="highlighted-row">
-                                <td class="font-bold text-sky-800 whitespace-nowrap">
-                                    <div class="flex items-center gap-2">
-                                        <div class="w-7 h-7 rounded-lg bg-sky-200 text-sky-800 flex items-center justify-center text-xs">
-                                            <i class="fa-solid fa-user-shield"></i>
-                                        </div>
-                                        <span>Kursus Privat</span>
-                                        <span class="text-xs bg-sky-200 text-sky-800 font-bold px-2 py-0.5 rounded-full ml-1">Fokus</span>
-                                    </div>
-                                </td>
-                                <td class="font-extrabold text-sky-800 whitespace-nowrap">
-                                    Rp1.000.000/bulan
-                                </td>
-                                <td class="text-slate-700 font-medium">
-                                    Peserta yang membutuhkan latihan lebih personal
-                                </td>
-                                <td class="text-center whitespace-nowrap">
-                                    <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.com, saya ingin mendaftar Kursus Privat renang di Kota Jambi.') }}" 
-                                       target="_blank" 
-                                       class="btn-primary-pill text-xs">
-                                        <span>DAFTAR KURSUS PRIVAT</span>
-                                        <i class="fa-solid fa-angle-right text-xs"></i>
-                                    </a>
-                                </td>
-                            </tr>
+                                    </td>
+                                    <td class="font-extrabold {{ $item['is_popular'] ? 'text-sky-800' : 'text-slate-900' }} whitespace-nowrap">
+                                        {{ $item['harga'] }}
+                                    </td>
+                                    <td class="{{ $item['is_popular'] ? 'text-slate-700 font-medium' : 'text-slate-600' }}">
+                                        {{ $item['cocok_untuk'] }}
+                                    </td>
+                                    <td class="text-center whitespace-nowrap">
+                                        <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode($item['msg']) }}" 
+                                           target="_blank" 
+                                           class="btn-primary-pill text-xs">
+                                            <span>{{ $item['action_label'] }}</span>
+                                            <i class="fa-solid fa-angle-right text-xs"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
@@ -890,7 +814,7 @@
             <div class="final-cta-checklist">
                 <span class="final-cta-check-item">
                     <i class="fa-solid fa-circle-check text-sky-600"></i>
-                    <span>Program Klub &amp; Privat</span>
+                    <span>4 Pilihan Program Latihan</span>
                 </span>
                 <span class="final-cta-check-item">
                     <i class="fa-solid fa-circle-check text-sky-600"></i>
@@ -902,7 +826,7 @@
                 </span>
                 <span class="final-cta-check-item">
                     <i class="fa-solid fa-circle-check text-sky-600"></i>
-                    <span>Kota Jambi</span>
+                    <span>9 Lokasi Kolam Jambi</span>
                 </span>
                 <span class="final-cta-check-item">
                     <i class="fa-solid fa-circle-check text-sky-600"></i>
@@ -934,36 +858,40 @@
                 <div class="location-grid-2col items-stretch">
                     <!-- Left: Description & Details -->
                     <div class="p-5 sm:p-8 md:p-10">
-                        <span class="pill-badge mb-3">LOKASI KOTA JAMBI</span>
+                        <span class="pill-badge mb-3">9 LOKASI DI KOTA JAMBI</span>
                         <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-3 break-words">
                             LOKASI LATIHAN
                         </h2>
                         <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
-                            Latihan tersedia di berbagai kolam renang di Kota Jambi, menyesuaikan domisili peserta.
+                            Latihan tersedia di 9 pilihan kolam renang Kota Jambi, menyesuaikan domisili terdekat Anda:
                         </p>
 
-                        <div class="space-y-3.5 mb-6 text-xs sm:text-sm text-slate-700">
-                            <div class="flex items-start gap-3">
-                                <i class="fa-solid fa-location-dot text-sky-600 text-base mt-0.5 flex-shrink-0"></i>
-                                <span class="leading-normal">Kolam Renang Tepian Ratu (Telanaipura, Kota Jambi)</span>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <i class="fa-solid fa-location-dot text-sky-600 text-base mt-0.5 flex-shrink-0"></i>
-                                <span class="leading-normal">Kolam Renang Kota Baru Jambi</span>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <i class="fa-solid fa-location-dot text-sky-600 text-base mt-0.5 flex-shrink-0"></i>
-                                <span class="leading-normal">Kolam Renang Sungai Kambang &amp; Mayang Mangurai</span>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <i class="fa-solid fa-location-dot text-sky-600 text-base mt-0.5 flex-shrink-0"></i>
-                                <span class="leading-normal">Kolam Renang Pribadi / Domisili Peserta di Kota Jambi</span>
-                            </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 text-xs sm:text-sm text-slate-700">
+                            @foreach($branches as $index => $branch)
+                                @php 
+                                    $bName = is_array($branch) ? $branch['name'] : $branch;
+                                    $bGmaps = is_array($branch) ? $branch['gmaps'] : ('https://www.google.com/maps/search/?api=1&query=' . rawurlencode($bName . ' Kota Jambi'));
+                                @endphp
+                                <div class="p-3 bg-white rounded-xl border border-slate-200 hover:border-sky-300 transition-colors flex items-start justify-between gap-2 shadow-xs">
+                                    <div class="flex items-start gap-2.5">
+                                        <span class="w-5 h-5 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">
+                                            {{ $index + 1 }}
+                                        </span>
+                                        <div>
+                                            <span class="font-bold text-slate-900 block leading-snug">{{ $bName }}</span>
+                                            <span class="text-xs text-slate-400">Kota Jambi</span>
+                                        </div>
+                                    </div>
+                                    <a href="{{ $bGmaps }}" target="_blank" class="text-xs text-sky-600 hover:text-sky-700 font-semibold inline-flex items-center gap-1 bg-sky-50 px-2 py-1 rounded-md border border-sky-100 flex-shrink-0">
+                                        <span>Maps</span> <i class="fa-solid fa-arrow-up-right-from-square text-2xs"></i>
+                                    </a>
+                                </div>
+                            @endforeach
                         </div>
 
                         <div class="p-3.5 bg-sky-50 rounded-xl border border-sky-100 text-xs text-slate-600 flex items-start gap-3">
                             <i class="fa-solid fa-circle-info text-sky-600 text-base mt-0.5 flex-shrink-0"></i>
-                            <span class="leading-relaxed">Menyesuaikan jadwal dan domisili terdekat peserta di Kota Jambi.</span>
+                            <span class="leading-relaxed">Silakan pilih titik lokasi terdekat dari tempat tinggal Anda untuk kenyamanan latihan.</span>
                         </div>
                     </div>
 
@@ -973,21 +901,21 @@
                             <div class="w-12 h-12 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center mx-auto mb-3 text-xl">
                                 <i class="fa-solid fa-map-location-dot"></i>
                             </div>
-                            <h4 class="text-sm font-bold text-slate-900 mb-1">TITIK KOLAM RENANG KOTA JAMBI</h4>
+                            <h4 class="text-sm font-bold text-slate-900 mb-1">9 TITIK KOLAM RENANG KOTA JAMBI</h4>
                             <p class="text-xs text-slate-500 mb-4">
-                                Latihan tersedia di berbagai kolam renang di Kota Jambi.
+                                Latihan privat &amp; kelompok tersedia di 9 lokasi terdaftar di Kota Jambi &amp; sekitarnya.
                             </p>
                             
                             <!-- Google Maps Button -->
-                            <a href="https://maps.google.com/?q=Kolam+Renang+Kota+Jambi" 
+                            <a href="https://www.google.com/maps/search/?api=1&query=Kolam+Renang+Kota+Jambi" 
                                target="_blank" 
                                class="btn-primary-pill text-xs w-full justify-center mb-3">
-                                <span>LIHAT LOKASI / GOOGLE MAPS</span>
+                                <span>BUKA GOOGLE MAPS KOTA JAMBI</span>
                                 <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                             </a>
 
                             <p class="text-xs text-slate-400 italic">
-                                Link Google Maps dapat ditambahkan setelah tersedia.
+                                Klik nama lokasi di samping untuk navigasi gmaps langsung.
                             </p>
                         </div>
                     </div>
