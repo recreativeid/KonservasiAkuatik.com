@@ -156,68 +156,70 @@
                 </p>
             </div>
 
-            <!-- 5 Cards Grid for all packages (Klub, Privat, Syaraf Terjepit, Hydroterapi, Kelas Gratis) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 lg:gap-5 max-w-[1400px] mx-auto items-stretch">
+            <!-- 5 Cards Centered Flex Layout (Klub, Privat, Syaraf Terjepit, Hydroterapi, Kelas Gratis) -->
+            <div class="pricing-flex-container">
                 @foreach($packages as $package)
-                    <div class="pricing-card {{ $package['is_popular'] ? 'popular' : '' }} w-full text-center flex flex-col justify-between items-center">
-                        @if($package['is_popular'])
-                            <!-- Top Ribbon Badge -->
-                            <div class="popular-top-badge">
-                                <i class="fa-solid fa-star text-amber-300 mr-1"></i> {{ $package['badge'] }}
-                            </div>
-                        @endif
-
-                        <div class="w-full flex flex-col items-center">
-                            <!-- Icon & Title -->
-                            <div class="flex flex-col items-center justify-center gap-2 mb-2 w-full text-center">
-                                <div class="w-10 h-10 rounded-xl {{ $package['is_popular'] ? 'bg-sky-100 text-sky-600' : (isset($package['is_free']) && $package['is_free'] ? 'bg-emerald-100 text-emerald-600' : 'bg-slate-100 text-slate-600') }} flex items-center justify-center text-base shrink-0 mb-1">
-                                    <i class="fa-solid {{ $package['id'] === 'gratis' ? 'fa-hand-holding-heart' : ($package['id'] === 'syaraf-terjepit' || $package['id'] === 'hydroterapi' ? 'fa-spa' : ($package['id'] === 'privat' ? 'fa-user-shield' : 'fa-users')) }}"></i>
+                    <div class="pricing-card-wrapper">
+                        <div class="pricing-card {{ $package['is_popular'] ? 'popular' : '' }} text-center flex flex-col justify-between items-center">
+                            @if($package['is_popular'])
+                                <!-- Top Ribbon Badge -->
+                                <div class="popular-top-badge">
+                                    <i class="fa-solid fa-star text-amber-300 mr-1"></i> {{ $package['badge'] }}
                                 </div>
-                                <h3 class="text-base font-extrabold text-slate-900 leading-snug break-words hyphens-none text-center">{{ $package['name'] }}</h3>
-                                @if(!$package['is_popular'])
-                                    <span class="text-2xs font-bold {{ isset($package['is_free']) && $package['is_free'] ? 'text-emerald-700 bg-emerald-100 border border-emerald-200' : 'text-slate-500 bg-slate-100' }} px-2.5 py-0.5 rounded-full whitespace-nowrap mt-0.5">{{ $package['badge'] }}</span>
-                                @endif
-                            </div>
+                            @endif
 
-                            <div class="text-2xs font-bold {{ isset($package['is_free']) && $package['is_free'] ? 'text-emerald-600' : 'text-sky-600' }} uppercase tracking-wide mb-2 text-center">{{ $package['subtitle'] }}</div>
-                            <p class="text-slate-600 text-xs leading-relaxed mb-3 text-center">
-                                {{ $package['description'] }}
-                            </p>
-
-                            <!-- Price Tag Box -->
-                            <div class="{{ $package['is_popular'] ? 'price-box-cyan' : (isset($package['is_free']) && $package['is_free'] ? 'price-box-green' : 'price-box-regular') }} flex flex-col items-center justify-center text-center">
-                                <div class="text-2xs {{ $package['is_popular'] ? 'text-sky-700' : (isset($package['is_free']) && $package['is_free'] ? 'text-emerald-700' : 'text-slate-500') }} font-bold uppercase tracking-wider">{{ $package['price_prefix'] }}</div>
-                                <div class="flex items-baseline justify-center gap-1 mt-0.5 flex-wrap w-full">
-                                    <span class="text-xl xl:text-2xl font-extrabold {{ $package['is_popular'] ? 'text-sky-700' : (isset($package['is_free']) && $package['is_free'] ? 'text-emerald-700' : 'text-slate-900') }} whitespace-nowrap leading-none text-center">{{ $package['price'] }}</span>
-                                    @if(!empty($package['period']))
-                                        <span class="text-xs font-semibold {{ $package['is_popular'] ? 'text-sky-600' : 'text-slate-500' }} shrink-0">{{ $package['period'] }}</span>
+                            <div class="w-full flex flex-col items-center">
+                                <!-- Icon & Title -->
+                                <div class="flex flex-col items-center justify-center gap-2 mb-2 w-full text-center">
+                                    <div class="w-10 h-10 rounded-xl {{ $package['is_popular'] ? 'bg-sky-100 text-sky-600' : (isset($package['is_free']) && $package['is_free'] ? 'bg-emerald-100 text-emerald-600' : 'bg-slate-100 text-slate-600') }} flex items-center justify-center text-base shrink-0 mb-1">
+                                        <i class="fa-solid {{ $package['id'] === 'gratis' ? 'fa-hand-holding-heart' : ($package['id'] === 'syaraf-terjepit' || $package['id'] === 'hydroterapi' ? 'fa-spa' : ($package['id'] === 'privat' ? 'fa-user-shield' : 'fa-users')) }}"></i>
+                                    </div>
+                                    <h3 class="text-base font-extrabold text-slate-900 leading-snug break-words hyphens-none text-center">{{ $package['name'] }}</h3>
+                                    @if(!$package['is_popular'])
+                                        <span class="text-2xs font-bold {{ isset($package['is_free']) && $package['is_free'] ? 'text-emerald-700 bg-emerald-100 border border-emerald-200' : 'text-slate-500 bg-slate-100' }} px-2.5 py-0.5 rounded-full whitespace-nowrap mt-0.5">{{ $package['badge'] }}</span>
                                     @endif
                                 </div>
-                                @if(!empty($package['note']))
-                                    <div class="text-2xs font-semibold {{ $package['is_popular'] ? 'text-sky-800 border-sky-200' : (isset($package['is_free']) && $package['is_free'] ? 'text-emerald-800 border-emerald-200' : 'text-slate-600 border-slate-200') }} mt-1.5 pt-1.5 border-t leading-tight w-full text-center">
-                                        <i class="fa-solid fa-clock {{ isset($package['is_free']) && $package['is_free'] ? 'text-emerald-600' : 'text-sky-600' }} mr-1"></i> {{ $package['note'] }}
+
+                                <div class="text-2xs font-bold {{ isset($package['is_free']) && $package['is_free'] ? 'text-emerald-600' : 'text-sky-600' }} uppercase tracking-wide mb-2 text-center">{{ $package['subtitle'] }}</div>
+                                <p class="text-slate-600 text-xs leading-relaxed mb-3 text-center">
+                                    {{ $package['description'] }}
+                                </p>
+
+                                <!-- Price Tag Box -->
+                                <div class="{{ $package['is_popular'] ? 'price-box-cyan' : (isset($package['is_free']) && $package['is_free'] ? 'price-box-green' : 'price-box-regular') }} flex flex-col items-center justify-center text-center">
+                                    <div class="text-2xs {{ $package['is_popular'] ? 'text-sky-700' : (isset($package['is_free']) && $package['is_free'] ? 'text-emerald-700' : 'text-slate-500') }} font-bold uppercase tracking-wider">{{ $package['price_prefix'] }}</div>
+                                    <div class="flex items-baseline justify-center gap-1 mt-0.5 flex-wrap w-full">
+                                        <span class="text-xl xl:text-2xl font-extrabold {{ $package['is_popular'] ? 'text-sky-700' : (isset($package['is_free']) && $package['is_free'] ? 'text-emerald-700' : 'text-slate-900') }} whitespace-nowrap leading-none text-center">{{ $package['price'] }}</span>
+                                        @if(!empty($package['period']))
+                                            <span class="text-xs font-semibold {{ $package['is_popular'] ? 'text-sky-600' : 'text-slate-500' }} shrink-0">{{ $package['period'] }}</span>
+                                        @endif
                                     </div>
-                                @endif
+                                    @if(!empty($package['note']))
+                                        <div class="text-2xs font-semibold {{ $package['is_popular'] ? 'text-sky-800 border-sky-200' : (isset($package['is_free']) && $package['is_free'] ? 'text-emerald-800 border-emerald-200' : 'text-slate-600 border-slate-200') }} mt-1.5 pt-1.5 border-t leading-tight w-full text-center">
+                                            <i class="fa-solid fa-clock {{ isset($package['is_free']) && $package['is_free'] ? 'text-emerald-600' : 'text-sky-600' }} mr-1"></i> {{ $package['note'] }}
+                                        </div>
+                                    @endif
+                                </div>
+
+                                <!-- Features -->
+                                <div class="space-y-2 mb-6 w-full text-center flex flex-col items-center">
+                                    @foreach($package['features'] as $feature)
+                                        <div class="flex items-center justify-center gap-1.5 text-xs text-slate-600 text-center">
+                                            <i class="fa-solid fa-circle-check {{ isset($package['is_free']) && $package['is_free'] ? 'text-emerald-600' : 'text-sky-600' }} text-xs shrink-0"></i>
+                                            <span class="leading-tight text-center">{{ $feature }}</span>
+                                        </div>
+                                    @endforeach
+                                </div>
                             </div>
 
-                            <!-- Features -->
-                            <div class="space-y-2 mb-6 w-full text-center flex flex-col items-center">
-                                @foreach($package['features'] as $feature)
-                                    <div class="flex items-center justify-center gap-1.5 text-xs text-slate-600 text-center">
-                                        <i class="fa-solid fa-circle-check {{ isset($package['is_free']) && $package['is_free'] ? 'text-emerald-600' : 'text-sky-600' }} text-xs shrink-0"></i>
-                                        <span class="leading-tight text-center">{{ $feature }}</span>
-                                    </div>
-                                @endforeach
+                            <div class="w-full">
+                                <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode($package['whatsapp_msg']) }}" 
+                                   target="_blank" 
+                                   class="{{ $package['cta_class'] }} text-xs py-2.5 w-full justify-center text-center">
+                                    <span>{{ $package['cta_text'] }}</span>
+                                    <i class="fa-solid fa-arrow-right text-2xs"></i>
+                                </a>
                             </div>
-                        </div>
-
-                        <div class="w-full">
-                            <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode($package['whatsapp_msg']) }}" 
-                               target="_blank" 
-                               class="{{ $package['cta_class'] }} text-xs py-2.5 w-full justify-center text-center">
-                                <span>{{ $package['cta_text'] }}</span>
-                                <i class="fa-solid fa-arrow-right text-2xs"></i>
-                            </a>
                         </div>
                     </div>
                 @endforeach
