@@ -863,7 +863,7 @@
             </div>
 
             <!-- Secretariat Address Banner -->
-            <div class="max-w-5xl mx-auto mb-8 p-4 sm:p-6 bg-white border border-sky-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
+            <div class="secretariat-banner-card">
                 <div class="flex items-center gap-3.5 text-center sm:text-left">
                     <div class="w-10 h-10 rounded-xl bg-sky-600 text-white flex items-center justify-center font-bold text-base shrink-0">
                         <i class="fa-solid fa-building-flag"></i>
@@ -882,23 +882,23 @@
             </div>
 
             <!-- 9 Locations Grid (3 Columns on Desktop, 2 on Tablet, 1 on Mobile) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 max-w-5xl mx-auto mb-8">
+            <div class="location-grid-3col">
                 @foreach($branches as $index => $branch)
                     @php 
                         $bName = is_array($branch) ? $branch['name'] : $branch;
                         $bGmaps = is_array($branch) ? $branch['gmaps'] : ('https://www.google.com/maps/search/?api=1&query=' . rawurlencode($bName . ' Kota Jambi'));
                     @endphp
-                    <div class="p-3.5 bg-white rounded-xl border border-slate-200/90 hover:border-sky-300 hover:shadow-md transition-all flex items-center justify-between gap-2.5 shadow-xs">
+                    <div class="location-card-item">
                         <div class="flex items-center gap-3 min-w-0">
-                            <span class="w-6 h-6 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-xs shrink-0">
+                            <span class="location-num-badge">
                                 {{ $index + 1 }}
                             </span>
-                            <div class="min-w-0">
-                                <span class="font-bold text-slate-900 text-xs sm:text-sm block leading-snug truncate">{{ $bName }}</span>
-                                <span class="text-2xs text-slate-400 font-medium">Kota Jambi</span>
+                            <div class="location-info-content">
+                                <span class="location-title-name" title="{{ $bName }}">{{ $bName }}</span>
+                                <span class="location-sub-label">Kota Jambi</span>
                             </div>
                         </div>
-                        <a href="{{ $bGmaps }}" target="_blank" class="text-xs text-sky-600 hover:text-sky-700 font-semibold inline-flex items-center gap-1 bg-sky-50 hover:bg-sky-100 px-2.5 py-1.5 rounded-lg border border-sky-100 shrink-0 whitespace-nowrap transition-colors">
+                        <a href="{{ $bGmaps }}" target="_blank" class="location-map-btn">
                             <span>Maps</span>
                             <i class="fa-solid fa-arrow-up-right-from-square text-2xs"></i>
                         </a>

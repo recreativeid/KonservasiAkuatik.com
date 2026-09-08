@@ -55,7 +55,7 @@
         <div class="container-custom flex items-center justify-between py-4">
             <!-- Brand Logo (Main Logo Image Only) -->
             <a href="{{ route('home') }}" class="brand-logo inline-flex items-center">
-                <img src="{{ asset('images/logo_utama.jpg') }}" alt="Konservasi Akuatik" class="h-8 sm:h-10 w-auto max-w-[160px] sm:max-w-[200px] object-contain transition-transform hover:scale-105">
+                <img src="{{ asset('images/logo_utama.jpg') }}" alt="Konservasi Akuatik" class="brand-logo-img" style="height:38px; max-height:38px; width:auto; max-width:180px; object-fit:contain;">
             </a>
 
             <!-- Desktop Nav Items -->
