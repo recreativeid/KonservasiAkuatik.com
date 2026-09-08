@@ -87,8 +87,8 @@
                 </div>
             </div>
 
-            <!-- Hero Tablet 3D Showcase (Aceternity UI Container Scroll Animation) -->
-            <div class="tablet-scroll-container w-full max-w-5xl mx-auto relative z-10 mt-8 md:mt-12 mb-6 md:mb-10" id="tabletScrollContainer">
+            <!-- Hero Tablet 3D Showcase (Aceternity UI Container Scroll Animation - Large 3:4 Portrait Tablet) -->
+            <div class="tablet-scroll-container w-full max-w-4xl mx-auto relative z-10 mt-8 md:mt-12 mb-6 md:mb-10" id="tabletScrollContainer">
                 <div class="tablet-scroll-wrapper" style="perspective: 1000px;">
                     <!-- 3D Tablet Frame Device Mockup -->
                     <div class="tablet-card shadow-2xl transition-transform duration-75 ease-out" id="tabletCard">

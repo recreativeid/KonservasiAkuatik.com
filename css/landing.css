@@ -653,14 +653,15 @@ img {
 }
 
 .tablet-card {
-    max-width: 64rem; /* max-w-5xl */
+    max-width: 46rem; /* Large portrait width for 3:4 aspect ratio */
     margin: 1.5rem auto 0 auto;
     width: 100%;
-    height: 30rem; /* Mobile height: 30rem */
-    border: 4px solid #6C6C6C;
-    padding: 0.5rem;
+    aspect-ratio: 3 / 4;
+    height: auto;
+    border: 5px solid #6C6C6C;
+    padding: 0.65rem;
     background-color: #222222;
-    border-radius: 30px;
+    border-radius: 36px;
     box-shadow: 0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042, 0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003;
     transform-style: preserve-3d;
     will-change: transform;
@@ -669,25 +670,17 @@ img {
 
 @media (max-width: 639px) {
     .tablet-card {
-        height: 22rem;
-        border-radius: 22px;
-        padding: 0.35rem;
-        border-width: 3.5px;
-    }
-}
-
-@media (min-width: 640px) and (max-width: 767px) {
-    .tablet-card {
-        height: 28rem;
+        padding: 0.4rem;
+        border-width: 4px;
         border-radius: 26px;
     }
 }
 
 @media (min-width: 768px) {
     .tablet-card {
-        height: 40rem; /* Desktop height: 40rem (h-[30rem] md:h-[40rem]) */
-        padding: 1.25rem;
+        padding: 1.15rem;
         border-width: 6px;
+        border-radius: 42px;
     }
 }
 
