@@ -67,11 +67,11 @@
 
             <!-- Desktop Nav Items -->
             <nav class="desktop-nav">
-                <a href="#program" class="nav-link">Program</a>
-                <a href="#untuk-siapa" class="nav-link">Untuk Siapa</a>
-                <a href="#jadwal" class="nav-link">Jadwal</a>
-                <a href="#kenapa-kami" class="nav-link">Kenapa Kami</a>
-                <a href="#lokasi" class="nav-link">Lokasi</a>
+                <a href="#program" class="nav-link">Program Latihan</a>
+                <a href="#untuk-siapa" class="nav-link">Kategori Peserta</a>
+                <a href="#jadwal" class="nav-link">Jadwal Latihan</a>
+                <a href="#kenapa-kami" class="nav-link">Keunggulan</a>
+                <a href="#lokasi" class="nav-link">Lokasi Latihan</a>
             </nav>
 
             <!-- Header Right Action -->
@@ -97,13 +97,13 @@
         <!-- Mobile Drawer Menu -->
         <div class="mobile-drawer hidden" id="mobileDrawer">
             <div class="flex flex-col gap-3.5 px-6 py-6 bg-white border-t border-slate-100 shadow-xl">
-                <a href="#program" class="mobile-link">Program Kami</a>
-                <a href="#untuk-siapa" class="mobile-link">Untuk Siapa Program Ini?</a>
+                <a href="#program" class="mobile-link">Program Latihan</a>
+                <a href="#untuk-siapa" class="mobile-link">Kategori Peserta</a>
                 <a href="#jadwal" class="mobile-link">Jadwal Latihan</a>
-                <a href="#kenapa-kami" class="mobile-link">Kenapa Konservasi Akuatik?</a>
+                <a href="#kenapa-kami" class="mobile-link">Keunggulan Kami</a>
                 <a href="#prestasi" class="mobile-link">Prestasi &amp; Milestone</a>
-                <a href="#kegiatan" class="mobile-link">Kegiatan Latihan</a>
-                <a href="#testimoni" class="mobile-link">Cerita &amp; Testimoni Peserta</a>
+                <a href="#kegiatan" class="mobile-link">Dokumentasi Latihan</a>
+                <a href="#testimoni" class="mobile-link">Testimoni Peserta</a>
                 <a href="#lokasi" class="mobile-link">Lokasi Latihan</a>
                 <hr class="border-slate-100 my-2">
                 <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.com, saya ingin konsultasi dan mendaftar kursus renang di Kota Jambi.') }}" 

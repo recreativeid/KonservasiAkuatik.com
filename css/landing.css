@@ -356,6 +356,7 @@ img {
     transition: color 0.2s ease;
     text-decoration: none;
     letter-spacing: -0.01em;
+    white-space: nowrap;
 }
 
 .desktop-nav a.nav-link:hover {
