@@ -249,18 +249,45 @@ document.addEventListener('DOMContentLoaded', function () {
             audioToggleBtn.addEventListener('click', toggleAudio);
         }
 
-        // Clicking tablet screen video also toggles audio
-        const tabletScreen = document.querySelector('.tablet-screen');
-        if (tabletScreen) {
-            tabletScreen.addEventListener('click', (e) => {
-                // Avoid double triggering if clicking directly on link/badge
-                if (!e.target.closest('a')) {
-                    toggleAudio(e);
-                }
-            });
+        // 7. Page Visibility API & IntersectionObserver Video Lifecycle Management
+        const bgVid = document.querySelector('.hero-bg-video');
+
+        // Pause video when tab is in background, resume when active
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                if (heroVid && !heroVid.paused) heroVid.pause();
+                if (bgVid && !bgVid.paused) bgVid.pause();
+            } else {
+                if (heroVid && heroVid.paused) heroVid.play().catch(() => {});
+                if (bgVid && bgVid.paused) bgVid.play().catch(() => {});
+            }
+        });
+
+        // Pause video when scrolled out of viewport, play when in view
+        if ('IntersectionObserver' in window) {
+            const videoObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        if (heroVid && heroVid.paused) heroVid.play().catch(() => {});
+                    } else {
+                        if (heroVid && !heroVid.paused) heroVid.pause();
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            if (tabletContainer) videoObserver.observe(tabletContainer);
         }
     }
+
+    // 8. Auto Cache Clean & Fresh State on BFCache Restore / Re-enter
+    window.addEventListener('pageshow', (event) => {
+        if (event.persisted) {
+            // Force cache refresh if restored from back-forward cache
+            window.location.reload();
+        }
+    });
 });
+
 
 
 

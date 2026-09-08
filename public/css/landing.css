@@ -655,6 +655,22 @@ img {
     position: relative;
 }
 
+@media (max-width: 639px) {
+    .tablet-card {
+        height: 22rem;
+        border-radius: 22px;
+        padding: 0.35rem;
+        border-width: 3.5px;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+    .tablet-card {
+        height: 28rem;
+        border-radius: 26px;
+    }
+}
+
 @media (min-width: 768px) {
     .tablet-card {
         height: 40rem; /* Desktop height: 40rem (h-[30rem] md:h-[40rem]) */
@@ -727,10 +743,13 @@ img {
     box-shadow: 0 6px 20px rgba(2, 132, 199, 0.4);
 }
 
-.tablet-audio-btn.audio-active {
-    background: rgba(2, 132, 199, 0.95);
-    border-color: rgba(56, 189, 248, 0.6);
-    box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+@media (max-width: 639px) {
+    .tablet-audio-btn {
+        top: 0.5rem;
+        right: 0.5rem;
+        padding: 0.35rem 0.75rem;
+        font-size: 0.7rem;
+    }
 }
 
 .tablet-screen-glow {
