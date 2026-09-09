@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Klub & Kursus Renang untuk Semua Usia di Kota Jambi - KonservasiAkuatik.com')
+@section('title', 'Klub & Kursus Renang untuk Semua Usia di Kota Jambi - konservasiakuatik.fund')
 
 @section('content')
 
@@ -41,7 +41,7 @@
 
                 <!-- Subtitle / Paragraph -->
                 <p class="hero-subtitle mb-7 max-w-2xl mx-auto">
-                    KonservasiAkuatik.com hadir sebagai klub dan kursus renang untuk membantu siapa saja mulai dari balita, anak-anak, remaja, hingga orang tua agar semakin percaya diri dan mampu berenang dengan baik.
+                    konservasiakuatik.fund hadir sebagai klub dan kursus renang untuk membantu siapa saja mulai dari balita, anak-anak, remaja, hingga orang tua agar semakin percaya diri dan mampu berenang dengan baik.
                 </p>
 
                 <!-- Location Sub-note -->
@@ -58,7 +58,7 @@
                         <span>DAFTAR KURSUS SEKARANG</span>
                         <i class="fa-solid fa-arrow-right text-xs"></i>
                     </a>
-                    <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.com, saya ingin konsultasi dan tanya info pendaftaran kursus renang di Kota Jambi.') }}" 
+                    <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo konservasiakuatik.fund, saya ingin konsultasi dan tanya info pendaftaran kursus renang di Kota Jambi.') }}" 
                        target="_blank" 
                        class="btn-hero-secondary hero-btn-glass w-full sm:w-auto">
                         <i class="fa-brands fa-whatsapp text-emerald-500 text-base"></i>
@@ -230,7 +230,7 @@
                     Tidak perlu khawatir jika masih pemula.
                 </p>
                 <p class="text-slate-600 text-xs sm:text-sm">
-                    KonservasiAkuatik.com membuka program untuk:
+                    konservasiakuatik.fund membuka program untuk:
                 </p>
             </div>
 
@@ -489,7 +489,7 @@
                                 <div>
                                     <h4 class="text-sm sm:text-base font-bold text-slate-900">One Prestasi</h4>
                                     <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                                        Berbagai pencapaian menjadi bagian dari perjalanan dan perkembangan peserta KonservasiAkuatik.com.
+                                        Berbagai pencapaian menjadi bagian dari perjalanan dan perkembangan peserta konservasiakuatik.fund.
                                     </p>
                                 </div>
                             </div>
@@ -517,7 +517,7 @@
                         Karena setiap peserta memiliki proses dan pencapaian masing-masing.
                     </p>
 
-                    <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.com, saya ingin konsultasi perkembangan kemampuan renang untuk memulai di Kota Jambi.') }}" 
+                    <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo konservasiakuatik.fund, saya ingin konsultasi perkembangan kemampuan renang untuk memulai di Kota Jambi.') }}" 
                        target="_blank" 
                        class="text-xs sm:text-sm font-bold text-sky-600 hover:text-sky-700 inline-flex items-center gap-1.5 transition-colors">
                         <span>Konsultasikan target kemampuan renang Anda bersama tim kami</span>
@@ -528,13 +528,13 @@
                 <!-- Right: Coach Photo with Quote Overlay -->
                 <div>
                     <div class="coach-photo-wrapper">
-                        <img src="{{ asset('images/coach.jpg') }}" alt="Pelatih Utama KonservasiAkuatik.com Kota Jambi" loading="lazy">
+                        <img src="{{ asset('images/coach.jpg') }}" alt="Pelatih Utama konservasiakuatik.fund Kota Jambi" loading="lazy">
                         <div class="coach-photo-overlay">
                             <p class="text-sm sm:text-base font-bold italic text-white mb-2 leading-relaxed">
                                 «"Dari takut air menjadi percaya diri. Dari belum bisa berenang menjadi mampu berenang."»
                             </p>
                             <span class="text-xs text-sky-200 font-semibold tracking-wider uppercase">
-                                — Pelatih Utama KonservasiAkuatik.com
+                                — Pelatih Utama konservasiakuatik.fund
                             </span>
                         </div>
                     </div>
@@ -604,7 +604,7 @@
             <!-- Bottom Note -->
             <div class="p-4 bg-sky-50/80 rounded-2xl border border-sky-100 text-xs sm:text-sm text-slate-600 text-center max-w-2xl mx-auto flex items-center justify-center gap-2 shadow-xs">
                 <i class="fa-solid fa-circle-check text-sky-600 text-base shrink-0"></i>
-                <span>Dokumentasi asli kegiatan latihan renang bersama tim pelatih KonservasiAkuatik.com di berbagai kolam renang Kota Jambi.</span>
+                <span>Dokumentasi asli kegiatan latihan renang bersama tim pelatih konservasiakuatik.fund di berbagai kolam renang Kota Jambi.</span>
             </div>
         </div>
     </section>
@@ -788,7 +788,7 @@
                 <p class="text-sm font-semibold text-slate-700 mb-2">
                     Belum yakin memilih program yang mana?
                 </p>
-                <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.com, saya ingin konsultasi kebutuhan program renang yang cocok untuk saya/keluarga saya di Kota Jambi.') }}" 
+                <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo konservasiakuatik.fund, saya ingin konsultasi kebutuhan program renang yang cocok untuk saya/keluarga saya di Kota Jambi.') }}" 
                    target="_blank" 
                    class="text-xs sm:text-sm font-bold text-sky-600 hover:text-sky-700 inline-flex items-center gap-1.5 transition-colors">
                     <i class="fa-brands fa-whatsapp text-emerald-500 text-base"></i>
@@ -810,7 +810,7 @@
                 Jangan biarkan rasa takut terhadap air menjadi penghalang.
             </p>
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
-                Mulai perjalanan berenang Anda bersama KonservasiAkuatik.com.
+                Mulai perjalanan berenang Anda bersama konservasiakuatik.fund.
             </p>
 
             <!-- 5 Checklist Items from User -->
@@ -839,7 +839,7 @@
 
             <!-- WhatsApp CTA Button -->
             <div>
-                <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.com, saya siap mulai belajar berenang di Kota Jambi. Mohon panduan pendaftarannya.') }}" 
+                <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo konservasiakuatik.fund, saya siap mulai belajar berenang di Kota Jambi. Mohon panduan pendaftarannya.') }}" 
                    target="_blank" 
                    class="btn-final-whatsapp">
                     <i class="fa-brands fa-whatsapp text-xl"></i>
@@ -929,7 +929,7 @@
             </div>
 
             <!-- Partner Logos Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-7xl mx-auto items-stretch justify-center">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-5 max-w-7xl mx-auto items-stretch justify-center">
                 <!-- Partner 1: Akuatik Indonesia -->
                 <div class="partner-card-box group">
                     <div class="partner-card-logo-wrap mb-0">
@@ -937,7 +937,7 @@
                     </div>
                 </div>
 
-                <!-- Partner 2: The Jambi Times & Voice of Jakarta -->
+                <!-- Partner 2: The Jambi Times & Voice of Jakarta (Side-by-side in one column) -->
                 <div class="partner-card-box group">
                     <div class="partner-card-logo-wrap media-partner-dual-wrap">
                         <img src="{{ asset('images/the_jambi_time.jpeg') }}" alt="The Jambi Times" class="logo-jt">
@@ -947,30 +947,39 @@
                     <span class="text-2xs text-slate-400 font-medium mt-0.5">Media Partner</span>
                 </div>
 
-                <!-- Partner 3: Konservasi Akuatik Air Indonesia -->
+                <!-- Partner 3: Aquatic Conservation Foundation -->
+                <div class="partner-card-box group">
+                    <div class="partner-card-logo-wrap">
+                        <img src="{{ asset('images/aquatic_conservation_foundation.jpg') }}" alt="Aquatic Conservation Foundation">
+                    </div>
+                    <span class="text-xs font-bold text-slate-800 text-center leading-tight">Aquatic Conservation Foundation</span>
+                    <span class="text-2xs text-slate-400 font-medium mt-0.5">Asosiasi &amp; Konservasi</span>
+                </div>
+
+                <!-- Partner 4: Konservasi Akuatik Air Indonesia -->
                 <div class="partner-card-box group">
                     <div class="partner-card-logo-wrap">
                         <img src="{{ asset('images/logo_konservasi_akuatik_air_indonesia.png') }}" alt="Konservasi Akuatik Air Indonesia">
                     </div>
-                    <span class="text-xs font-bold text-slate-800">Konservasi Akuatik Air Indonesia</span>
+                    <span class="text-xs font-bold text-slate-800 text-center leading-tight">Konservasi Akuatik Air Indonesia</span>
                     <span class="text-2xs text-slate-400 font-medium mt-0.5">Asosiasi Olahraga Akuatik</span>
                 </div>
 
-                <!-- Partner 4: Fisioterapi & Hidroterapi -->
+                <!-- Partner 5: Fisioterapi & Hidroterapi -->
                 <div class="partner-card-box group">
                     <div class="partner-card-logo-wrap">
                         <img src="{{ asset('images/logo_partner2.jpg') }}" alt="Fisioterapi & Hidroterapi">
                     </div>
-                    <span class="text-xs font-bold text-slate-800">Fisioterapi &amp; Hidroterapi</span>
+                    <span class="text-xs font-bold text-slate-800 text-center leading-tight">Fisioterapi &amp; Hidroterapi</span>
                     <span class="text-2xs text-slate-400 font-medium mt-0.5">Pemulihan Gerak Di Air</span>
                 </div>
 
-                <!-- Partner 5: Pusat Terapi HNP -->
+                <!-- Partner 6: Pusat Terapi HNP -->
                 <div class="partner-card-box group">
                     <div class="partner-card-logo-wrap">
                         <img src="{{ asset('images/logo_partner3.jpg') }}" alt="Pusat Terapi HNP & Syaraf Terjepit">
                     </div>
-                    <span class="text-xs font-bold text-slate-800">Pusat Terapi HNP</span>
+                    <span class="text-xs font-bold text-slate-800 text-center leading-tight">Pusat Terapi HNP</span>
                     <span class="text-2xs text-slate-400 font-medium mt-0.5">Syaraf Terjepit &amp; Rehabilitasi Air</span>
                 </div>
             </div>

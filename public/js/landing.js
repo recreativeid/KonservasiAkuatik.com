@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // WhatsApp Message setup
             const basePhone = '6281366878833';
-            const textMsg = `Halo KonservasiAkuatik.com, saya ingin konfirmasi jadwal latihan dan ketersediaan slot di: *${branchVal}* (${slotVal}). Mohon informasi pendaftarannya. Terima kasih!`;
+            const textMsg = `Halo konservasiakuatik.fund, saya ingin konfirmasi jadwal latihan dan ketersediaan slot di: *${branchVal}* (${slotVal}). Mohon informasi pendaftarannya. Terima kasih!`;
             const waUrl = `https://wa.me/${basePhone}?text=${encodeURIComponent(textMsg)}`;
 
             // Populate modal

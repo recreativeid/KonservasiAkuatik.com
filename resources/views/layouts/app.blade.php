@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>@yield('title', 'Klub & Kursus Renang untuk Semua Usia di Kota Jambi - KonservasiAkuatik.com')</title>
-    <meta name="description" content="KonservasiAkuatik.com hadir sebagai klub dan kursus renang untuk membantu siapa saja mulai dari balita, anak-anak, remaja, hingga orang tua agar semakin percaya diri dan mampu berenang dengan baik di Kota Jambi.">
+    <title>@yield('title', 'Klub & Kursus Renang untuk Semua Usia di Kota Jambi - konservasiakuatik.fund')</title>
+    <meta name="description" content="konservasiakuatik.fund hadir sebagai klub dan kursus renang untuk membantu siapa saja mulai dari balita, anak-anak, remaja, hingga orang tua agar semakin percaya diri dan mampu berenang dengan baik di Kota Jambi.">
     <meta name="keywords" content="klub renang jambi, kursus renang kota jambi, les renang anak jambi, privat renang jambi, pelatih renang kota jambi, renang balita jambi">
     <!-- Cache Control Headers for Fresh State -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <meta name="author" content="KonservasiAkuatik.com">
+    <meta name="author" content="konservasiakuatik.fund">
     
     <!-- Open Graph / WhatsApp / Facebook Link Preview -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:title" content="Klub &amp; Kursus Renang untuk Semua Usia di Kota Jambi - KonservasiAkuatik.com">
-    <meta property="og:description" content="Belajar berenang lebih cepat, percaya diri, dan menyenangkan di Kota Jambi bersama KonservasiAkuatik.com.">
+    <meta property="og:title" content="Klub &amp; Kursus Renang untuk Semua Usia di Kota Jambi - konservasiakuatik.fund">
+    <meta property="og:description" content="Belajar berenang lebih cepat, percaya diri, dan menyenangkan di Kota Jambi bersama konservasiakuatik.fund.">
     <meta property="og:image" content="{{ asset('images/logo_utama.jpg') }}">
 
     <!-- Twitter / Messaging Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Klub &amp; Kursus Renang untuk Semua Usia di Kota Jambi - KonservasiAkuatik.com">
-    <meta name="twitter:description" content="Belajar berenang lebih cepat, percaya diri, dan menyenangkan di Kota Jambi bersama KonservasiAkuatik.com.">
+    <meta name="twitter:title" content="Klub &amp; Kursus Renang untuk Semua Usia di Kota Jambi - konservasiakuatik.fund">
+    <meta name="twitter:description" content="Belajar berenang lebih cepat, percaya diri, dan menyenangkan di Kota Jambi bersama konservasiakuatik.fund.">
     <meta name="twitter:image" content="{{ asset('images/logo_utama.jpg') }}">
 
     <!-- Theme Color & Favicon Logo Utama -->
@@ -51,7 +51,7 @@
     <div class="announcement-bar">
         <div class="container-custom flex items-center justify-center text-center text-xs sm:text-sm font-medium py-2">
             <span>
-                <strong class="font-bold">KonservasiAkuatik.com</strong> • Klub &amp; Kursus Renang untuk Semua Usia di Kota Jambi • 
+                <strong class="font-bold">konservasiakuatik.fund</strong> • Klub &amp; Kursus Renang untuk Semua Usia di Kota Jambi • 
                 <a href="#program" class="underline hover:text-sky-600 transition-colors font-semibold ml-1">Pilih Program Kami <i class="fa-solid fa-angle-right text-xs"></i></a>
             </span>
         </div>
@@ -76,7 +76,7 @@
 
             <!-- Header Right Action -->
             <div class="header-actions">
-                <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.com, saya ingin bertanya seputar klub dan kursus renang di Kota Jambi.') }}" 
+                <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo konservasiakuatik.fund, saya ingin bertanya seputar klub dan kursus renang di Kota Jambi.') }}" 
                    target="_blank" 
                    class="contact-link flex items-center gap-1.5 text-xs font-semibold text-slate-600 hover:text-sky-600 transition-colors">
                     <i class="fa-brands fa-whatsapp text-emerald-500 text-base"></i>
@@ -106,7 +106,7 @@
                 <a href="#testimoni" class="mobile-link">Testimoni Peserta</a>
                 <a href="#lokasi" class="mobile-link">Lokasi Latihan</a>
                 <hr class="border-slate-100 my-2">
-                <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.com, saya ingin konsultasi dan mendaftar kursus renang di Kota Jambi.') }}" 
+                <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo konservasiakuatik.fund, saya ingin konsultasi dan mendaftar kursus renang di Kota Jambi.') }}" 
                    target="_blank" 
                    class="btn-primary-pill justify-center text-center w-full">
                     <i class="fa-brands fa-whatsapp text-base"></i>
@@ -171,7 +171,7 @@
 
             <!-- Bottom Copyright (Centered) -->
             <div class="pt-6 border-t border-slate-200/80 flex flex-col items-center justify-center text-center text-xs text-slate-500 gap-2.5">
-                <p class="text-center">© {{ date('Y') }} KonservasiAkuatik.com. All rights reserved. Kota Jambi.</p>
+                <p class="text-center">© {{ date('Y') }} konservasiakuatik.fund. All rights reserved. Kota Jambi.</p>
                 <a href="#hero" class="hover:text-sky-600 transition-colors font-medium inline-flex items-center justify-center gap-1">
                     <span>Kembali ke Atas</span>
                     <i class="fa-solid fa-arrow-up text-xs"></i>
@@ -182,7 +182,7 @@
 
     <!-- Floating WhatsApp Button -->
     <div class="floating-wa-container">
-        <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.com, saya ingin konsultasi dan tanya jadwal kursus renang di Kota Jambi.') }}" 
+        <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo konservasiakuatik.fund, saya ingin konsultasi dan tanya jadwal kursus renang di Kota Jambi.') }}" 
            target="_blank" 
            class="floating-wa-btn" 
            title="Chat WhatsApp Konsultasi Gratis">
