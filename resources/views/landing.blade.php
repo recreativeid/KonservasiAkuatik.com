@@ -947,21 +947,21 @@
 
             <!-- Partner Logos Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-7xl mx-auto items-stretch justify-center">
-                <!-- Partner 1: The Jambi Time -->
+                <!-- Partner 1: Akuatik Indonesia -->
                 <div class="partner-card-box group">
-                    <div class="partner-card-logo-wrap">
-                        <img src="{{ asset('images/the_jambi_time.jpeg') }}" alt="The Jambi Time">
+                    <div class="partner-card-logo-wrap mb-0">
+                        <img src="{{ asset('images/akuatik_indonesia.jpeg') }}" alt="Akuatik Indonesia">
                     </div>
-                    <span class="text-xs font-bold text-slate-800">The Jambi Time</span>
-                    <span class="text-2xs text-slate-400 font-medium mt-0.5">Media Partner</span>
                 </div>
 
-                <!-- Partner 2: Voice of Indonesia -->
+                <!-- Partner 2: The Jambi Time & Voice of Jakarta -->
                 <div class="partner-card-box group">
-                    <div class="partner-card-logo-wrap">
-                        <img src="{{ asset('images/voice_of_indonesia.jpeg') }}" alt="Voice of Indonesia">
+                    <div class="partner-card-logo-wrap flex items-center justify-center gap-2 px-1">
+                        <img src="{{ asset('images/the_jambi_time.jpeg') }}" alt="The Jambi Time" class="max-h-12 w-auto max-w-[46%] object-contain">
+                        <div class="h-8 w-px bg-slate-200 shrink-0"></div>
+                        <img src="{{ asset('images/voice_of_jakarta.jpeg') }}" alt="Voice of Jakarta" class="max-h-8 w-auto max-w-[46%] object-contain">
                     </div>
-                    <span class="text-xs font-bold text-slate-800">Voice of Indonesia</span>
+                    <span class="text-xs font-bold text-slate-800 text-center leading-tight">The Jambi Time &amp; Voice of Jakarta</span>
                     <span class="text-2xs text-slate-400 font-medium mt-0.5">Media Partner</span>
                 </div>
 

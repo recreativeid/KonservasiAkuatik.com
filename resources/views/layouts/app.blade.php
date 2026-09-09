@@ -163,6 +163,10 @@
                     <span>Buka Peta Google Maps</span>
                     <i class="fa-solid fa-arrow-up-right-from-square text-2xs no-mr"></i>
                 </a>
+                <div class="mt-3 pt-3 border-t border-sky-200/60 flex items-center justify-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-700">
+                    <i class="fa-solid fa-envelope text-sky-600 mr-1"></i>
+                    <span>Email: <a href="mailto:konservasiakuatik.com@gmail.com" class="text-sky-600 hover:text-sky-700 hover:underline">konservasiakuatik.com@gmail.com</a></span>
+                </div>
             </div>
 
             <!-- Bottom Copyright (Centered) -->
