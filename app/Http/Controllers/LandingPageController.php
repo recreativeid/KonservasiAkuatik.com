@@ -11,8 +11,8 @@ class LandingPageController extends Controller
      */
     public function index()
     {
-        $whatsappNumber = '6281234567890';
-        $whatsappDisplay = '0812-3456-7890';
+        $whatsappNumber = '6281366878833';
+        $whatsappDisplay = '0813-6687-8833';
 
         $packages = [
             [
@@ -380,7 +380,7 @@ class LandingPageController extends Controller
     {
         $branch = $request->input('branch', 'Kota Jambi');
         $slot = $request->input('slot', 'Pagi Hari (06.00 - 08.00 WIB)');
-        $phone = '6281234567890';
+        $phone = '6281366878833';
 
         $text = rawurlencode("Halo KonservasiAkuatik.com, saya ingin informasi jadwal latihan dan ketersediaan slot di: {$branch} ({$slot}).");
         $waUrl = "https://wa.me/{$phone}?text={$text}";

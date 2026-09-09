@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const slotVal = slotSelect ? slotSelect.value : 'Sore - Malam';
 
             // WhatsApp Message setup
-            const basePhone = '6281234567890';
+            const basePhone = '6281366878833';
             const textMsg = `Halo KonservasiAkuatik.com, saya ingin konfirmasi jadwal latihan dan ketersediaan slot di: *${branchVal}* (${slotVal}). Mohon informasi pendaftarannya. Terima kasih!`;
             const waUrl = `https://wa.me/${basePhone}?text=${encodeURIComponent(textMsg)}`;
 

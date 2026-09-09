@@ -946,17 +946,26 @@
             </div>
 
             <!-- Partner Logos Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto items-stretch justify-center">
-                <!-- Partner 1: The Jambi Times -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-7xl mx-auto items-stretch justify-center">
+                <!-- Partner 1: The Jambi Time -->
                 <div class="partner-card-box group">
                     <div class="partner-card-logo-wrap">
-                        <img src="{{ asset('images/logo_akuatik_indonesia.png') }}" alt="The Jambi Times">
+                        <img src="{{ asset('images/the_jambi_time.jpeg') }}" alt="The Jambi Time">
                     </div>
-                    <span class="text-xs font-bold text-slate-800">The Jambi Times</span>
-                    <span class="text-2xs text-slate-400 font-medium mt-0.5">Voice of Jakarta</span>
+                    <span class="text-xs font-bold text-slate-800">The Jambi Time</span>
+                    <span class="text-2xs text-slate-400 font-medium mt-0.5">Media Partner</span>
                 </div>
 
-                <!-- Partner 2: Konservasi Akuatik Air Indonesia -->
+                <!-- Partner 2: Voice of Indonesia -->
+                <div class="partner-card-box group">
+                    <div class="partner-card-logo-wrap">
+                        <img src="{{ asset('images/voice_of_indonesia.jpeg') }}" alt="Voice of Indonesia">
+                    </div>
+                    <span class="text-xs font-bold text-slate-800">Voice of Indonesia</span>
+                    <span class="text-2xs text-slate-400 font-medium mt-0.5">Media Partner</span>
+                </div>
+
+                <!-- Partner 3: Konservasi Akuatik Air Indonesia -->
                 <div class="partner-card-box group">
                     <div class="partner-card-logo-wrap">
                         <img src="{{ asset('images/logo_konservasi_akuatik_air_indonesia.png') }}" alt="Konservasi Akuatik Air Indonesia">
@@ -965,7 +974,7 @@
                     <span class="text-2xs text-slate-400 font-medium mt-0.5">Asosiasi Olahraga Akuatik</span>
                 </div>
 
-                <!-- Partner 3: Fisioterapi & Hidroterapi -->
+                <!-- Partner 4: Fisioterapi & Hidroterapi -->
                 <div class="partner-card-box group">
                     <div class="partner-card-logo-wrap">
                         <img src="{{ asset('images/logo_partner2.jpg') }}" alt="Fisioterapi & Hidroterapi">
@@ -974,7 +983,7 @@
                     <span class="text-2xs text-slate-400 font-medium mt-0.5">Pemulihan Gerak Di Air</span>
                 </div>
 
-                <!-- Partner 4: Pusat Terapi HNP -->
+                <!-- Partner 5: Pusat Terapi HNP -->
                 <div class="partner-card-box group">
                     <div class="partner-card-logo-wrap">
                         <img src="{{ asset('images/logo_partner3.jpg') }}" alt="Pusat Terapi HNP & Syaraf Terjepit">
