@@ -1912,5 +1912,63 @@ img {
 .ml-1\.5 { margin-left: 0.45rem !important; }
 .ml-2 { margin-left: 0.6rem !important; }
 
+/* Price Single Line Box */
+.price-single-box {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.3rem !important;
+    white-space: nowrap !important;
+    padding: 0.38rem 0.4rem !important;
+    border-radius: 0.65rem !important;
+    margin: 0.45rem 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+}
+
+.price-single-box .price-label-text {
+    font-size: 0.7rem !important;
+    font-weight: 500 !important;
+    color: #64748b !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.01em !important;
+}
+
+.price-single-box .price-amount-highlight {
+    font-size: 0.735rem !important;
+    font-weight: 600 !important;
+    color: #0284c7 !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.01em !important;
+}
+
+.price-single-box.is-popular {
+    background: #f0f9ff !important;
+    border-color: #bae6fd !important;
+}
+.price-single-box.is-popular .price-amount-highlight {
+    color: #0284c7 !important;
+}
+
+.price-single-box.is-free {
+    background: #ecfdf5 !important;
+    border-color: #a7f3d0 !important;
+}
+.price-single-box.is-free .price-amount-highlight {
+    color: #059669 !important;
+}
+
+.price-single-box.is-perwira {
+    background: #fffbeb !important;
+    border-color: #fde68a !important;
+}
+.price-single-box.is-perwira .price-amount-highlight {
+    color: #d97706 !important;
+}
+
+
 
 

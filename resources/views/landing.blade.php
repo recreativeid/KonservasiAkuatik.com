@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Klub & Kursus Renang untuk Semua Usia di Kota Jambi - konservasiakuatik.fund')
+@section('title', 'Klub & Kursus Renang untuk Semua Usia di Kota Jambi - KonservasiAkuatik.fund')
 
 @section('content')
 
@@ -41,7 +41,7 @@
 
                 <!-- Subtitle / Paragraph -->
                 <p class="hero-subtitle mb-7 max-w-2xl mx-auto">
-                    konservasiakuatik.fund hadir sebagai klub dan kursus renang untuk membantu siapa saja mulai dari balita, anak-anak, remaja, hingga orang tua agar semakin percaya diri dan mampu berenang dengan baik.
+                    KonservasiAkuatik.fund hadir sebagai klub dan kursus renang untuk membantu siapa saja mulai dari balita, anak-anak, remaja, hingga orang tua agar semakin percaya diri dan mampu berenang dengan baik.
                 </p>
 
                 <!-- Location Sub-note -->
@@ -58,7 +58,7 @@
                         <span>DAFTAR KURSUS SEKARANG</span>
                         <i class="fa-solid fa-arrow-right text-xs"></i>
                     </a>
-                    <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo konservasiakuatik.fund, saya ingin konsultasi dan tanya info pendaftaran kursus renang di Kota Jambi.') }}" 
+                    <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.fund, saya ingin konsultasi dan tanya info pendaftaran kursus renang di Kota Jambi.') }}" 
                        target="_blank" 
                        class="btn-hero-secondary hero-btn-glass w-full sm:w-auto">
                         <i class="fa-brands fa-whatsapp text-emerald-500 text-base"></i>
@@ -230,7 +230,7 @@
                     Tidak perlu khawatir jika masih pemula.
                 </p>
                 <p class="text-slate-600 text-xs sm:text-sm">
-                    konservasiakuatik.fund membuka program untuk:
+                    KonservasiAkuatik.fund membuka program untuk:
                 </p>
             </div>
 
@@ -489,7 +489,7 @@
                                 <div>
                                     <h4 class="text-sm sm:text-base font-bold text-slate-900">One Prestasi</h4>
                                     <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                                        Berbagai pencapaian menjadi bagian dari perjalanan dan perkembangan peserta konservasiakuatik.fund.
+                                        Berbagai pencapaian menjadi bagian dari perjalanan dan perkembangan peserta KonservasiAkuatik.fund.
                                     </p>
                                 </div>
                             </div>
@@ -517,7 +517,7 @@
                         Karena setiap peserta memiliki proses dan pencapaian masing-masing.
                     </p>
 
-                    <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo konservasiakuatik.fund, saya ingin konsultasi perkembangan kemampuan renang untuk memulai di Kota Jambi.') }}" 
+                    <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.fund, saya ingin konsultasi perkembangan kemampuan renang untuk memulai di Kota Jambi.') }}" 
                        target="_blank" 
                        class="text-xs sm:text-sm font-bold text-sky-600 hover:text-sky-700 inline-flex items-center gap-1.5 transition-colors">
                         <span>Konsultasikan target kemampuan renang Anda bersama tim kami</span>
@@ -525,18 +525,10 @@
                     </a>
                 </div>
 
-                <!-- Right: Coach Photo with Quote Overlay -->
+                <!-- Right: Coach Photo (Clean without text overlay) -->
                 <div>
                     <div class="coach-photo-wrapper">
-                        <img src="{{ asset('images/coach.jpg') }}" alt="Pelatih Utama konservasiakuatik.fund Kota Jambi" loading="lazy">
-                        <div class="coach-photo-overlay">
-                            <p class="text-sm sm:text-base font-bold italic text-white mb-2 leading-relaxed">
-                                «"Dari takut air menjadi percaya diri. Dari belum bisa berenang menjadi mampu berenang."»
-                            </p>
-                            <span class="text-xs text-sky-200 font-semibold tracking-wider uppercase">
-                                — Pelatih Utama konservasiakuatik.fund
-                            </span>
-                        </div>
+                        <img src="{{ asset('images/coach.jpg') }}" alt="Pelatih Utama KonservasiAkuatik.fund Kota Jambi" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -604,7 +596,7 @@
             <!-- Bottom Note -->
             <div class="p-4 bg-sky-50/80 rounded-2xl border border-sky-100 text-xs sm:text-sm text-slate-600 text-center max-w-2xl mx-auto flex items-center justify-center gap-2 shadow-xs">
                 <i class="fa-solid fa-circle-check text-sky-600 text-base shrink-0"></i>
-                <span>Dokumentasi asli kegiatan latihan renang bersama tim pelatih konservasiakuatik.fund di berbagai kolam renang Kota Jambi.</span>
+                <span>Dokumentasi asli kegiatan latihan renang bersama tim pelatih KonservasiAkuatik.fund di berbagai kolam renang Kota Jambi.</span>
             </div>
         </div>
     </section>
@@ -721,43 +713,43 @@
             </div>
 
             <!-- Responsive Program Cards (Side-by-Side on Laptop, Vertical Stacked on HP) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4 max-w-7xl mx-auto mb-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3.5 max-w-7xl mx-auto mb-8">
                 @foreach($priceTable as $item)
-                    <div class="p-4 sm:p-5 bg-white rounded-2xl border {{ $item['is_popular'] ? 'border-sky-500 shadow-md ring-2 ring-sky-200/60' : (str_contains($item['program'], 'Gratis') ? 'border-emerald-300 shadow-xs' : 'border-slate-200 shadow-xs') }} flex flex-col justify-between items-center text-center transition-all duration-200 hover:-translate-y-1 hover:shadow-md relative">
+                    <div class="p-3.5 bg-white rounded-2xl border {{ $item['is_popular'] ? 'border-sky-500 shadow-md ring-2 ring-sky-200/60' : (str_contains($item['program'], 'Gratis') ? 'border-emerald-300 shadow-xs' : 'border-slate-200 shadow-xs') }} flex flex-col justify-between items-center text-center transition-all duration-200 hover:-translate-y-1 hover:shadow-md relative">
                         
                         @if($item['is_popular'])
                             <!-- Popular Ribbon Badge -->
-                            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-sky-600 text-white text-2xs font-extrabold px-3 py-0.5 rounded-full shadow-xs whitespace-nowrap z-10">
+                            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-sky-600 text-white text-2xs font-semibold px-2.5 py-0.5 rounded-full shadow-xs whitespace-nowrap z-10">
                                 Rekomendasi Terapi
                             </div>
                         @elseif(str_contains($item['program'], 'Gratis'))
                             <!-- Free Ribbon Badge -->
-                            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-emerald-600 text-white text-2xs font-extrabold px-3 py-0.5 rounded-full shadow-xs whitespace-nowrap z-10">
+                            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-emerald-600 text-white text-2xs font-semibold px-2.5 py-0.5 rounded-full shadow-xs whitespace-nowrap z-10">
                                 Hibah &amp; Subsidi
                             </div>
                         @elseif(str_contains($item['program'], 'Perwira'))
                             <!-- Perwira Badge -->
-                            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-500 text-white text-2xs font-extrabold px-3 py-0.5 rounded-full shadow-xs whitespace-nowrap z-10">
+                            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-500 text-white text-2xs font-semibold px-2.5 py-0.5 rounded-full shadow-xs whitespace-nowrap z-10">
                                 Program Intensif
                             </div>
                         @endif
 
-                        <div class="w-full flex flex-col items-center pt-1.5 flex-1">
+                        <div class="w-full flex flex-col items-center pt-1 flex-1">
                             <!-- Icon & Title -->
-                            <div class="w-10 h-10 rounded-xl {{ $item['is_popular'] ? 'bg-sky-100 text-sky-600' : (str_contains($item['program'], 'Gratis') ? 'bg-emerald-100 text-emerald-600' : (str_contains($item['program'], 'Perwira') ? 'bg-amber-100 text-amber-600' : 'bg-slate-100 text-slate-600')) }} flex items-center justify-center text-base shrink-0 mb-2">
+                            <div class="w-9 h-9 rounded-xl {{ $item['is_popular'] ? 'bg-sky-100 text-sky-600' : (str_contains($item['program'], 'Gratis') ? 'bg-emerald-100 text-emerald-600' : (str_contains($item['program'], 'Perwira') ? 'bg-amber-100 text-amber-600' : 'bg-slate-100 text-slate-600')) }} flex items-center justify-center text-sm shrink-0 mb-2">
                                 <i class="fa-solid {{ str_contains($item['program'], 'Gratis') ? 'fa-hand-holding-heart' : (str_contains($item['program'], 'Perwira') ? 'fa-medal' : (str_contains($item['program'], 'Syaraf') || str_contains($item['program'], 'Hydro') ? 'fa-spa' : (str_contains($item['program'], 'Privat') ? 'fa-user-shield' : 'fa-users'))) }} no-mr"></i>
                             </div>
                             
-                            <h3 class="text-base font-extrabold text-slate-900 leading-snug mb-2">{{ $item['program'] }}</h3>
+                            <h3 class="text-sm sm:text-base font-bold text-slate-800 leading-snug mb-1">{{ $item['program'] }}</h3>
                             
-                            <!-- Price Box -->
-                            <div class="my-2 py-2 px-3 {{ $item['is_popular'] ? 'bg-sky-50 border-sky-100' : (str_contains($item['program'], 'Gratis') ? 'bg-emerald-50 border-emerald-100' : (str_contains($item['program'], 'Perwira') ? 'bg-amber-50 border-amber-100' : 'bg-slate-50 border-slate-100')) }} rounded-xl w-full text-center border">
-                                <span class="text-2xs {{ $item['is_popular'] ? 'text-sky-600' : (str_contains($item['program'], 'Gratis') ? 'text-emerald-600' : (str_contains($item['program'], 'Perwira') ? 'text-amber-700' : 'text-slate-400')) }} font-bold uppercase tracking-wider block mb-0.5">Biaya / Harga</span>
-                                <span class="text-base font-extrabold {{ $item['is_popular'] ? 'text-sky-700' : (str_contains($item['program'], 'Gratis') ? 'text-emerald-700' : (str_contains($item['program'], 'Perwira') ? 'text-amber-800' : 'text-slate-900')) }} block leading-tight">{{ $item['harga'] }}</span>
+                            <!-- Price Single Line Box -->
+                            <div class="price-single-box {{ $item['is_popular'] ? 'is-popular' : (str_contains($item['program'], 'Gratis') ? 'is-free' : (str_contains($item['program'], 'Perwira') ? 'is-perwira' : '')) }}">
+                                <span class="price-label-text">Biaya / Harga</span>
+                                <span class="price-amount-highlight">{{ $item['harga'] }}</span>
                             </div>
 
                             <!-- Description / Suitable For -->
-                            <p class="text-xs text-slate-600 leading-relaxed text-center my-2 flex-1">
+                            <p class="text-xs text-slate-500 font-normal leading-relaxed text-center my-1.5 flex-1">
                                 {{ $item['cocok_untuk'] }}
                             </p>
                         </div>
@@ -766,7 +758,7 @@
                         <div class="w-full pt-3 border-t border-slate-100 mt-2">
                             <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode($item['msg']) }}" 
                                target="_blank" 
-                               class="{{ $item['is_popular'] ? 'btn-card-primary' : 'btn-card-outline' }} text-xs w-full justify-center text-center py-2.5">
+                               class="{{ $item['is_popular'] ? 'btn-card-primary' : 'btn-card-outline' }} text-xs w-full justify-center text-center py-2.5 font-semibold">
                                 <span>{{ $item['action_label'] }}</span>
                                 <i class="fa-solid fa-angle-right text-xs no-mr"></i>
                             </a>
@@ -788,9 +780,9 @@
                 <p class="text-sm font-semibold text-slate-700 mb-2">
                     Belum yakin memilih program yang mana?
                 </p>
-                <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo konservasiakuatik.fund, saya ingin konsultasi kebutuhan program renang yang cocok untuk saya/keluarga saya di Kota Jambi.') }}" 
-                   target="_blank" 
-                   class="text-xs sm:text-sm font-bold text-sky-600 hover:text-sky-700 inline-flex items-center gap-1.5 transition-colors">
+                <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.fund, saya ingin konsultasi kebutuhan program renang yang cocok untuk saya/keluarga saya di Kota Jambi.') }}" 
+                    target="_blank" 
+                    class="text-xs sm:text-sm font-bold text-sky-600 hover:text-sky-700 inline-flex items-center gap-1.5 transition-colors">
                     <i class="fa-brands fa-whatsapp text-emerald-500 text-base"></i>
                     <span>Konsultasikan kebutuhan Anda terlebih dahulu melalui WhatsApp</span>
                     <i class="fa-solid fa-arrow-right text-xs"></i>
@@ -810,7 +802,7 @@
                 Jangan biarkan rasa takut terhadap air menjadi penghalang.
             </p>
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
-                Mulai perjalanan berenang Anda bersama konservasiakuatik.fund.
+                Mulai perjalanan berenang Anda bersama KonservasiAkuatik.fund.
             </p>
 
             <!-- 5 Checklist Items from User -->
@@ -839,7 +831,7 @@
 
             <!-- WhatsApp CTA Button -->
             <div>
-                <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo konservasiakuatik.fund, saya siap mulai belajar berenang di Kota Jambi. Mohon panduan pendaftarannya.') }}" 
+                <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.fund, saya siap mulai belajar berenang di Kota Jambi. Mohon panduan pendaftarannya.') }}" 
                    target="_blank" 
                    class="btn-final-whatsapp">
                     <i class="fa-brands fa-whatsapp text-xl"></i>
