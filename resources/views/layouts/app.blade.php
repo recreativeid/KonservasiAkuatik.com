@@ -128,19 +128,19 @@
                 <p class="text-sky-600 font-bold text-base sm:text-lg mb-4 text-center">
                     Belajar Berenang. Bangun Kepercayaan Diri. Raih Milestone Baru.
                 </p>
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-6 text-xs sm:text-sm font-semibold text-slate-700 text-center">
-                    <div class="flex items-center justify-center gap-1.5">
-                        <i class="fa-solid fa-person-swimming text-sky-600 mr-2"></i>
+                <div class="footer-pills-row">
+                    <div class="footer-pill-item">
+                        <i class="fa-solid fa-person-swimming text-sky-600 footer-pill-icon"></i>
                         <span>Klub Renang, Privat &amp; Terapi Air</span>
                     </div>
-                    <span class="hidden sm:inline text-slate-300">•</span>
-                    <div class="flex items-center justify-center gap-1.5">
-                        <i class="fa-solid fa-location-dot text-sky-600 mr-2"></i>
+                    <span class="footer-pill-dot">•</span>
+                    <div class="footer-pill-item">
+                        <i class="fa-solid fa-location-dot text-sky-600 footer-pill-icon"></i>
                         <span>Kota Jambi</span>
                     </div>
-                    <span class="hidden sm:inline text-slate-300">•</span>
-                    <a href="https://wa.me/{{ $whatsappNumber }}" target="_blank" class="flex items-center justify-center gap-1.5 text-slate-700 hover:text-emerald-600 transition-colors">
-                        <i class="fa-brands fa-whatsapp text-emerald-500 text-base mr-2"></i>
+                    <span class="footer-pill-dot">•</span>
+                    <a href="https://wa.me/{{ $whatsappNumber }}" target="_blank" class="footer-pill-item footer-pill-link">
+                        <i class="fa-brands fa-whatsapp text-emerald-500 footer-pill-icon footer-pill-icon-wa"></i>
                         <span>WhatsApp: {{ $whatsappDisplay }}</span>
                     </a>
                 </div>
@@ -149,8 +149,8 @@
 
             <!-- Secretariat Address Box (Centered) -->
             <div class="max-w-2xl mx-auto mb-8 p-4 sm:p-5 bg-sky-50/80 border border-sky-100 rounded-2xl text-center shadow-xs">
-                <div class="inline-flex items-center justify-center gap-2 text-xs font-bold text-sky-700 bg-white px-3.5 py-1 rounded-full border border-sky-100 mb-2">
-                    <i class="fa-solid fa-building-flag text-sky-600 mr-2"></i>
+                <div class="inline-flex items-center justify-center text-xs font-bold text-sky-700 bg-white px-4 py-1.5 rounded-full border border-sky-100 mb-2.5" style="gap: 0.55rem;">
+                    <i class="fa-solid fa-building-flag text-sky-600"></i>
                     <span>ALAMAT SEKRETARIAT UTAMA</span>
                 </div>
                 <p class="text-xs sm:text-sm text-slate-700 font-semibold leading-relaxed text-center">
@@ -158,13 +158,13 @@
                 </p>
                 <a href="{{ $secretariatGmaps ?? 'https://maps.app.goo.gl/u8TQr6hjZDnCQhmy6?g_st=awb' }}" 
                    target="_blank" 
-                   class="inline-flex items-center justify-center gap-1.5 text-xs font-bold text-sky-600 hover:text-sky-700 mt-2 transition-colors">
-                    <i class="fa-solid fa-map-location-dot mr-2"></i>
+                   class="inline-flex items-center justify-center text-xs font-bold text-sky-600 hover:text-sky-700 mt-2.5 transition-colors" style="gap: 0.55rem;">
+                    <i class="fa-solid fa-map-location-dot"></i>
                     <span>Buka Peta Google Maps</span>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-2xs no-mr"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-2xs"></i>
                 </a>
-                <div class="mt-3 pt-3 border-t border-sky-200/60 flex items-center justify-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-700">
-                    <i class="fa-solid fa-envelope text-sky-600 mr-1"></i>
+                <div class="mt-3.5 pt-3 border-t border-sky-200/60 flex items-center justify-center text-xs sm:text-sm font-semibold text-slate-700" style="gap: 0.55rem;">
+                    <i class="fa-solid fa-envelope text-sky-600"></i>
                     <span>Email: <a href="mailto:konservasiakuatik.com@gmail.com" class="text-sky-600 hover:text-sky-700 hover:underline">konservasiakuatik.com@gmail.com</a></span>
                 </div>
             </div>
