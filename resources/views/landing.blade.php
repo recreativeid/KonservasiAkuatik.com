@@ -119,23 +119,6 @@
 
                             <!-- Glass Glare overlay -->
                             <div class="tablet-screen-glow"></div>
-                            
-                            <!-- Floating Info Badge at Bottom of Tablet Screen -->
-                            <div class="hero-floating-badge">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-9 h-9 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center flex-shrink-0">
-                                        <i class="fa-solid fa-location-dot text-base"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-xs sm:text-sm font-bold text-slate-800">Latihan di Berbagai Kolam Renang di Kota Jambi</h4>
-                                        <p class="text-xs text-slate-500">Menyesuaikan domisili peserta &amp; fasilitas kolam renang yang tersedia</p>
-                                    </div>
-                                </div>
-                                <a href="#lokasi" class="btn-primary-pill text-xs self-start sm:self-center">
-                                    <span>Lihat Lokasi</span>
-                                    <i class="fa-solid fa-angle-right text-xs"></i>
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -954,14 +937,13 @@
                     </div>
                 </div>
 
-                <!-- Partner 2: The Jambi Time & Voice of Jakarta -->
+                <!-- Partner 2: The Jambi Times & Voice of Jakarta -->
                 <div class="partner-card-box group">
-                    <div class="partner-card-logo-wrap flex items-center justify-center gap-2 px-1">
-                        <img src="{{ asset('images/the_jambi_time.jpeg') }}" alt="The Jambi Time" class="max-h-12 w-auto max-w-[46%] object-contain">
-                        <div class="h-8 w-px bg-slate-200 shrink-0"></div>
-                        <img src="{{ asset('images/voice_of_jakarta.jpeg') }}" alt="Voice of Jakarta" class="max-h-8 w-auto max-w-[46%] object-contain">
+                    <div class="partner-card-logo-wrap media-partner-dual-wrap">
+                        <img src="{{ asset('images/the_jambi_time.jpeg') }}" alt="The Jambi Times" class="logo-jt">
+                        <img src="{{ asset('images/voice_of_jakarta.jpeg') }}" alt="Voice of Jakarta" class="logo-voj">
                     </div>
-                    <span class="text-xs font-bold text-slate-800 text-center leading-tight">The Jambi Time &amp; Voice of Jakarta</span>
+                    <span class="text-xs font-bold text-slate-800 text-center leading-tight">The Jambi Times &amp; Voice of Jakarta</span>
                     <span class="text-2xs text-slate-400 font-medium mt-0.5">Media Partner</span>
                 </div>
 

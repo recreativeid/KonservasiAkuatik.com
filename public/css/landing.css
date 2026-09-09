@@ -1731,7 +1731,7 @@ img {
 
 /* Partner & Media Partner Cards */
 .partner-card-box {
-    background-color: rgba(248, 250, 252, 0.85);
+    background-color: #ffffff;
     border: 1px solid rgba(226, 232, 240, 0.85);
     border-radius: 1rem;
     padding: 1.5rem 1rem;
@@ -1744,6 +1744,8 @@ img {
     box-shadow: 0 1px 3px rgba(0,0,0,0.03);
     text-decoration: none;
     height: 100%;
+    overflow: hidden;
+    position: relative;
 }
 .partner-card-box:hover {
     background-color: #ffffff;
@@ -1759,6 +1761,7 @@ img {
     justify-content: center;
     margin-bottom: 0.75rem;
     padding: 0.25rem;
+    position: relative;
 }
 .partner-card-logo-wrap img {
     max-height: 6.5rem !important;
@@ -1770,6 +1773,32 @@ img {
 }
 .partner-card-box:hover .partner-card-logo-wrap img {
     transform: scale(1.05);
+}
+
+/* Dual logo for media partner (The Jambi Times & Voice of Jakarta) */
+.media-partner-dual-wrap {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.4rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+}
+.media-partner-dual-wrap img.logo-jt {
+    max-height: 3rem !important;
+    max-width: 80% !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+}
+.media-partner-dual-wrap img.logo-voj {
+    max-height: 2.2rem !important;
+    max-width: 82% !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
 }
 
 /* Footer Media Partner Badges */
