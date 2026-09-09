@@ -1752,7 +1752,7 @@ img {
     transform: translateY(-2px);
 }
 .partner-card-logo-wrap {
-    height: 5rem;
+    height: 7.5rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -1761,7 +1761,7 @@ img {
     padding: 0.25rem;
 }
 .partner-card-logo-wrap img {
-    max-height: 3.75rem !important;
+    max-height: 6.5rem !important;
     max-width: 100% !important;
     width: auto !important;
     height: auto !important;
