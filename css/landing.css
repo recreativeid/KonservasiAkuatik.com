@@ -1203,8 +1203,9 @@ img {
 
 .coach-photo-wrapper img {
     width: 100%;
-    height: 380px;
+    height: 400px;
     object-fit: cover;
+    object-position: center 20%;
     display: block;
 }
 
@@ -1727,4 +1728,76 @@ img {
         text-align: left;
     }
 }
+
+/* Partner & Media Partner Cards */
+.partner-card-box {
+    background-color: rgba(248, 250, 252, 0.85);
+    border: 1px solid rgba(226, 232, 240, 0.85);
+    border-radius: 1rem;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.25s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    text-decoration: none;
+    height: 100%;
+}
+.partner-card-box:hover {
+    background-color: #ffffff;
+    border-color: #7dd3fc;
+    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.08);
+    transform: translateY(-2px);
+}
+.partner-card-logo-wrap {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+    padding: 0.25rem;
+}
+.partner-card-logo-wrap img {
+    max-height: 3.75rem !important;
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+.partner-card-box:hover .partner-card-logo-wrap img {
+    transform: scale(1.05);
+}
+
+/* Footer Media Partner Badges */
+.footer-media-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.35rem 0.85rem;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    transition: all 0.2s ease;
+    text-decoration: none;
+    height: 2.75rem;
+    max-height: 2.75rem;
+}
+.footer-media-badge:hover {
+    border-color: #38bdf8;
+    box-shadow: 0 2px 8px rgba(2, 132, 199, 0.12);
+}
+.footer-media-badge img {
+    height: 1.5rem !important;
+    max-height: 1.5rem !important;
+    max-width: 140px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    display: block;
+}
+
 

@@ -146,6 +146,7 @@
                 </div>
             </div>
 
+
             <!-- Secretariat Address Box (Centered) -->
             <div class="max-w-2xl mx-auto mb-8 p-4 sm:p-5 bg-sky-50/80 border border-sky-100 rounded-2xl text-center shadow-xs">
                 <div class="inline-flex items-center justify-center gap-2 text-xs font-bold text-sky-700 bg-white px-3.5 py-1 rounded-full border border-sky-100 mb-2">
@@ -153,9 +154,9 @@
                     <span>ALAMAT SEKRETARIAT UTAMA</span>
                 </div>
                 <p class="text-xs sm:text-sm text-slate-700 font-semibold leading-relaxed text-center">
-                    Jalan Penerangan Perum Panorama Sakura Asri Blok T No 52 Kenali Besar, Alam Barajo Jambi
+                    {{ $secretariatAddress ?? 'Perum Panorama Sakura Asri Blok T No. 52, Jl. Penerangan, Kel. Kenali Besar, Kec. Alam Barajo, Kota Jambi, Jambi 36125' }}
                 </p>
-                <a href="{{ $secretariatGmaps ?? 'https://www.google.com/maps/search/?api=1&query=Perum+Panorama+Sakura+Asri+Kenali+Besar+Alam+Barajo+Jambi' }}" 
+                <a href="{{ $secretariatGmaps ?? 'https://maps.app.goo.gl/u8TQr6hjZDnCQhmy6?g_st=awb' }}" 
                    target="_blank" 
                    class="inline-flex items-center justify-center gap-1.5 text-xs font-bold text-sky-600 hover:text-sky-700 mt-2 transition-colors">
                     <i class="fa-solid fa-map-location-dot mr-2"></i>

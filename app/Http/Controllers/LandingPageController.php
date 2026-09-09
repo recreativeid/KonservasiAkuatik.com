@@ -146,8 +146,8 @@ class LandingPageController extends Controller
             ],
         ];
 
-        $secretariatAddress = 'Jalan Penerangan Perum Panorama Sakura Asri Blok T No 52 Kenali Besar, Alam Barajo Jambi';
-        $secretariatGmaps = 'https://www.google.com/maps/search/?api=1&query=' . rawurlencode('Perum Panorama Sakura Asri Kenali Besar Alam Barajo Jambi');
+        $secretariatAddress = 'Perum Panorama Sakura Asri Blok T No. 52, Jl. Penerangan, Kel. Kenali Besar, Kec. Alam Barajo, Kota Jambi, Jambi 36125';
+        $secretariatGmaps = 'https://maps.app.goo.gl/u8TQr6hjZDnCQhmy6?g_st=awb';
 
         $targetAudience = [
             [
@@ -269,18 +269,18 @@ class LandingPageController extends Controller
 
         $activities = [
             [
-                'title' => '[ FOTO KEGIATAN ]',
-                'description' => 'Dokumentasi kegiatan latihan kolam renang bersama tim KonservasiAkuatik.com.',
+                'title' => 'Latihan Kelompok Anak & Balita',
+                'description' => 'Pengenalan air ramah anak, water safety, serta latihan dasar berenang bersama teman sebaya.',
                 'image' => asset('images/activity-1.jpg'),
             ],
             [
-                'title' => '[ FOTO LATIHAN ]',
-                'description' => 'Sesi belajar bersama pelatih dalam menguasai teknik dasar dan pernapasan.',
+                'title' => 'Pendampingan Privat & Terapi Air',
+                'description' => 'Latihan privat terfokus untuk penguasaan teknik renang dan pendampingan keluhan syaraf terjepit.',
                 'image' => asset('images/activity-2.jpg'),
             ],
             [
-                'title' => '[ FOTO PESERTA ]',
-                'description' => 'Momen pencapaian milestone kemampuan renang peserta dari berbagai usia.',
+                'title' => 'Hydroterapi & Kebugaran Lansia',
+                'description' => 'Gerakan terarah di air untuk melatih kelenturan sendi, perbaikan mobilitas, dan kebugaran lansia.',
                 'image' => asset('images/activity-3.jpg'),
             ],
         ];

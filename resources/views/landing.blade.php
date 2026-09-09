@@ -545,13 +545,13 @@
                 <!-- Right: Coach Photo with Quote Overlay -->
                 <div>
                     <div class="coach-photo-wrapper">
-                        <img src="{{ asset('images/coach-sarah.jpg') }}" alt="Prestasi & Milestone Konservasi Akuatik Kota Jambi" loading="lazy">
+                        <img src="{{ asset('images/coach.jpg') }}" alt="Pelatih Utama KonservasiAkuatik.com Kota Jambi" loading="lazy">
                         <div class="coach-photo-overlay">
                             <p class="text-sm sm:text-base font-bold italic text-white mb-2 leading-relaxed">
                                 «"Dari takut air menjadi percaya diri. Dari belum bisa berenang menjadi mampu berenang."»
                             </p>
                             <span class="text-xs text-sky-200 font-semibold tracking-wider uppercase">
-                                — KonservasiAkuatik.com Kota Jambi
+                                — Pelatih Utama KonservasiAkuatik.com
                             </span>
                         </div>
                     </div>
@@ -568,62 +568,60 @@
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-3">
                     KEGIATAN LATIHAN
                 </h2>
-                <p class="text-slate-600 text-sm sm:text-base font-semibold">
-                    Dokumentasi kegiatan akan segera hadir.
+                <p class="text-slate-600 text-sm sm:text-base font-medium">
+                    Dokumentasi nyata kegiatan latihan renang terpadu, pendampingan privat, serta terapi air di Kota Jambi.
                 </p>
             </div>
 
-            <!-- 3 Photo Cards matching user tags -->
+            <!-- 3 Photo Cards with real activities -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                <!-- Photo 1: [ FOTO KEGIATAN ] -->
+                <!-- Photo 1: Kelas Anak & Kelompok -->
                 <div class="activity-photo-card">
                     <div class="activity-photo-img">
-                        <img src="{{ asset('images/activity-1.jpg') }}" alt="Foto Kegiatan Latihan Renang Kota Jambi" loading="lazy">
+                        <img src="{{ asset('images/activity-1.jpg') }}" alt="Dokumentasi Latihan Renang Anak dan Balita Kota Jambi" loading="lazy">
                         <span class="activity-photo-badge">
-                            <i class="fa-solid fa-camera mr-1"></i> [ FOTO KEGIATAN ]
+                            <i class="fa-solid fa-children mr-1"></i> Kelas Anak &amp; Kelompok
                         </span>
                     </div>
                     <div class="p-5 text-center">
-                        <h4 class="text-sm font-bold text-slate-900 mb-1">[ FOTO KEGIATAN ]</h4>
-                        <p class="text-xs text-slate-500">Dokumentasi suasana kolam renang dan aktivitas latihan bersama.</p>
+                        <h4 class="text-sm font-bold text-slate-900 mb-1">Latihan Kelompok Anak &amp; Balita</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">Pengenalan air ramah anak, water safety, serta latihan dasar berenang terarah dalam suasana aktif dan suportif.</p>
                     </div>
                 </div>
 
-                <!-- Photo 2: [ FOTO LATIHAN ] -->
+                <!-- Photo 2: Kursus Privat & Terapi Air -->
                 <div class="activity-photo-card">
                     <div class="activity-photo-img">
-                        <img src="{{ asset('images/activity-2.jpg') }}" alt="Foto Sesi Latihan Renang Kota Jambi" loading="lazy">
+                        <img src="{{ asset('images/activity-2.jpg') }}" alt="Dokumentasi Kursus Privat dan Terapi Air Kota Jambi" loading="lazy">
                         <span class="activity-photo-badge">
-                            <i class="fa-solid fa-person-chalkboard mr-1"></i> [ FOTO LATIHAN ]
+                            <i class="fa-solid fa-user-check mr-1"></i> Privat &amp; Terapi Air
                         </span>
                     </div>
                     <div class="p-5 text-center">
-                        <h4 class="text-sm font-bold text-slate-900 mb-1">[ FOTO LATIHAN ]</h4>
-                        <p class="text-xs text-slate-500">Pendampingan teknik dasar, pernapasan, dan kayuhan di air.</p>
+                        <h4 class="text-sm font-bold text-slate-900 mb-1">Pendampingan Privat &amp; Terapi Air</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">Latihan privat intensif satu-satu untuk penguasaan teknik, kenyamanan di air, serta pendampingan keluhan syaraf terjepit.</p>
                     </div>
                 </div>
 
-                <!-- Photo 3: [ FOTO PESERTA ] -->
+                <!-- Photo 3: Hydroterapi & Lansia -->
                 <div class="activity-photo-card">
                     <div class="activity-photo-img">
-                        <img src="{{ asset('images/activity-3.jpg') }}" alt="Foto Peserta Renang Kota Jambi" loading="lazy">
+                        <img src="{{ asset('images/activity-3.jpg') }}" alt="Dokumentasi Latihan Hydroterapi dan Kebugaran Lansia Kota Jambi" loading="lazy">
                         <span class="activity-photo-badge">
-                            <i class="fa-solid fa-award mr-1"></i> [ FOTO PESERTA ]
+                            <i class="fa-solid fa-heart-pulse mr-1"></i> Hydroterapi &amp; Lansia
                         </span>
                     </div>
                     <div class="p-5 text-center">
-                        <h4 class="text-sm font-bold text-slate-900 mb-1">[ FOTO PESERTA ]</h4>
-                        <p class="text-xs text-slate-500">Milestone dan kebersamaan peserta dari balita hingga orang tua.</p>
+                        <h4 class="text-sm font-bold text-slate-900 mb-1">Hydroterapi &amp; Kebugaran Lansia</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">Gerakan terarah dan aman di media air untuk kelenturan sendi, perbaikan mobilitas, serta kebugaran tubuh orang tua.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Bottom Note -->
-            <div class="dashed-info-box max-w-2xl mx-auto">
-                <p class="text-xs sm:text-sm text-slate-500 font-medium">
-                    <i class="fa-regular fa-image text-sky-600 mr-1.5"></i>
-                    Tambahkan foto kolam renang, kegiatan latihan, pelatih, serta dokumentasi peserta di bagian ini.
-                </p>
+            <div class="p-4 bg-sky-50/80 rounded-2xl border border-sky-100 text-xs sm:text-sm text-slate-600 text-center max-w-2xl mx-auto flex items-center justify-center gap-2 shadow-xs">
+                <i class="fa-solid fa-circle-check text-sky-600 text-base shrink-0"></i>
+                <span>Dokumentasi asli kegiatan latihan renang bersama tim pelatih KonservasiAkuatik.com di berbagai kolam renang Kota Jambi.</span>
             </div>
         </div>
     </section>
@@ -947,27 +945,42 @@
                 </p>
             </div>
 
-            <!-- 3 Partner Logos Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto items-center justify-center">
-                <!-- Partner 1 -->
-                <div class="p-6 bg-slate-50/80 rounded-2xl border border-slate-200/80 hover:border-sky-300 hover:bg-white transition-all duration-200 flex flex-col items-center justify-center text-center shadow-xs group">
-                    <img src="{{ asset('images/logo_partner1.jpg') }}" alt="Konservasi Akuatik Air Indonesia" class="h-20 sm:h-24 w-auto object-contain mb-3 transition-transform group-hover:scale-105">
+            <!-- Partner Logos Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto items-stretch justify-center">
+                <!-- Partner 1: The Jambi Times -->
+                <div class="partner-card-box group">
+                    <div class="partner-card-logo-wrap">
+                        <img src="{{ asset('images/logo_akuatik_indonesia.png') }}" alt="The Jambi Times">
+                    </div>
+                    <span class="text-xs font-bold text-slate-800">The Jambi Times</span>
+                    <span class="text-2xs text-slate-400 font-medium mt-0.5">Voice of Jakarta</span>
+                </div>
+
+                <!-- Partner 2: Konservasi Akuatik Air Indonesia -->
+                <div class="partner-card-box group">
+                    <div class="partner-card-logo-wrap">
+                        <img src="{{ asset('images/logo_konservasi_akuatik_air_indonesia.png') }}" alt="Konservasi Akuatik Air Indonesia">
+                    </div>
                     <span class="text-xs font-bold text-slate-800">Konservasi Akuatik Air Indonesia</span>
-                    <span class="text-2xs text-slate-400 font-medium">Asosiasi Olahraga Akuatik</span>
+                    <span class="text-2xs text-slate-400 font-medium mt-0.5">Asosiasi Olahraga Akuatik</span>
                 </div>
 
-                <!-- Partner 2 -->
-                <div class="p-6 bg-slate-50/80 rounded-2xl border border-slate-200/80 hover:border-sky-300 hover:bg-white transition-all duration-200 flex flex-col items-center justify-center text-center shadow-xs group">
-                    <img src="{{ asset('images/logo_partner2.jpg') }}" alt="Fisioterapi & Hidroterapi" class="h-20 sm:h-24 w-auto object-contain mb-3 transition-transform group-hover:scale-105">
+                <!-- Partner 3: Fisioterapi & Hidroterapi -->
+                <div class="partner-card-box group">
+                    <div class="partner-card-logo-wrap">
+                        <img src="{{ asset('images/logo_partner2.jpg') }}" alt="Fisioterapi & Hidroterapi">
+                    </div>
                     <span class="text-xs font-bold text-slate-800">Fisioterapi &amp; Hidroterapi</span>
-                    <span class="text-2xs text-slate-400 font-medium">Pemulihan Gerak Di Air</span>
+                    <span class="text-2xs text-slate-400 font-medium mt-0.5">Pemulihan Gerak Di Air</span>
                 </div>
 
-                <!-- Partner 3 -->
-                <div class="p-6 bg-slate-50/80 rounded-2xl border border-slate-200/80 hover:border-sky-300 hover:bg-white transition-all duration-200 flex flex-col items-center justify-center text-center shadow-xs group">
-                    <img src="{{ asset('images/logo_partner3.jpg') }}" alt="Pusat Terapi HNP & Syaraf Terjepit" class="h-20 sm:h-24 w-auto object-contain mb-3 transition-transform group-hover:scale-105">
+                <!-- Partner 4: Pusat Terapi HNP -->
+                <div class="partner-card-box group">
+                    <div class="partner-card-logo-wrap">
+                        <img src="{{ asset('images/logo_partner3.jpg') }}" alt="Pusat Terapi HNP & Syaraf Terjepit">
+                    </div>
                     <span class="text-xs font-bold text-slate-800">Pusat Terapi HNP</span>
-                    <span class="text-2xs text-slate-400 font-medium">Syaraf Terjepit &amp; Rehabilitasi Air</span>
+                    <span class="text-2xs text-slate-400 font-medium mt-0.5">Syaraf Terjepit &amp; Rehabilitasi Air</span>
                 </div>
             </div>
         </div>
