@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Klub & Kursus Renang untuk Semua Usia di Kota Jambi - KonservasiAkuatik.fund')
+@section('title', 'Klub & Kursus Renang untuk Semua Usia di Kota Jambi - KonservasiAkuatik.space')
 
 @section('content')
 
@@ -41,7 +41,7 @@
 
                 <!-- Subtitle / Paragraph -->
                 <p class="hero-subtitle mb-7 max-w-2xl mx-auto">
-                    KonservasiAkuatik.fund hadir sebagai klub dan kursus renang untuk membantu siapa saja mulai dari balita, anak-anak, remaja, hingga orang tua agar semakin percaya diri dan mampu berenang dengan baik.
+                    KonservasiAkuatik.space hadir sebagai klub dan kursus renang untuk membantu siapa saja mulai dari balita, anak-anak, remaja, hingga orang tua agar semakin percaya diri dan mampu berenang dengan baik.
                 </p>
 
                 <!-- Location Sub-note -->
@@ -58,7 +58,7 @@
                         <span>DAFTAR KURSUS SEKARANG</span>
                         <i class="fa-solid fa-arrow-right text-xs"></i>
                     </a>
-                    <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.fund, saya ingin konsultasi dan tanya info pendaftaran kursus renang di Kota Jambi.') }}" 
+                    <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.space, saya ingin konsultasi dan tanya info pendaftaran kursus renang di Kota Jambi.') }}" 
                        target="_blank" 
                        class="btn-hero-secondary hero-btn-glass w-full sm:w-auto">
                         <i class="fa-brands fa-whatsapp text-emerald-500 text-base"></i>
@@ -230,7 +230,7 @@
                     Tidak perlu khawatir jika masih pemula.
                 </p>
                 <p class="text-slate-600 text-xs sm:text-sm">
-                    KonservasiAkuatik.fund membuka program untuk:
+                    KonservasiAkuatik.space membuka program untuk:
                 </p>
             </div>
 
@@ -489,7 +489,7 @@
                                 <div>
                                     <h4 class="text-sm sm:text-base font-bold text-slate-900">One Prestasi</h4>
                                     <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                                        Berbagai pencapaian menjadi bagian dari perjalanan dan perkembangan peserta KonservasiAkuatik.fund.
+                                        Berbagai pencapaian menjadi bagian dari perjalanan dan perkembangan peserta KonservasiAkuatik.space.
                                     </p>
                                 </div>
                             </div>
@@ -517,7 +517,7 @@
                         Karena setiap peserta memiliki proses dan pencapaian masing-masing.
                     </p>
 
-                    <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.fund, saya ingin konsultasi perkembangan kemampuan renang untuk memulai di Kota Jambi.') }}" 
+                    <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.space, saya ingin konsultasi perkembangan kemampuan renang untuk memulai di Kota Jambi.') }}" 
                        target="_blank" 
                        class="text-xs sm:text-sm font-bold text-sky-600 hover:text-sky-700 inline-flex items-center gap-1.5 transition-colors">
                         <span>Konsultasikan target kemampuan renang Anda bersama tim kami</span>
@@ -528,7 +528,7 @@
                 <!-- Right: Coach Photo with Compact Bottom Overlay -->
                 <div>
                     <div class="coach-photo-wrapper">
-                        <img src="{{ asset('images/coach.jpg') }}" alt="Pelatih Utama KonservasiAkuatik.fund Kota Jambi" loading="lazy">
+                        <img src="{{ asset('images/coach.jpg') }}" alt="Pelatih Utama KonservasiAkuatik.space Kota Jambi" loading="lazy">
                         <div class="coach-photo-overlay">
                             <div class="coach-title">Pelatih Utama</div>
                             <p class="coach-subtitle">
@@ -602,7 +602,7 @@
             <!-- Bottom Note -->
             <div class="p-4 bg-sky-50/80 rounded-2xl border border-sky-100 text-xs sm:text-sm text-slate-600 text-center max-w-2xl mx-auto flex items-center justify-center gap-2 shadow-xs">
                 <i class="fa-solid fa-circle-check text-sky-600 text-base shrink-0"></i>
-                <span>Dokumentasi asli kegiatan latihan renang bersama tim pelatih KonservasiAkuatik.fund di berbagai kolam renang Kota Jambi.</span>
+                <span>Dokumentasi asli kegiatan latihan renang bersama tim pelatih KonservasiAkuatik.space di berbagai kolam renang Kota Jambi.</span>
             </div>
         </div>
     </section>
@@ -689,7 +689,7 @@
                 <p class="text-sm font-semibold text-slate-700 mb-2">
                     Belum yakin memilih program yang mana?
                 </p>
-                <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.fund, saya ingin konsultasi kebutuhan program renang yang cocok untuk saya/keluarga saya di Kota Jambi.') }}" 
+                <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.space, saya ingin konsultasi kebutuhan program renang yang cocok untuk saya/keluarga saya di Kota Jambi.') }}" 
                     target="_blank" 
                     class="text-xs sm:text-sm font-bold text-sky-600 hover:text-sky-700 inline-flex items-center gap-1.5 transition-colors">
                     <i class="fa-brands fa-whatsapp text-emerald-500 text-base"></i>
@@ -711,7 +711,7 @@
                 Jangan biarkan rasa takut terhadap air menjadi penghalang.
             </p>
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
-                Mulai perjalanan berenang Anda bersama KonservasiAkuatik.fund.
+                Mulai perjalanan berenang Anda bersama KonservasiAkuatik.space.
             </p>
 
             <!-- 5 Checklist Items from User -->
@@ -740,7 +740,7 @@
 
             <!-- WhatsApp CTA Button -->
             <div>
-                <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.fund, saya siap mulai belajar berenang di Kota Jambi. Mohon panduan pendaftarannya.') }}" 
+                <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.space, saya siap mulai belajar berenang di Kota Jambi. Mohon panduan pendaftarannya.') }}" 
                    target="_blank" 
                    class="btn-final-whatsapp">
                     <i class="fa-brands fa-whatsapp text-xl"></i>

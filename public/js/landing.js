@@ -1,5 +1,5 @@
 /**
- * KonservasiAkuatik.com - Landing Page Interactivity
+ * KonservasiAkuatik.space - Landing Page Interactivity
  */
 document.addEventListener('DOMContentLoaded', function () {
     // 1. Mobile Menu Toggle
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // WhatsApp Message setup
             const basePhone = '6281366878833';
-            const textMsg = `Halo KonservasiAkuatik.fund, saya ingin konfirmasi jadwal latihan dan ketersediaan slot di: *${branchVal}* (${slotVal}). Mohon informasi pendaftarannya. Terima kasih!`;
+            const textMsg = `Halo KonservasiAkuatik.space, saya ingin konfirmasi jadwal latihan dan ketersediaan slot di: *${branchVal}* (${slotVal}). Mohon informasi pendaftarannya. Terima kasih!`;
             const waUrl = `https://wa.me/${basePhone}?text=${encodeURIComponent(textMsg)}`;
 
             // Populate modal

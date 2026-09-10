@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class LandingPageController extends Controller
 {
     /**
-     * Display the KonservasiAkuatik.fund landing page.
+     * Display the KonservasiAkuatik.space landing page.
      */
     public function index()
     {
@@ -34,7 +34,7 @@ class LandingPageController extends Controller
                 ],
                 'cta_text' => 'PILIH KELAS KLUB',
                 'cta_class' => 'btn-card-outline',
-                'whatsapp_msg' => 'Halo KonservasiAkuatik.fund, saya ingin mendaftar Kelas Klub di Kota Jambi. Mohon info jadwal dan lokasinya.',
+                'whatsapp_msg' => 'Halo KonservasiAkuatik.space, saya ingin mendaftar Kelas Klub di Kota Jambi. Mohon info jadwal dan lokasinya.',
             ],
             [
                 'id' => 'privat',
@@ -55,7 +55,7 @@ class LandingPageController extends Controller
                 ],
                 'cta_text' => 'DAFTAR KURSUS PRIVAT',
                 'cta_class' => 'btn-card-outline',
-                'whatsapp_msg' => 'Halo KonservasiAkuatik.fund, saya ingin mendaftar Kursus Privat renang di Kota Jambi. Mohon informasi ketersediaan jadwal.',
+                'whatsapp_msg' => 'Halo KonservasiAkuatik.space, saya ingin mendaftar Kursus Privat renang di Kota Jambi. Mohon informasi ketersediaan jadwal.',
             ],
             [
                 'id' => 'syaraf-terjepit',
@@ -76,7 +76,7 @@ class LandingPageController extends Controller
                 ],
                 'cta_text' => 'DAFTAR KELAS SYARAF TERJEPIT',
                 'cta_class' => 'btn-card-primary',
-                'whatsapp_msg' => 'Halo KonservasiAkuatik.fund, saya ingin mendaftar Kelas Syaraf Terjepit (Pendampingan Terapi Air) di Kota Jambi. Mohon info ketersediaan jadwal.',
+                'whatsapp_msg' => 'Halo KonservasiAkuatik.space, saya ingin mendaftar Kelas Syaraf Terjepit (Pendampingan Terapi Air) di Kota Jambi. Mohon info ketersediaan jadwal.',
             ],
             [
                 'id' => 'hydroterapi',
@@ -97,7 +97,7 @@ class LandingPageController extends Controller
                 ],
                 'cta_text' => 'DAFTAR HYDROTERAPI',
                 'cta_class' => 'btn-card-outline',
-                'whatsapp_msg' => 'Halo KonservasiAkuatik.fund, saya ingin mendaftar Kelas Hydroterapi (Terapi & Latihan di Dalam Air) di Kota Jambi. Mohon info ketersediaan jadwal.',
+                'whatsapp_msg' => 'Halo KonservasiAkuatik.space, saya ingin mendaftar Kelas Hydroterapi (Terapi & Latihan di Dalam Air) di Kota Jambi. Mohon info ketersediaan jadwal.',
             ],
             [
                 'id' => 'perwira-tni-polri',
@@ -119,7 +119,7 @@ class LandingPageController extends Controller
                 ],
                 'cta_text' => 'DAFTAR KELAS PERWIRA',
                 'cta_class' => 'btn-card-outline',
-                'whatsapp_msg' => 'Halo KonservasiAkuatik.fund, saya ingin mendaftar Kelas Calon Perwira TNI/Polri (Program Intensif 2 Minggu) di Kota Jambi. Mohon info ketersediaan jadwal.',
+                'whatsapp_msg' => 'Halo KonservasiAkuatik.space, saya ingin mendaftar Kelas Calon Perwira TNI/Polri (Program Intensif 2 Minggu) di Kota Jambi. Mohon info ketersediaan jadwal.',
             ],
             [
                 'id' => 'gratis',
@@ -142,7 +142,7 @@ class LandingPageController extends Controller
                 ],
                 'cta_text' => 'DAFTAR KELAS GRATIS',
                 'cta_class' => 'btn-card-outline',
-                'whatsapp_msg' => 'Halo KonservasiAkuatik.fund, saya ingin mendaftar Program Kelas Gratis (Hibah & Subsidi) di Kota Jambi. Mohon info syarat dan kualifikasinya.',
+                'whatsapp_msg' => 'Halo KonservasiAkuatik.space, saya ingin mendaftar Program Kelas Gratis (Hibah & Subsidi) di Kota Jambi. Mohon info syarat dan kualifikasinya.',
             ],
         ];
 
@@ -292,7 +292,7 @@ class LandingPageController extends Controller
                 'cocok_untuk' => 'Peserta yang ingin berlatih bersama',
                 'action_label' => 'PILIH KELAS KLUB',
                 'is_popular' => false,
-                'msg' => 'Halo KonservasiAkuatik.fund, saya ingin mendaftar Kelas Klub di Kota Jambi.',
+                'msg' => 'Halo KonservasiAkuatik.space, saya ingin mendaftar Kelas Klub di Kota Jambi.',
             ],
             [
                 'program' => 'Kursus Privat',
@@ -300,7 +300,7 @@ class LandingPageController extends Controller
                 'cocok_untuk' => 'Peserta yang membutuhkan latihan lebih personal',
                 'action_label' => 'DAFTAR KURSUS PRIVAT',
                 'is_popular' => false,
-                'msg' => 'Halo KonservasiAkuatik.fund, saya ingin mendaftar Kursus Privat renang di Kota Jambi.',
+                'msg' => 'Halo KonservasiAkuatik.space, saya ingin mendaftar Kursus Privat renang di Kota Jambi.',
             ],
             [
                 'program' => 'Kelas Syaraf Terjepit',
@@ -308,7 +308,7 @@ class LandingPageController extends Controller
                 'cocok_untuk' => 'Pendampingan Terapi Air (8x pertemuan, durasi 2 jam)',
                 'action_label' => 'DAFTAR SYARAF TERJEPIT',
                 'is_popular' => true,
-                'msg' => 'Halo KonservasiAkuatik.fund, saya ingin mendaftar Kelas Syaraf Terjepit (Pendampingan Terapi Air) di Kota Jambi.',
+                'msg' => 'Halo KonservasiAkuatik.space, saya ingin mendaftar Kelas Syaraf Terjepit (Pendampingan Terapi Air) di Kota Jambi.',
             ],
             [
                 'program' => 'Hydroterapi',
@@ -316,7 +316,7 @@ class LandingPageController extends Controller
                 'cocok_untuk' => 'Terapi & Latihan di Dalam Air (4x pertemuan, durasi 1 jam)',
                 'action_label' => 'DAFTAR HYDROTERAPI',
                 'is_popular' => false,
-                'msg' => 'Halo KonservasiAkuatik.fund, saya ingin mendaftar Kelas Hydroterapi di Kota Jambi.',
+                'msg' => 'Halo KonservasiAkuatik.space, saya ingin mendaftar Kelas Hydroterapi di Kota Jambi.',
             ],
             [
                 'program' => 'Kelas Calon Perwira TNI/Polri',
@@ -324,7 +324,7 @@ class LandingPageController extends Controller
                 'cocok_untuk' => 'Program Intensif 2 Minggu (Durasi 2 jam/latihan)',
                 'action_label' => 'DAFTAR KELAS PERWIRA',
                 'is_popular' => false,
-                'msg' => 'Halo KonservasiAkuatik.fund, saya ingin mendaftar Kelas Calon Perwira TNI/Polri (Program Intensif 2 Minggu) di Kota Jambi.',
+                'msg' => 'Halo KonservasiAkuatik.space, saya ingin mendaftar Kelas Calon Perwira TNI/Polri (Program Intensif 2 Minggu) di Kota Jambi.',
             ],
             [
                 'program' => 'Kelas Gratis',
@@ -332,7 +332,7 @@ class LandingPageController extends Controller
                 'cocok_untuk' => 'Program Hibah & Subsidi (Peserta Terpilih)',
                 'action_label' => 'DAFTAR KELAS GRATIS',
                 'is_popular' => false,
-                'msg' => 'Halo KonservasiAkuatik.fund, saya ingin mendaftar Program Kelas Gratis (Hibah & Subsidi) di Kota Jambi.',
+                'msg' => 'Halo KonservasiAkuatik.space, saya ingin mendaftar Program Kelas Gratis (Hibah & Subsidi) di Kota Jambi.',
             ],
         ];
 
@@ -360,7 +360,7 @@ class LandingPageController extends Controller
         $slot = $request->input('slot', 'Pagi Hari (06.00 - 08.00 WIB)');
         $phone = '6281366878833';
 
-        $text = rawurlencode("Halo KonservasiAkuatik.fund, saya ingin informasi jadwal latihan dan ketersediaan slot di: {$branch} ({$slot}).");
+        $text = rawurlencode("Halo KonservasiAkuatik.space, saya ingin informasi jadwal latihan dan ketersediaan slot di: {$branch} ({$slot}).");
         $waUrl = "https://wa.me/{$phone}?text={$text}";
 
         if ($request->ajax()) {
