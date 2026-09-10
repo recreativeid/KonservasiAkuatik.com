@@ -285,27 +285,6 @@ class LandingPageController extends Controller
             ],
         ];
 
-        $testimonials = [
-            [
-                'name' => 'Peserta / Orang Tua Peserta 1',
-                'role' => 'Orang Tua Siswa Balita & Anak (Kota Jambi)',
-                'rating' => 5,
-                'comment' => 'Pengalaman pertama anak belajar renang di KonservasiAkuatik Kota Jambi sangat menyenangkan. Pelatihnya sabar dan telaten sehingga anak yang tadinya takut air sekarang jadi berani.',
-            ],
-            [
-                'name' => 'Peserta 2',
-                'role' => 'Peserta Dewasa Pemula (Kota Jambi)',
-                'rating' => 5,
-                'comment' => 'Belajar renang saat dewasa ternyata tidak canggung di sini. Metode belajarnya santai dan terarah, dalam beberapa sesi sudah berani meluncur dan bernapas dengan ritmis.',
-            ],
-            [
-                'name' => 'Peserta / Orang Tua Peserta 3',
-                'role' => 'Peserta Kelas Klub (Kota Jambi)',
-                'rating' => 5,
-                'comment' => 'Suasana latihan klub sangat positif dan suportif. Teman-teman berlatih bersama dan kemampuan berenang terus meningkat di setiap sesi latihan.',
-            ],
-        ];
-
         $priceTable = [
             [
                 'program' => 'Kelas Klub',
@@ -368,7 +347,6 @@ class LandingPageController extends Controller
             'branches',
             'reasons',
             'activities',
-            'testimonials',
             'priceTable'
         ));
     }

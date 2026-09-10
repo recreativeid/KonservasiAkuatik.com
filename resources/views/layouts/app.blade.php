@@ -103,7 +103,6 @@
                 <a href="#kenapa-kami" class="mobile-link">Keunggulan Kami</a>
                 <a href="#prestasi" class="mobile-link">Prestasi &amp; Milestone</a>
                 <a href="#kegiatan" class="mobile-link">Dokumentasi Latihan</a>
-                <a href="#testimoni" class="mobile-link">Testimoni Peserta</a>
                 <a href="#lokasi" class="mobile-link">Lokasi Latihan</a>
                 <hr class="border-slate-100 my-2">
                 <a href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Halo KonservasiAkuatik.fund, saya ingin konsultasi dan mendaftar kursus renang di Kota Jambi.') }}" 

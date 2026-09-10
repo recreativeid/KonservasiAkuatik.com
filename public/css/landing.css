@@ -1214,9 +1214,45 @@ img {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.65) 65%, transparent 100%);
-    padding: 1.75rem 1.5rem 1.25rem;
+    background: linear-gradient(to top, rgba(15, 23, 42, 0.94) 0%, rgba(15, 23, 42, 0.65) 75%, transparent 100%);
+    padding: 2.5rem 1.25rem 0.85rem;
     color: #ffffff;
+    pointer-events: none;
+}
+
+.coach-photo-overlay .coach-title {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 0.2rem;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+}
+
+.coach-photo-overlay .coach-subtitle {
+    font-size: 0.78rem;
+    color: #cbd5e1;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 0;
+    white-space: normal;
+    word-break: normal;
+}
+
+@media (max-width: 640px) {
+    .coach-photo-overlay {
+        padding: 1.75rem 1rem 0.75rem;
+    }
+
+    .coach-photo-overlay .coach-title {
+        font-size: 0.95rem;
+    }
+
+    .coach-photo-overlay .coach-subtitle {
+        font-size: 0.74rem;
+        line-height: 1.35;
+        white-space: normal;
+    }
 }
 
 /* Activity Gallery */
@@ -1244,24 +1280,6 @@ img {
     object-fit: cover;
 }
 
-/* Testimonials */
-.testi-card {
-    background-color: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 1rem;
-    padding: 1.5rem;
-    box-shadow: var(--shadow-sm);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.star-row {
-    color: #fbbf24;
-    font-size: 0.85rem;
-    display: flex;
-    gap: 0.2rem;
-}
 
 /* Price Comparison Table */
 .table-wrapper {

@@ -525,10 +525,16 @@
                     </a>
                 </div>
 
-                <!-- Right: Coach Photo (Clean without text overlay) -->
+                <!-- Right: Coach Photo with Compact Bottom Overlay -->
                 <div>
                     <div class="coach-photo-wrapper">
                         <img src="{{ asset('images/coach.jpg') }}" alt="Pelatih Utama KonservasiAkuatik.fund Kota Jambi" loading="lazy">
+                        <div class="coach-photo-overlay">
+                            <div class="coach-title">Pelatih Utama</div>
+                            <p class="coach-subtitle">
+                                Mendampingi latihan renang dengan aman, sabar, dan terarah.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -601,105 +607,8 @@
         </div>
     </section>
 
-    <!-- ==================== 8. CERITA & TESTIMONI PESERTA ==================== -->
-    <section class="py-16 bg-white" id="testimoni">
-        <div class="container-custom">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="pill-badge mb-3">PENGALAMAN PESERTA</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-3">
-                    CERITA &amp; TESTIMONI PESERTA
-                </h2>
-                <p class="text-slate-600 text-sm sm:text-base">
-                    Pengalaman peserta menjadi bagian penting dari perjalanan kami.
-                </p>
-            </div>
 
-            <!-- 3 Testimonial Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                <!-- Testi 1 -->
-                <div class="testi-card">
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="text-xs font-bold text-sky-700 bg-sky-50 px-2.5 py-1 rounded-full border border-sky-100">[ Testimoni 1 ]</span>
-                            <div class="star-row">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed italic mb-5">
-                            "Awalnya sangat takut air, sekarang anak saya jadi percaya diri dan selalu antusias setiap hari latihan tiba. Pelatih mendampingi dengan ramah dan sabar."
-                        </p>
-                    </div>
-                    <div class="flex items-center gap-2.5 pt-3 border-t border-slate-100">
-                        <div class="w-8 h-8 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-xs">
-                            P1
-                        </div>
-                        <div>
-                            <h5 class="text-xs font-bold text-slate-900">[ Testimoni 1 ]</h5>
-                            <p class="text-xs text-slate-400">Orang Tua Peserta (Kota Jambi)</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testi 2 -->
-                <div class="testi-card">
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="text-xs font-bold text-sky-700 bg-sky-50 px-2.5 py-1 rounded-full border border-sky-100">[ Testimoni 2 ]</span>
-                            <div class="star-row">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed italic mb-5">
-                            "Belajar renang di usia dewasa ternyata menyenangkan dan tidak canggung. Latihan privat membantu fokus menguasai teknik dasar dengan aman."
-                        </p>
-                    </div>
-                    <div class="flex items-center gap-2.5 pt-3 border-t border-slate-100">
-                        <div class="w-8 h-8 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-xs">
-                            P2
-                        </div>
-                        <div>
-                            <h5 class="text-xs font-bold text-slate-900">[ Testimoni 2 ]</h5>
-                            <p class="text-xs text-slate-400">Peserta Dewasa Pemula (Kota Jambi)</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testi 3 -->
-                <div class="testi-card">
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="text-xs font-bold text-sky-700 bg-sky-50 px-2.5 py-1 rounded-full border border-sky-100">[ Testimoni 3 ]</span>
-                            <div class="star-row">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed italic mb-5">
-                            "Suasana kelas klub seru dan suportif. Teman-teman berlatih bersama dan kemampuan berenang terus meningkat di setiap sesi latihan."
-                        </p>
-                    </div>
-                    <div class="flex items-center gap-2.5 pt-3 border-t border-slate-100">
-                        <div class="w-8 h-8 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-xs">
-                            P3
-                        </div>
-                        <div>
-                            <h5 class="text-xs font-bold text-slate-900">[ Testimoni 3 ]</h5>
-                            <p class="text-xs text-slate-400">Peserta Kelas Klub (Kota Jambi)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bottom Note -->
-            <div class="dashed-info-box max-w-2xl mx-auto">
-                <p class="text-xs sm:text-sm text-slate-500 font-medium">
-                    <i class="fa-regular fa-comment-dots text-sky-600 mr-1.5"></i>
-                    Bagian ini dapat diisi setelah tersedia testimoni dari peserta/orang tua peserta.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== 9. PILIH PROGRAM ANDA (TABEL PERBANDINGAN) ==================== -->
+    <!-- ==================== 8. PILIH PROGRAM ANDA (TABEL PERBANDINGAN) ==================== -->
     <section class="py-16 bg-slate-50">
         <div class="container-custom">
             <div class="text-center max-w-2xl mx-auto mb-12">
@@ -791,7 +700,7 @@
         </div>
     </section>
 
-    <!-- ==================== 10. SIAP MULAI BELAJAR BERENANG? ==================== -->
+    <!-- ==================== 9. SIAP MULAI BELAJAR BERENANG? ==================== -->
     <section class="final-cta-clean">
         <div class="container-custom max-w-2xl mx-auto">
             <span class="pill-badge mb-3">MULAI SEKARANG</span>
@@ -846,7 +755,7 @@
         </div>
     </section>
 
-    <!-- ==================== 11. LOKASI LATIHAN ==================== -->
+    <!-- ==================== 10. LOKASI LATIHAN ==================== -->
     <section class="py-16 bg-slate-50" id="lokasi">
         <div class="container-custom">
             <div class="text-center max-w-2xl mx-auto mb-10">
@@ -907,7 +816,7 @@
             </div>
         </div>
     </section>
-    <!-- ==================== 12. MITRA & PARTNER TERPERCAYA ==================== -->
+    <!-- ==================== 11. MITRA & PARTNER TERPERCAYA ==================== -->
     <section class="py-16 bg-white border-t border-slate-100" id="mitra">
         <div class="container-custom">
             <div class="text-center max-w-2xl mx-auto mb-10">
